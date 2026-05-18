@@ -13,6 +13,25 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
 ## [Pré-teste em andamento]
 
+## [0.13.0] — 2026-05-18
+
+### Adicionado
+- **Integração com WooCommerce** (BK-149): a Bússola agora sincroniza automaticamente os pedidos pagos da loja online da sua OSC como receitas em Movimentações. Cada pedido `completed` vira um lançamento financeiro com data, valor, cliente, método de pagamento e categoria — sem intervenção manual.
+- **Configuração da integração** (BK-149): nova seção "WooCommerce" em **Configurações → Organização**. Admin informa URL da loja, Consumer Key e Consumer Secret (com instruções passo a passo de como gerar no admin do WooCommerce, sem suposições), escolhe a frequência da sincronização (diária / semanal / mensal / desligada), a conta financeira destino, a data de corte para o backfill inicial e o modo de mapeamento de categorias (automático com categoria-mãe ou manual explícito).
+- **Sincronização automática diária** (BK-149): todas as OSCs com integração ativa têm seus pedidos sincronizados automaticamente todo dia às 06:00 (horário de Brasília). A frequência efetiva por OSC respeita a configuração escolhida — uma OSC em "Semanal" só roda nas segundas; em "Mensal" só no dia 1; em "Desligada" pula completamente.
+- **Importação manual sob demanda** (BK-149): além do cron automático, a página **Movimentações → Importar Lançamentos** (renomeada de "Importar CSV") agora tem duas fontes — CSV (existente) e WooCommerce (nova). Na aba WooCommerce, o admin escolhe o período (Desde a última sincronização / Últimos 7 dias / Últimos 30 dias / Personalizado com 2 datas) e clica "Importar agora".
+- **Estorno automático em refunds** (BK-149): se um pedido importado pela Bússola virar `refunded` ou `cancelled` no WooCommerce depois, a próxima sincronização cria automaticamente um lançamento contrário (padrão de estorno do BK-156) e ambos os lançamentos passam a exibir o badge "Estornado". A OSC não precisa fazer nada manualmente — a reconciliação contábil acontece sozinha.
+- **Badge "WooCommerce" na lista de movimentações** (BK-149): lançamentos importados da loja online ganham um badge clicável ao lado do título. Clicar abre o pedido original no admin do WooCommerce em nova aba (útil para conferir o pedido completo, falar com o cliente, etc.).
+- **Mapeamento inteligente de categorias** (BK-149): no modo automático, a Bússola lê as categorias dos produtos da loja e cria sub-categorias correspondentes sob a categoria-mãe escolhida (ex: "Loja Online" → "Camisetas", "Livros", "Doações"). Renomeação manual prevalece em sincronizações futuras — a Bússola não sobrescreve o nome que a OSC ajustou. No modo manual, o admin mapeia explicitamente cada categoria do WooCommerce para uma categoria contábil da Bússola.
+- **Detalhe rico no lançamento** (BK-149): cada movimento importado traz nas observações a lista dos itens comprados, o método de pagamento, o status no WooCommerce, dados do cliente e um link direto para abrir o pedido no admin da loja.
+- **Histórico de sincronizações** (BK-149): nova área dentro da configuração da integração mostra as últimas 20 execuções (data, modo, totais de novos/estornados/erros, status). Útil para diagnosticar problemas e acompanhar a saúde da integração.
+- **Notificação de falha** (BK-149): se uma sincronização falhar por credenciais inválidas, loja fora do ar ou outro erro grave, os administradores da OSC recebem notificação imediatamente (pelos canais habilitados na matriz de notificações do perfil).
+
+### Notas técnicas
+- Sem alteração nos fluxos existentes de Reembolsos, Pedidos de Pagamento, Movimentações manuais ou CSV — a integração WooCommerce é totalmente aditiva.
+- LGPD: payload bruto do pedido e e-mail do cliente são preservados na tabela de integração mas **excluídos do audit log** para minimizar duplicação de dados pessoais.
+- Pendente para versões futuras: webhook em tempo real (hoje sync é cron + manual), split por método de pagamento, cálculo automático de taxa do gateway, reconciliação com extrato bancário (que vem com BK-067) e múltiplas lojas por OSC.
+
 ## [0.12.0] — 2026-05-18
 
 ### Adicionado
