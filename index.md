@@ -5,8 +5,9 @@ permalink: /
 ---
 
 <style>
-.home-intro { max-width: 640px; margin: 2rem 0 2.5rem; font-size: 1.05rem; line-height: 1.7; }
-.module-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0 2.5rem; }
+.home-intro { max-width: 720px; margin: 2rem 0 2.5rem; font-size: 1.05rem; line-height: 1.7; }
+.home-intro p { margin: 0 0 1rem; }
+.module-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; margin: 1.5rem 0 2.5rem; }
 .module-card { display: block; padding: 1.25rem 1rem; border: 1px solid #dde3ec; border-radius: 8px; text-decoration: none; color: #222; background: #f8fafd; transition: box-shadow 0.15s; }
 .module-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-color: #aac; text-decoration: none; }
 .module-card-icon { font-size: 1.75rem; margin-bottom: 0.5rem; }
@@ -18,9 +19,10 @@ permalink: /
 .quick-links a:hover { background: #dce8f8; }
 </style>
 
-<p class="home-intro">
-O <strong>Bússola Financeira</strong> é uma plataforma de gestão financeira desenvolvida pela <a href="https://rit.org.br">RIT</a> para organizações da sociedade civil (OSCs). Acesse em <a href="https://bf.rit.org.br">bf.rit.org.br</a>.
-</p>
+<div class="home-intro">
+  <p>O <strong>Bússola Financeira</strong> é a plataforma de gestão financeira para Organizações da Sociedade Civil (OSCs) desenvolvida pela <a href="https://rit.org.br">RIT — Rede de Inovação e Transformação</a>. Acesse o sistema em <a href="https://bf.rit.org.br">bf.rit.org.br</a>.</p>
+  <p>Esta documentação <strong>não é só um manual de botões</strong>: cada seção explica o porquê das funcionalidades, conceitos financeiros relevantes para OSC (fluxo de caixa, regime de caixa, estorno, quórum de aprovação) e boas práticas que vimos funcionarem na rede. Leia na ordem que quiser; comece pelos <a href="/primeiros-passos/">Primeiros Passos</a> se você acabou de chegar.</p>
+</div>
 
 <div class="section-title">Módulos</div>
 
@@ -28,83 +30,88 @@ O <strong>Bússola Financeira</strong> é uma plataforma de gestão financeira d
   <a class="module-card" href="/modulos/painel/">
     <div class="module-card-icon">📊</div>
     <div class="module-card-title">Painel</div>
-    <div class="module-card-desc">Visão geral de saldos e atividade recente</div>
+    <div class="module-card-desc">Cockpit da sua OSC — saldos, resumo e pendências por papel</div>
   </a>
   <a class="module-card" href="/modulos/movimentacoes/">
     <div class="module-card-icon">💸</div>
     <div class="module-card-title">Movimentações</div>
-    <div class="module-card-desc">Receitas, despesas e transferências</div>
+    <div class="module-card-desc">Receitas, despesas e transferências — o coração do sistema</div>
   </a>
   <a class="module-card" href="/modulos/reembolsos/">
     <div class="module-card-icon">🔄</div>
     <div class="module-card-title">Reembolsos</div>
-    <div class="module-card-desc">Solicitar e aprovar reembolsos de despesas</div>
+    <div class="module-card-desc">Solicitar e aprovar reembolsos de despesas pagas do bolso</div>
   </a>
   <a class="module-card" href="/modulos/pedidos-pagamento/">
     <div class="module-card-icon">📋</div>
     <div class="module-card-title">Pedidos de Pagamento</div>
-    <div class="module-card-desc">Solicitar pagamentos a fornecedores</div>
+    <div class="module-card-desc">Autorizar pagamentos a fornecedores antes da despesa acontecer</div>
   </a>
   <a class="module-card" href="/modulos/projetos/">
     <div class="module-card-icon">📁</div>
     <div class="module-card-title">Projetos</div>
-    <div class="module-card-desc">Vincular lançamentos a projetos <em>(em breve)</em></div>
+    <div class="module-card-desc">Vincular lançamentos a projetos específicos <em>(em construção)</em></div>
   </a>
   <a class="module-card" href="/modulos/relatorios/">
     <div class="module-card-icon">📈</div>
     <div class="module-card-title">Relatórios</div>
-    <div class="module-card-desc">Análises financeiras consolidadas <em>(em breve)</em></div>
+    <div class="module-card-desc">Análises financeiras consolidadas <em>(em construção)</em></div>
   </a>
 </div>
 
-<div class="section-title">Configurações</div>
+<div class="section-title">Meu Perfil</div>
 
 <div class="module-grid">
   <a class="module-card" href="/configuracoes/perfil/">
     <div class="module-card-icon">👤</div>
-    <div class="module-card-title">Perfil</div>
-    <div class="module-card-desc">Dados pessoais, notificações e dados para reembolso</div>
+    <div class="module-card-title">Meu Perfil</div>
+    <div class="module-card-desc">Dados pessoais, dados para reembolso, preferências de notificação por canal e evento</div>
+  </a>
+</div>
+
+<div class="section-title">Configurações da Organização <small style="font-weight: 400; color: #666;">(admin e tesoureiro)</small></div>
+
+<div class="module-grid">
+  <a class="module-card" href="/configuracoes/organizacao/">
+    <div class="module-card-icon">🏢</div>
+    <div class="module-card-title">Organização</div>
+    <div class="module-card-desc">Dados da OSC e integrações (WooCommerce, Google Drive, WhatsApp, Telegram)</div>
   </a>
   <a class="module-card" href="/configuracoes/usuarios/">
     <div class="module-card-icon">👥</div>
     <div class="module-card-title">Usuários</div>
-    <div class="module-card-desc">Membros da organização e convites</div>
-  </a>
-  <a class="module-card" href="/configuracoes/organizacao/">
-    <div class="module-card-icon">🏢</div>
-    <div class="module-card-title">Organização</div>
-    <div class="module-card-desc">Dados da OSC e integrações</div>
+    <div class="module-card-desc">Membros da organização, papéis e convites</div>
   </a>
   <a class="module-card" href="/configuracoes/contas/">
     <div class="module-card-icon">🏦</div>
-    <div class="module-card-title">Contas Financeiras</div>
-    <div class="module-card-desc">Contas bancárias e saldos</div>
+    <div class="module-card-title">Contas Bancárias</div>
+    <div class="module-card-desc">Contas financeiras e saldos consolidados</div>
   </a>
   <a class="module-card" href="/configuracoes/categorias/">
     <div class="module-card-icon">🏷️</div>
     <div class="module-card-title">Categorias</div>
-    <div class="module-card-desc">Categorias e centros de custo</div>
+    <div class="module-card-desc">Categorias de receita, despesa e centros de custo</div>
   </a>
-  <a class="module-card" href="/configuracoes/workflow/">
+  <a class="module-card" href="/configuracoes/aprovacoes/">
     <div class="module-card-icon">✅</div>
-    <div class="module-card-title">Fluxo de Aprovação</div>
-    <div class="module-card-desc">Configuração de aprovadores e regras</div>
+    <div class="module-card-title">Fluxo de Aprovações</div>
+    <div class="module-card-desc">Quórum e aprovadores elegíveis para reembolsos e pedidos</div>
   </a>
 </div>
 
-<div class="section-title">Primeiros Passos</div>
+<div class="section-title">Primeiros Passos e Referência</div>
 
 <div class="quick-links">
-  <a href="/primeiros-passos/">Primeiro acesso e convite</a>
-  <a href="/primeiros-passos/#navegação-principal">Navegação principal</a>
+  <a href="/primeiros-passos/">Primeiro acesso e navegação</a>
   <a href="/papeis/">Papéis e permissões</a>
   <a href="/faq/">Perguntas frequentes</a>
+  <a href="/roadmap/">Roadmap</a>
   <a href="/changelog/">Changelog</a>
 </div>
 
-<div class="section-title">Suporte</div>
+<div class="section-title">Suporte e contato</div>
 
-<p>Dúvidas ou problemas? Use o botão <strong>💬 Feedback</strong> dentro do Bússola Financeira ou envie um e-mail para <a href="mailto:dpo@rit.org.br">dpo@rit.org.br</a>.</p>
+<p>Dúvidas, sugestões ou problemas? Use o botão <strong>💬 Feedback</strong> dentro do Bússola — vai direto para a equipe da RIT, com a versão do app e o seu contexto. Para questões de privacidade ou LGPD, escreva para <a href="mailto:dpo@rit.org.br">dpo@rit.org.br</a>.</p>
 
 <hr>
-<p style="font-size:0.8rem; color:#888;">Bússola Financeira v0.10 (beta) · <a href="https://rit.org.br">RIT — Rede de Inovação e Transformação</a></p>
+<p style="font-size:0.8rem; color:#888;">Bússola Financeira v0.13.0 · <a href="https://rit.org.br">RIT — Rede de Inovação e Transformação</a> · <a href="https://github.com/RIT-DF/bussola-docs">repositório público desta documentação</a></p>
