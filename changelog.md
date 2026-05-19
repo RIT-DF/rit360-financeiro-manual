@@ -13,6 +13,29 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ## [Pré-teste em andamento]
 
+## [0.15.0] — 2026-05-19
+
+### Adicionado
+- **Módulo de Relatórios** (BK-070, Onda 5): novo item "Relatórios" na barra superior, restrito a **Presidente, Tesoureiro e Comissão Fiscal**. Consolida toda a informação financeira da OSC em análises gerenciais navegáveis em **cinco abas**: Visão Geral, Receitas, Despesas, Atenção e Previsão. Voluntários e Coordenadores de Projeto não acessam no momento.
+- **Visão Geral** (BK-070): resultado do período em destaque (receitas menos despesas pagas), gráfico de evolução do saldo, cards com saldo de cada conta na **data final do período** (não "hoje" — coerência com prestação de contas histórica), top 5 receitas e top 5 despesas por categoria com link para a aba detalhada.
+- **Receitas e Despesas** (BK-070): gráfico por categoria + tabela detalhada com todas as categorias e percentual do total; quando há mais de 10 categorias, linha "Outros" agregada com expansão inline. Clique em qualquer linha abre `/movimentacoes` filtrado pela categoria + período.
+- **Aba Atenção** (BK-070): lista anomalias detectadas no período por **cinco regras configuráveis** — despesa única concentrada, categoria com pico, fornecedor novo com alto valor, categoria zerada que voltou, queda de receita. Cada anomalia tem severidade (leve/moderada/alta) e link de ação contextual. Badge na aba mostra a contagem total.
+- **Aba Previsão** (BK-070): forecast híbrido de fluxo de caixa para os próximos 3, 6 ou 12 meses combinando lançamentos já cadastrados (pendentes, ocorrências futuras de séries recorrentes, parcelas futuras de pedidos aprovados — "agendados") com extrapolação por média móvel de 6 meses por categoria ("estimados"). Mês corrente entra como primeiro mês projetado com marcador "em curso". Cada célula traz badge de origem (agendado/estimado). Drilldown mostra a composição. Alerta destacado quando há mês com saldo projetado negativo.
+- **Comparativo com período anterior** (BK-070): toggle no cabeçalho ativa comparação em todas as abas onde faz sentido (Visão Geral, Receitas, Despesas). Granularidade automática: mês completo compara com mês anterior completo; mês em andamento ou intervalo customizado compara com janela de mesma duração imediatamente antes.
+- **Configuração das regras de atenção** (BK-070): nova seção em **Configurações → Relatórios** (restrita ao Presidente). Cards editáveis com toggle on/off, threshold em campo numérico com unidade clara, link "Restaurar padrão" individual e link "Restaurar todas as regras ao padrão".
+- **Calibrar pelo histórico** (BK-070): botão na tela de configuração de regras (habilitado a partir de 6 meses de movimentação registrada) que dispara análise estatística do histórico da OSC e sugere thresholds personalizados para cada uma das cinco regras, com nível de confiança (alta/média/baixa) e justificativa em linguagem natural. Admin pode aceitar todas, editar individualmente antes de salvar, ou cancelar. Aplicação atômica em transação única.
+- **Exportação dos relatórios** (BK-070): botão Exportar com três opções — PDF da aba ativa, PDF completo (todas as cinco abas + sumário) e Excel multi-sheet. Cabeçalho identificador padrão em todos os formatos: nome da OSC, escopo, período, filtros aplicados, estado do comparativo, data/hora de geração. Receitas/despesas exportadas trazem todas as categorias (não só top 10).
+- **Filtros e período compartilhados entre abas** (BK-070): conta, categoria, fornecedor, tipo, centro de custo — todos multi-select. Período com presets (mês, trimestre, semestre, ano) + intervalo customizado. Default: último mês fechado. Estado completo persistido em query params da URL — link compartilhável reconstrói o recorte.
+
+### Corrigido
+- **Bloco "Resultado do período" zerado** (BK-173): bloco hero da aba Visão Geral exibia R$ 0,00 enquanto os demais blocos da mesma tela (gráfico, saldos por conta, top 5) mostravam dados reais. RPC `report_overview` foi corrigida para alinhar lógica de filtros com as demais RPCs do módulo.
+
+### Notas técnicas
+- Cálculo dos relatórios é **regime de caixa**: considera apenas movimentações com status `pago`, agregadas pela data de pagamento. A aba Previsão é exceção — lançamentos pendentes futuros entram como "agendados".
+- Relatórios são leitura pura — nenhuma operação altera dados financeiros. Geração de relatório não é registrada em audit_log (alto volume previsto, sem mudança de estado).
+- Defesa em profundidade: todas as RPCs do módulo validam papel do caller no servidor além do guard de rota no frontend.
+- PDF da primeira versão usa **tabelas e blocos textuais** — sem reprodução de gráficos visuais. Reprodução visual em PDF entra em versão futura.
+
 ## [0.14.0] — 2026-05-19
 
 ### Adicionado
