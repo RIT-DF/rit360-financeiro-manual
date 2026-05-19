@@ -27,7 +27,7 @@ Clique em **+ Adicionar usuário**. Informe o **e-mail** e o **papel** desejado.
 
 Cada linha tem menu de ações que muda conforme o status:
 
-- **Alterar papel** — muda o papel do usuário (Presidente, Tesoureiro, Coordenador, Voluntário)
+- **Editar papéis** — abre painel lateral com checkboxes para os 5 papéis disponíveis (Presidente, Tesoureiro, Coordenador de Projeto, Voluntário, Comissão Fiscal). Um usuário pode ter mais de um papel ao mesmo tempo — ver [Papéis e Permissões](/papeis/) para a regra de combinações.
 - **Desativar acesso** — bloqueia entrada sem excluir histórico
 - **Reativar acesso** — restaura entrada de quem estava desativado
 - **Cancelar convite pendente** — remove convite que ainda não foi aceito

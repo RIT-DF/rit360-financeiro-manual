@@ -13,6 +13,29 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ## [Pré-teste em andamento]
 
+## [0.14.0] — 2026-05-19
+
+### Adicionado
+- **Múltiplos papéis por usuário em uma mesma OSC** (BK-166): um membro agora pode acumular papéis no mesmo vínculo — por exemplo, ser **Coordenador de Projeto** e **Comissão Fiscal** ao mesmo tempo. As capacidades se somam: o usuário faz tudo que qualquer um dos seus papéis permite. Útil em OSCs pequenas onde a mesma pessoa cumpre mais de uma função.
+- **Editor de papéis dedicado** (BK-166): em Configurações → Usuários, o menu de ações ganhou o item **"Editar papéis"** que abre um painel lateral com checkboxes para os 6 papéis disponíveis. Marcar/desmarcar é livre, com **uma restrição visível**: Comissão Fiscal não pode ser combinada com Presidente nem Tesoureiro (conflito de interesse — o fiscal não pode fiscalizar a si mesmo). O sistema desabilita visualmente as opções incompatíveis e mostra mensagem explicativa.
+- **Confirmações sensíveis preservadas** (BK-166): adicionar ou remover o papel de Presidente continua exibindo o diálogo de confirmação ("Promover a administrador" / "Remover privilégios de administrador") antes de salvar. Outras mudanças de papel salvam direto.
+- **Lista de membros com todas as pills de papel** (BK-166): a tabela e os cards de membros agora exibem **todas as pills de papel** lado a lado, na ordem hierárquica (Presidente → Tesoureiro → Dirigente → Coordenador de Projeto → Comissão Fiscal → Voluntário). A visão do superadmin recebeu a mesma atualização para manter consistência.
+
+### Notas técnicas
+- Mudança estrutural no schema: `user_organization.role` (single) foi substituído por `user_organization.roles user_role[]` (array). Mantida 1 linha por vínculo user/OSC — convites, status, máquina de estados e auditoria intactos.
+- Invariante "último administrador ativo" preservada: o sistema continua bloqueando a remoção do papel de Presidente do último admin ativo da OSC.
+- O fluxo de **convite** de novos membros não muda — convite continua atribuindo um único papel (default: Voluntário); papéis adicionais são atribuídos depois via edição do membro.
+
+## [0.13.1] — 2026-05-19
+
+### Adicionado
+- **Papel "Comissão Fiscal"** como 5º papel disponível (BK-165): novo papel destinado a membros eleitos da comissão fiscal estatutária da OSC. Capacidades: leitura ampla de todas as movimentações, reembolsos, pedidos de pagamento e log de auditoria. **Não opera, não aprova e não solicita pedidos de pagamento** — pode solicitar reembolso próprio, como qualquer outro membro. Configurações da OSC ficam inacessíveis (mesma regra de Coordenador/Voluntário).
+- **Filtros de papel em Configurações → Fluxo de Aprovações** (BK-165): seletor de papéis aprovadores **não exibe** Comissão Fiscal como opção. Tentativas de configurar via API direta são rejeitadas pelo backend com erro explícito.
+- **Defesa em profundidade** (BK-165): bloqueio de mutações financeiras por Comissão Fiscal aplicado em três camadas — guard de rota, ocultação de botão na UI e validação no backend. Mesmo que algum passo falhe, os demais continuam protegendo.
+
+### Corrigido
+- **Regressão na ST-165.2** (BK-170): Comissão Fiscal aparecia indevidamente como opção de **solicitante de pedido de pagamento** em Configurações → Fluxo de Aprovações. Corrigido — apenas Presidente, Tesoureiro e Coordenador de Projeto solicitam pedidos de pagamento.
+
 ## [0.13.0] — 2026-05-18
 
 ### Adicionado
