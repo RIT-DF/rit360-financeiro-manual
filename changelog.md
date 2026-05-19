@@ -13,6 +13,33 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ## [Pré-teste em andamento]
 
+## [0.17.0] — 2026-05-19
+
+### Adicionado
+- **Bússola instalável como aplicativo no celular** (BK-179): Android Chrome agora oferece **Instalar aplicativo** no menu de três pontos. No iPhone, **Compartilhar → Adicionar à Tela de Início** instala a Bússola como app de verdade. No desktop (Chrome/Edge), aparece um ícone de **Instalar** na barra de endereços. App instalado abre em janela própria, sem barra do navegador, com splash em Verde Teal e ícone próprio da marca.
+- **Logo oficial em todas as telas** (BK-179): símbolo + nome **BÚSSOLA** lado a lado substituem a pseudo-logo de texto improvisada que aparecia no cabeçalho, na tela de login e no painel de autenticação. Mesmo símbolo é usado como ícone do app quando instalado no celular.
+- **Manual público com logo oficial** (BK-179): cabeçalho da documentação (`bussola-docs`) passa a exibir **RIT** + **Bússola Financeira** lado a lado.
+
+### Alterado
+- **Fonte Exo 2 self-hostada** (BK-179): tipografia oficial do design system agora é servida pelo próprio domínio da Bússola, sem depender mais do Google Fonts. Resultados: carregamento mais rápido, funciona em redes que bloqueiam CDN externa, e nenhum dado de IP do usuário vai para a infraestrutura do Google (privacy-by-design).
+- **Atualização sob seu controle** (BK-179): quando uma nova versão da Bússola for publicada, você verá uma notificação discreta perguntando se quer atualizar agora ou depois — em vez de o app trocar de versão sem aviso enquanto você usa.
+
+### Notas técnicas
+- PWA: `vite-plugin-pwa` + Workbox, `registerType: 'prompt'`, precache de assets do build, NetworkFirst no shell, CacheFirst em imagens e fontes.
+- Sem cache de chamadas autenticadas (`*.supabase.co`, `*.lovable.app/api`) — RLS preservada.
+- iOS status bar: `default` (não `black-translucent`) para evitar regressão de safe-area em iPhones com notch enquanto layout não tratar `env(safe-area-inset-top)`.
+- Service Worker tem guard explícito de iframe/hostname de preview do editor Lovable — só ativa no domínio publicado (`bf.rit.org.br`).
+- Tela offline (`/offline.html`) com identidade visual da marca virá na próxima entrega (ST-179.3).
+
+---
+
+## [0.16.1] — 2026-05-19
+
+### Corrigido
+- **Relatórios: filtro "Todos" agora exibe os dados completos** (BK-180): ao escolher o preset **Todos** na Visão Geral de `/relatorios`, o Resultado do Período, Evolução do Saldo, Saldos por Conta e Top 5 receitas/despesas voltam a exibir todos os valores reais do histórico da OSC, em vez de zerar tudo como se não houvesse movimentações. As demais abas (Receitas, Despesas, Atenção, Previsão) seguem a mesma lógica.
+
+---
+
 ## [0.16.0] — 2026-05-19
 
 ### Adicionado
