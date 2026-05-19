@@ -13,6 +13,26 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ## [Pré-teste em andamento]
 
+## [0.17.1] — 2026-05-19
+
+### Corrigido
+- **Filtros de Relatórios voltaram a funcionar** (BK-183): os filtros **Conta**, **Categoria** e **Centro de custo** estavam exibindo botões vazios e não filtravam nada (só **Tipo** funcionava). Agora todos os filtros listam as opções com nome legível e aplicam o filtro corretamente em todas as abas (Visão Geral, Receitas, Despesas, Atenção, Previsão).
+- **Menu "Mais" no celular não cai mais em 404** (BK-187): ao tocar em **Mais** na barra inferior do app instalado no celular, agora abre um painel deslizante com **Pagamentos e Reembolsos**, **Projetos**, **Relatórios**, **Configurações da organização**, **Meu perfil** e **Sair** — em vez de mostrar página de erro.
+- **Banner de instalação não bloqueia mais a navegação no celular** (BK-188): o banner "Instale o Bússola como app" subiu para acima da barra de navegação inferior. Tesoureiros agora conseguem usar a navegação livremente mesmo com o banner visível.
+- **Banner de instalação só aparece no celular** (BK-186): em computadores desktop, o banner sumiu — Chrome/Edge já têm o ícone "Instalar" próprio na barra de endereços, então o banner era redundante e ocupava espaço.
+- **Página de erro 404 agora em português** (BK-189): ao acessar uma rota inexistente, a Bússola exibe **"Página não encontrada"** com a identidade visual da marca (logo, paleta teal, fonte Exo 2) em vez do texto genérico "Oops! Page not found" em inglês.
+- **Atualizações voltam ao modelo de aviso** (BK-185): a v0.17.0 saiu com modo de auto-atualização forçada (necessário para destravar quem ficou com a versão quebrada do dia anterior). A v0.17.1 retoma o comportamento padrão — você vê uma notificação "Nova versão disponível" e decide quando aplicar.
+
+### Em validação (Android)
+- **Bússola tentando virar app real, não atalho** (BK-191): em algumas situações, instalar a Bússola no Android estava criando apenas um atalho que abre no Chrome com barra de endereços (em vez de aplicativo standalone com ícone próprio). Adicionamos os campos `id` e `screenshots` no manifest do PWA + meta tag `mobile-web-app-capable`. **Para validar**: no celular, limpar o cache do Chrome para `bf.rit.org.br`, reabrir o site, navegar por ~30 segundos e conferir se o menu de 3 pontos passa a oferecer **"Instalar aplicativo"** (em vez de só "Adicionar à tela inicial").
+
+### Notas técnicas
+- Causa raiz do BK-183: colisão de `queryKey` no React Query entre `ReportsFiltersBar` e `useFilterLabelResolver`. Fix arquitetural: `queryFn` canônico + transformação `{value, label}` movida para `select` (por-consumidor, não toca no cache compartilhado).
+- BK-187: novo componente `MobileMoreSheet` (shadcn `Sheet side="bottom"`). Não criou rota nova — bottom sheet sobre a tela atual.
+- BK-191: aplicadas hipóteses H1 (`id` no manifest) + H2 (`screenshots` wide e narrow) + H4 (meta `mobile-web-app-capable`). Hipóteses H3 (maskable-192) e engagement reservadas para BK próprio caso problema persista.
+
+---
+
 ## [0.17.0] — 2026-05-19
 
 ### Adicionado
