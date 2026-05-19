@@ -93,8 +93,7 @@ Esta página mostra **o estado de cada funcionalidade** do Bússola Financeira �
 
 | Funcionalidade | Descrição | Disponível | Em Construção | Planejado |
 |---|---|:---:|:---:|:---:|
-| Cadastro de voluntários (módulo básico) | Nome, contato, papel, vinculação a projetos, histórico de participação | | | ✓ |
-| Atividades, especialidades e progressão (módulo avançado) | Para OSCs com estrutura de progressão escoteira ou similar | | | ✓ |
+| Cadastro de voluntários | Nome, contato, papel, vinculação a projetos, histórico de participação | | | ✓ |
 | Gestão de associados contribuintes | Cadastro de membros pagantes, planos de contribuição, vínculo financeiro | | | ✓ |
 | Portal do Associado (área pública por token) | Associado consulta situação financeira e histórico sem precisar de login | | | ✓ |
 | Acordos de trabalho e termos com voluntários | Registro de termos de participação, assinatura digital, histórico por voluntário | | | ✓ |
@@ -116,8 +115,6 @@ Esta página mostra **o estado de cada funcionalidade** do Bússola Financeira �
 | Funcionalidade | Descrição | Disponível | Em Construção | Planejado |
 |---|---|:---:|:---:|:---:|
 | Doações via WooCommerce | "Doações" como produto na loja online sincronizam para Movimentações | ✓ | | |
-| Cadastro de doadores | Base de doadores com histórico, valor total, contato | | | ✓ |
-| Recibos de doação em PDF | Documento padronizado com dados da OSC e do doador | | | ✓ |
 | Campanhas de arrecadação | Página pública `/doe/<slug>` com meta, prazo e barra de progresso | | | ✓ |
 | Personalização da página pública de transparência | Configurar o que aparece — indicadores resumidos, gráficos, fotos | | | ✓ |
 
@@ -168,10 +165,7 @@ Esta página mostra **o estado de cada funcionalidade** do Bússola Financeira �
 | WhatsApp Business API | Envio oficial de notificações pela conta WhatsApp Business da OSC | | | ✓ |
 | Telegram para grupos e canais da OSC | Envio para grupo/canal além de usuário individual | | | ✓ |
 | Google Drive | Sincronização de anexos com Drive da OSC | | | ✓ |
-| Asaas como gateway primário | PIX, boleto e cartão recorrente com webhook | | | ✓ |
-| Múltiplos gateways de pagamento | Stripe, Cielo, PagSeguro, Mercado Pago | | | ✓ |
 | API pública REST (OpenAPI / Swagger) | Acesso programático aos dados da OSC, habilitado por OSC via superadmin | | | ✓ |
-| Plugin WordPress (WooCommerce + widget) | Shortcode `[bussola_doacoes]` e bloco Gutenberg | | | ✓ |
 | Integração com sistemas contábeis (NIBO, ContaAzul) | Exportação automática de lançamentos para o ERP contábil | | | ✓ |
 | Webhook em tempo real para WooCommerce | Sincronização instantânea ao invés de diária | | | ✓ |
 | Conciliação com extrato bancário (OFX/CNAB) | Importação de extrato com matching automático | | | ✓ |
@@ -198,7 +192,6 @@ Esta página mostra **o estado de cada funcionalidade** do Bússola Financeira �
 | Sugestão automática de categoria | LLM sugere categoria com base em descrição e histórico | | | ✓ |
 | OCR de comprovantes | Extração de valor, data e fornecedor a partir da foto da nota | | | ✓ |
 | Relatório gerencial mensal gerado por IA | Resumo escrito em prosa do mês para diretoria | | | ✓ |
-| Plano pago com provedor LLM operado pela RIT | Para OSCs sem provedor próprio | | | ✓ |
 
 ---
 
@@ -216,9 +209,6 @@ Esta página mostra **o estado de cada funcionalidade** do Bússola Financeira �
 | Aceite combinado privacy + terms | Fluxo único de aceite com versionamento independente dos dois | | ✓ | |
 | Exportação de dados pessoais sob demanda | Direito de portabilidade da LGPD | | | ✓ |
 | Anonimização automática | Direito ao esquecimento; PII vira placeholders mantendo integridade contábil | | | ✓ |
-| Login com Microsoft, Apple, Discord | Provedores adicionais além de Google | | | ✓ |
-| Web Application Firewall (Cloudflare) | Rate limiting, DDoS protection, regras customizadas | | | ✓ |
-| Penetration test antes de abertura ampla | Auditoria de segurança profissional antes da expansão | | | ✓ |
 
 ---
 
@@ -231,7 +221,6 @@ Esta página mostra **o estado de cada funcionalidade** do Bússola Financeira �
 | Plano Pro para OSCs fora da rede (pago) | Cobrança recorrente PIX/boleto/cartão | | | ✓ |
 | Régua de cobrança automática (inadimplência) | D+7, D+15, D+30; bloqueio configurável | | | ✓ |
 | Cota de armazenamento e usuários por plano | Limites configuráveis por nível de plano | | | ✓ |
-| Documentos institucionais com controle de validade | Atas, certidões, contratos; alertas de vencimento | | | ✓ |
 
 ---
 
@@ -243,10 +232,7 @@ Esta página mostra **o estado de cada funcionalidade** do Bússola Financeira �
 | Manual público em `docs.bf.rit.org.br` | Esta documentação que você está lendo | ✓ | | |
 | Changelog versionado | Lista de alterações por versão; atualizado a cada release | ✓ | | |
 | Modo claro / escuro | Toggle de tema no perfil do usuário | | | ✓ |
-| Personalização de painel por usuário | Reorganização dos cards e indicadores | | | ✓ |
 | Cronograma automático de relatórios periódicos | Envio mensal/trimestral para destinatários configurados | | | ✓ |
-| Comparativos entre OSCs da rede RIT | Anonimizado por default; visão consolidada para superadmin | | | ✓ |
-| Dashboard de saúde da plataforma | Para a RIT: OSCs ativas, usuários, volume, uso de armazenamento | | | ✓ |
 | Monitoramento (Sentry, Logflare) | Captura de erros e logs estruturados | | | ✓ |
 | Disaster recovery documentado e testado | Procedimento anual de teste de recuperação | | | ✓ |
 | Internacionalização (i18n) | Suporte a idiomas além de pt-BR | | | ✓ |
