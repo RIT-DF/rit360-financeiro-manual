@@ -13,6 +13,21 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ## [Pré-teste em andamento]
 
+## [Não lançado] — aguardando bump v0.17.3
+
+> Estas entregas já foram implementadas no código pelo Lovable nos prompts #177, #184, #191, #192 e #193, mas o app continua marcado como **v0.17.2** porque o bump da `version.ts` ainda não foi pedido. **Validação E2E em produção:** 6 de 7 itens confirmados via Playwright em 2026-05-20 (BK-193, BK-194, BK-195, BK-174, BK-176, BK-177). O sétimo (BK-171, importação CSV) foi verificado por inspeção da Edge Function — teste manual com upload de CSV em formato brasileiro ainda recomendado. Regressão residual de 47px de overflow em `/movimentacoes` (mascarada pelo `overflow-x: hidden` do BK-195) foi registrada como **BK-202** para tratamento futuro. Quando o próximo prompt do Lovable for enviado, agrupar o bump v0.17.3 e mover esta seção para release proper.
+
+### Corrigido
+- **App no celular agora rola normalmente ao arrastar com o dedo** (BK-193, prompt #191): em Android Chrome e iOS Safari, a tela não rolava por toque — o conteúdo ficava cortado e o usuário precisava esticar/zoom para chegar no rodapé. A altura fixa que travava o documento foi substituída por altura mínima, liberando o browser a criar a área scrollável virtual. Em desktop continua funcionando como antes.
+- **Tabela de Movimentações em celular agora exibe os lançamentos como cartões** (BK-194, prompt #192): a tabela de 9 colunas era cortada em viewport mobile (só 2 colunas visíveis em 322px). Agora, em telas menores que 1024px, cada lançamento aparece como um cartão com todos os campos visíveis sem rolagem horizontal — padrão familiar de apps financeiros (Nubank, Conta Azul). Em telas >= 1024px, a tabela tradicional continua sendo usada.
+- **Scrollbar horizontal indesejada no body em mobile** (BK-195, prompt #193): em `/pagamentos`, `/reembolsos`, `/movimentacoes` e `/relatorios`, a página inteira oferecia rolagem horizontal de até 342px em mobile, dando sensação de "tela quebrada". `overflow-x: hidden` defensivo aplicado no `body` corrige o sintoma global; containers de tabs ficam responsáveis por sua própria rolagem horizontal quando precisarem.
+- **Sino de notificações sem funcionalidade removido da TopNav** (BK-174, prompt #184): o ícone de sino próximo ao avatar não estava ligado a nenhum fluxo de notificações in-app — clicar não fazia nada. Foi removido para não passar expectativa errada ao usuário. Quando a feature de notificações in-app for implementada, o sino volta junto com o backend.
+- **Filtro de Fornecedor removido da barra de Relatórios** (BK-176, prompt #184): decisão de produto — no contexto de prestação de contas e visão gerencial agregada, Tipo, Conta, Categoria e Centro de custo já cobrem o essencial. Filtro permanece intacto em `/movimentacoes` e demais telas.
+- **Meses em português em todo o módulo Relatórios** (BK-177, prompt #184): alerta de meses negativos na aba Previsão exibia "Atenção: saldo projetado negativo em May/2026" em vez de "Maio/2026". Todos os pontos de formatação de mês no módulo (alerta de Previsão, gráficos, tabelas, cabeçalho) passaram a usar o locale pt-BR.
+- **Importação de movimentações via CSV agora aceita seis formatos de data** (BK-171, prompt #177): planilhas brasileiras (com data em `dd/mm/yyyy` ou `dd-mm-yyyy`) eram rejeitadas pelo importador, que aceitava apenas ISO (`yyyy-MM-dd`). Agora o parser reconhece automaticamente `yyyy-MM-dd`, `yyyy/MM/dd`, `dd-MM-yyyy`, `dd/MM/yyyy`, `dd-MM-yy`, `dd/MM/yy` e normaliza para ISO internamente antes de persistir.
+
+---
+
 ## [0.17.2] — 2026-05-19
 
 ### Corrigido
