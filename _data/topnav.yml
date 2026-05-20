@@ -2,6 +2,8 @@
   url: /
 - title: Primeiros Passos
   url: /primeiros-passos/
+- title: Instalar como app
+  url: /instalar-como-app/
 - title: Módulos
   url: /modulos/painel/
   prefix: /modulos/
