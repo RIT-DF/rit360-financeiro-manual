@@ -4,6 +4,9 @@
 - title: Primeiros Passos
   url: /primeiros-passos/
 
+- title: Instalar como aplicativo
+  url: /instalar-como-app/
+
 - title: Módulos
   children:
     - title: Painel

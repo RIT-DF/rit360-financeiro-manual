@@ -22,10 +22,6 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 ### Adicionado
 - **Troca de organização (OSC) agora disponível no celular** (BK-201): no celular, usuários com acesso a mais de uma OSC (superadmin, voluntários cross-OSC, contadores) não tinham como trocar de organização — o seletor existia só no cabeçalho desktop, escondido em mobile. Agora, no painel **Mais** (barra inferior), aparece no topo um bloco com a **OSC ativa** (logo + nome). Quando há múltiplas OSCs, tocar nesse bloco expande a lista de organizações disponíveis dentro do próprio painel; tocar em uma delas troca de OSC e fecha o painel. Se o usuário tem só uma OSC, o bloco aparece apenas como informação ("você está na OSC X").
 
-### Notas técnicas
-- Causa raiz do BK-197: combinação `inline-flex` + `max-w-full` + `overflow-x: auto` no `<TabsList>` shadcn cria container de scroll com largura *shrink-to-fit*, fazendo o navegador calcular origem do scroll de forma instável em mobile (filhos com `offsetLeft` negativo, inalcançáveis). Fix em 2 propriedades no shared `Code/src/components/ui/tabs.tsx`: `<TabsList>` `inline-flex max-w-full` → `flex w-full`; `<TabsTrigger>` ganhou `shrink-0`.
-- BK-201: novo bloco no `<MobileMoreSheet>` reusando `<OrgMark>` exportado do `<OrgSwitcher>` desktop (DRY). Expansão inline da lista de OSCs (não popover sobre o sheet, anti-pattern de modal sobre modal). `<SheetTitle>` mantido em `sr-only` para acessibilidade.
-
 ---
 
 ## [0.17.1] — 2026-05-19
@@ -39,12 +35,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 - **Atualizações voltam ao modelo de aviso** (BK-185): a v0.17.0 saiu com modo de auto-atualização forçada (necessário para destravar quem ficou com a versão quebrada do dia anterior). A v0.17.1 retoma o comportamento padrão — você vê uma notificação "Nova versão disponível" e decide quando aplicar.
 
 ### Em validação (Android)
-- **Bússola tentando virar app real, não atalho** (BK-191): em algumas situações, instalar a Bússola no Android estava criando apenas um atalho que abre no Chrome com barra de endereços (em vez de aplicativo standalone com ícone próprio). Adicionamos os campos `id` e `screenshots` no manifest do PWA + meta tag `mobile-web-app-capable`. **Para validar**: no celular, limpar o cache do Chrome para `bf.rit.org.br`, reabrir o site, navegar por ~30 segundos e conferir se o menu de 3 pontos passa a oferecer **"Instalar aplicativo"** (em vez de só "Adicionar à tela inicial").
-
-### Notas técnicas
-- Causa raiz do BK-183: colisão de `queryKey` no React Query entre `ReportsFiltersBar` e `useFilterLabelResolver`. Fix arquitetural: `queryFn` canônico + transformação `{value, label}` movida para `select` (por-consumidor, não toca no cache compartilhado).
-- BK-187: novo componente `MobileMoreSheet` (shadcn `Sheet side="bottom"`). Não criou rota nova — bottom sheet sobre a tela atual.
-- BK-191: aplicadas hipóteses H1 (`id` no manifest) + H2 (`screenshots` wide e narrow) + H4 (meta `mobile-web-app-capable`). Hipóteses H3 (maskable-192) e engagement reservadas para BK próprio caso problema persista.
+- **Bússola virou app instalável de verdade no Android** (BK-191): instalar a Bússola pelo Chrome Android agora cria um aplicativo standalone com ícone próprio (não mais um simples atalho que abre dentro do Chrome). **Validado em produção em 2026-05-19.** Veja como instalar em [Instalar como aplicativo](/instalar-como-app/).
 
 ---
 
@@ -58,13 +49,6 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 ### Alterado
 - **Fonte Exo 2 self-hostada** (BK-179): tipografia oficial do design system agora é servida pelo próprio domínio da Bússola, sem depender mais do Google Fonts. Resultados: carregamento mais rápido, funciona em redes que bloqueiam CDN externa, e nenhum dado de IP do usuário vai para a infraestrutura do Google (privacy-by-design).
 - **Atualização sob seu controle** (BK-179): quando uma nova versão da Bússola for publicada, você verá uma notificação discreta perguntando se quer atualizar agora ou depois — em vez de o app trocar de versão sem aviso enquanto você usa.
-
-### Notas técnicas
-- PWA: `vite-plugin-pwa` + Workbox, `registerType: 'prompt'`, precache de assets do build, NetworkFirst no shell, CacheFirst em imagens e fontes.
-- Sem cache de chamadas autenticadas (`*.supabase.co`, `*.lovable.app/api`) — RLS preservada.
-- iOS status bar: `default` (não `black-translucent`) para evitar regressão de safe-area em iPhones com notch enquanto layout não tratar `env(safe-area-inset-top)`.
-- Service Worker tem guard explícito de iframe/hostname de preview do editor Lovable — só ativa no domínio publicado (`bf.rit.org.br`).
-- Tela offline (`/offline.html`) com identidade visual da marca virá na próxima entrega (ST-179.3).
 
 ---
 
@@ -86,11 +70,9 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 - **CPF e RG via Vault** (BK-178): se a planilha incluir CPF/RG, esses dados vão para o cofre seguro (Vault) do Supabase, com a mesma proteção que o cadastro individual recebe. Nunca persistem em coluna clara.
 - **Resumo final por categoria** (BK-178): ao concluir, a Bússola mostra contagens por tipo (convites enviados, convites com e-mail pendente quando o envio falhou, vínculos novos, perfis atualizados, linhas com erro). Linhas com erro ficam disponíveis para download em CSV separado com coluna de motivo, facilitando correção.
 
-### Notas técnicas
+### Observações de uso
 - Multi-papel não entra via planilha — cada linha atribui exatamente 1 papel. Para acumular papéis, usar **Editar papéis** no menu de ações do membro após importar.
 - Dados de pagamento (PIX/banco/conta) **não entram** na planilha por decisão de segurança e simplicidade. Cada membro preenche no próprio perfil.
-- Nova RPC `admin_set_user_profile_sensitive(p_user_id, p_org_id, p_cpf, p_rg)` com gate de admin **da OSC alvo** — bloqueio explícito de escrita cross-organizacional.
-- Audit log registra cada linha processada com ação correta (`invited`, `linked`, `profile_updated`, `invited_email_pending`, `skipped_error`).
 
 ## [0.15.0] — 2026-05-19
 
@@ -109,10 +91,9 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 ### Corrigido
 - **Bloco "Resultado do período" zerado** (BK-173): bloco hero da aba Visão Geral exibia R$ 0,00 enquanto os demais blocos da mesma tela (gráfico, saldos por conta, top 5) mostravam dados reais. RPC `report_overview` foi corrigida para alinhar lógica de filtros com as demais RPCs do módulo.
 
-### Notas técnicas
-- Cálculo dos relatórios é **regime de caixa**: considera apenas movimentações com status `pago`, agregadas pela data de pagamento. A aba Previsão é exceção — lançamentos pendentes futuros entram como "agendados".
-- Relatórios são leitura pura — nenhuma operação altera dados financeiros. Geração de relatório não é registrada em audit_log (alto volume previsto, sem mudança de estado).
-- Defesa em profundidade: todas as RPCs do módulo validam papel do caller no servidor além do guard de rota no frontend.
+### Observações de uso
+- Cálculo dos relatórios é **regime de caixa**: considera apenas movimentações com status **pago**, agregadas pela data de pagamento. A aba Previsão é exceção — lançamentos pendentes futuros entram como "agendados".
+- Relatórios são leitura pura — gerar um relatório não altera nenhum dado financeiro.
 - PDF da primeira versão usa **tabelas e blocos textuais** — sem reprodução de gráficos visuais. Reprodução visual em PDF entra em versão futura.
 
 ## [0.14.0] — 2026-05-19
@@ -123,8 +104,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 - **Confirmações sensíveis preservadas** (BK-166): adicionar ou remover o papel de Presidente continua exibindo o diálogo de confirmação ("Promover a administrador" / "Remover privilégios de administrador") antes de salvar. Outras mudanças de papel salvam direto.
 - **Lista de membros com todas as pills de papel** (BK-166): a tabela e os cards de membros agora exibem **todas as pills de papel** lado a lado, na ordem hierárquica (Presidente → Tesoureiro → Dirigente → Coordenador de Projeto → Comissão Fiscal → Voluntário). A visão do superadmin recebeu a mesma atualização para manter consistência.
 
-### Notas técnicas
-- Mudança estrutural no schema: `user_organization.role` (single) foi substituído por `user_organization.roles user_role[]` (array). Mantida 1 linha por vínculo user/OSC — convites, status, máquina de estados e auditoria intactos.
+### Observações de uso
 - Invariante "último administrador ativo" preservada: o sistema continua bloqueando a remoção do papel de Presidente do último admin ativo da OSC.
 - O fluxo de **convite** de novos membros não muda — convite continua atribuindo um único papel (default: Voluntário); papéis adicionais são atribuídos depois via edição do membro.
 
@@ -152,10 +132,9 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 - **Histórico de sincronizações** (BK-149): nova área dentro da configuração da integração mostra as últimas 20 execuções (data, modo, totais de novos/estornados/erros, status). Útil para diagnosticar problemas e acompanhar a saúde da integração.
 - **Notificação de falha** (BK-149): se uma sincronização falhar por credenciais inválidas, loja fora do ar ou outro erro grave, os administradores da OSC recebem notificação imediatamente (pelos canais habilitados na matriz de notificações do perfil).
 
-### Notas técnicas
+### Observações de uso
 - Sem alteração nos fluxos existentes de Reembolsos, Pedidos de Pagamento, Movimentações manuais ou CSV — a integração WooCommerce é totalmente aditiva.
-- LGPD: payload bruto do pedido e e-mail do cliente são preservados na tabela de integração mas **excluídos do audit log** para minimizar duplicação de dados pessoais.
-- Pendente para versões futuras: webhook em tempo real (hoje sync é cron + manual), split por método de pagamento, cálculo automático de taxa do gateway, reconciliação com extrato bancário (que vem com BK-067) e múltiplas lojas por OSC.
+- Pendente para versões futuras: webhook em tempo real (hoje sync é cron + manual), split por método de pagamento, cálculo automático de taxa do gateway, reconciliação com extrato bancário e múltiplas lojas por OSC.
 
 ## [0.12.0] — 2026-05-18
 

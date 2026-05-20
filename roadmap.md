@@ -224,6 +224,25 @@ Esta página mostra **o estado de cada funcionalidade** do Bússola Financeira �
 
 ---
 
+## 📱 Mobile e Aplicativo (PWA)
+
+| Funcionalidade | Descrição | Disponível | Em Construção | Planejado |
+|---|---|:---:|:---:|:---:|
+| Layout responsivo mobile-first | Toda a interface adaptada para uso confortável em celular (375px e acima) | ✓ | | |
+| Instalação como aplicativo (PWA) | Botão "Instalar aplicativo" em Android Chrome, "Adicionar à Tela de Início" em iOS Safari, ícone na barra de endereços em Chrome/Edge desktop. Veja [como instalar](/instalar-como-app/) | ✓ | | |
+| Janela standalone quando instalado | App abre em tela cheia, sem barra de endereços nem abas do navegador, com ícone próprio | ✓ | | |
+| Splash screen com identidade da marca | Tela de carregamento em Verde Teal com símbolo da Bússola ao abrir o app instalado | ✓ | | |
+| Atualização sob controle do usuário | Toast "Nova versão disponível" com botões **Atualizar agora** / **Depois** — você decide quando aplicar | ✓ | | |
+| Banner discreto de instalação no celular | Sugestão aparece após uso ativo (apenas mobile, sumindo em desktop e após instalar/dispensar) | ✓ | | |
+| Tela offline amigável | Quando sem conexão, app exibe tela em pt-BR com logo da Bússola e botão "Tentar novamente" — em vez de erro do navegador | ✓ | | |
+| Cards de Movimentações em mobile | Em vez de tabela cortada, lista vertical de cards otimizada para toque (descrição, valor, data, contraparte, ações) | ✓ | | |
+| Bottom nav fixa em mobile | Barra inferior fixa com Painel, Movim., +, Pag./Reemb., Mais — sempre acessível enquanto navega | ✓ | | |
+| Painel "Mais" com OrgSwitcher | Tap em **Mais** abre painel deslizante com troca de OSC (no topo), demais rotas (Projetos, Relatórios, Configurações, Perfil) e Sair | ✓ | | |
+| Notificações push em mobile | Eventos do app (reembolso aprovado, pedido aguardando aprovação, vencimento próximo) enviados como notificação push pelo celular, com toggles por evento na matriz de notificações do perfil | | | ✓ |
+| Capturar comprovante com a câmera do celular | Anexar nota fiscal, cupom ou comprovante fotografando direto pelo celular no fluxo de Novo Lançamento, Novo Reembolso e Novo Pedido de Pagamento | | | ✓ |
+
+---
+
 ## ⚙️ Operação e Suporte
 
 | Funcionalidade | Descrição | Disponível | Em Construção | Planejado |
