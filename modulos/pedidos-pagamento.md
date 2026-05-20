@@ -42,9 +42,14 @@ O módulo de **Pedidos de Pagamento** é onde alguém da OSC **pede autorizaçã
 ## Lista de pedidos de pagamento
 
 [![Lista de pedidos](/assets/screenshots/manual-07-pedidos-lista.png)](/assets/screenshots/manual-07-pedidos-lista.png)
-*Lista de pedidos de pagamento*
+*Lista de pedidos de pagamento em desktop*
 
 A lista exibe todos os pedidos com colunas Descrição, Destinatário, Valor, Data da despesa, Solicitante e Status.
+
+No **celular**, os cards de resumo ficam em grade de 2 colunas e a lista de pedidos vira cards verticais otimizados para toque:
+
+[![Pedidos de pagamento no celular](/assets/screenshots/mobile-pedidos-pagamento.png)](/assets/screenshots/mobile-pedidos-pagamento.png)
+*Pedidos de pagamento no celular — KPIs em grade 2×N e abas roláveis horizontalmente*
 
 ### Cards de resumo no topo
 

@@ -33,9 +33,16 @@ Antes de entrar nos botões, vale firmar três conceitos que você vai ver em to
 ## Lista de movimentações
 
 [![Lista de movimentações](/assets/screenshots/manual-02-movimentacoes-lista.png)](/assets/screenshots/manual-02-movimentacoes-lista.png)
-*Lista de movimentações*
+*Lista de movimentações em desktop — tabela com todas as colunas*
 
 A lista mostra todas as movimentações com as colunas **Vencimento**, **Pagamento**, **Lançamento** (título e beneficiário), **Conta**, **Categoria**, **Status** e **Valor**.
+
+No **celular** ou em telas estreitas (abaixo de 1024 px de largura), a tabela vira uma **lista de cards** com a mesma informação organizada verticalmente — descrição em destaque, valor colorido, data, contraparte, conta, categoria, status e menu de ações:
+
+[![Lista de movimentações no celular](/assets/screenshots/mobile-movimentacoes-cards.png)](/assets/screenshots/mobile-movimentacoes-cards.png)
+*Lista de movimentações no celular — cada lançamento como card*
+
+Para ordenar a lista no celular, use o seletor **"Ordenar por"** logo acima dos cards.
 
 Ao abrir a tela, ela já vem filtrada pelo **mês corrente** — o que você está operando agora. Para ver períodos anteriores ou outros recortes, use o filtro de período.
 
