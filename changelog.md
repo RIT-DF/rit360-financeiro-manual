@@ -13,6 +13,27 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ## [Pré-teste em andamento]
 
+## [0.19.0] — 2026-05-20
+
+Esta versão adiciona um novo canal de notificações: **push direto no celular ou no navegador**. Você passa a receber avisos da Bússola mesmo com o app fechado, como em qualquer aplicativo de banco — ao tocar no aviso, abre direto na tela relevante (reembolso aprovado, pedido pendente de seu voto, etc.). Push é o 4º canal da matriz de preferências, ao lado de E-mail, WhatsApp e Telegram.
+
+### Adicionado
+
+- **Push como 4º canal na matriz de notificações** (BK-199): a tabela de preferências em **Meu Perfil → Notificações** ganha uma coluna **Push** ao lado de E-mail, WhatsApp e Telegram. Cada par (evento × canal) continua sendo um toggle independente — você decide por qual caminho quer ser avisado de cada tipo de evento. Default vem com tudo ligado; você silencia o que não quer.
+- **Ativação por dispositivo** (BK-199): um interruptor mestre **"Ativar push neste dispositivo"** acima da matriz controla se este celular/computador específico recebe push. Pode ativar no celular pessoal e desativar no do trabalho sem afetar a configuração da sua conta — cada dispositivo é independente.
+- **Avisos chegam mesmo com o app fechado** (BK-199): a integração com os serviços nativos de notificação dos sistemas (Google no Android, Apple no iOS) faz o aviso chegar como o de WhatsApp ou e-mail — não depende de você estar com a Bússola aberta.
+- **Toque no aviso abre a tela correspondente** (BK-199): tocar em "Reembolso aprovado" abre direto no detalhe daquele reembolso; tocar em "Pedido pendente de aprovação" abre direto no detalhe do pedido — sem navegar por menu.
+
+### Observações de uso
+
+- **Android (Chrome / Edge / outro navegador moderno):** funciona direto, sem precisar instalar. Apenas autorize quando o navegador perguntar.
+- **iOS (Safari):** push só funciona se a Bússola estiver **instalada como app** na tela de início (toque em **Compartilhar → Adicionar à Tela de Início**). Sem isso o iOS não permite push, e o interruptor fica desabilitado com instrução. Veja **[Instalar como app](/instalar-como-app/)** se ainda não fez.
+- **Desktop (Chrome / Firefox / Edge):** funciona como no celular. Útil para receber avisos quando você está com outro aplicativo em primeiro plano.
+- **Múltiplas OSCs:** quem participa de mais de uma OSC recebe push de eventos de todas elas. A OSC aparece no corpo do aviso para identificação da origem.
+- **Privacidade:** o endpoint do seu dispositivo é armazenado da mesma forma que os outros dados de contato (número de WhatsApp, ID do Telegram). Você pode desativar a qualquer momento no master switch ou pedir exclusão completa pelo fluxo LGPD em **Ações de Conta**.
+
+---
+
 ## [0.18.0] — 2026-05-20
 
 Release consolidando duas frentes: a **captura de documentos pela câmera no celular** (BK-200, principal novidade) e um pacote de **estabilização mobile + polimentos** que vinha acumulando desde a entrega do PWA (v0.17.0). O salto de versão de v0.17.2 direto para v0.18.0 (sem v0.17.3 intermediária) reflete essa consolidação — todas as melhorias chegam juntas ao usuário.
