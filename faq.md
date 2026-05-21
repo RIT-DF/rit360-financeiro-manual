@@ -28,7 +28,7 @@ Sim. Em **Meu Perfil → Ações de Conta → Encerrar todas as sessões**. Úti
 
 ### Onde encontro Configurações? Não vejo nenhum item no menu.
 
-Configurações da organização está no **ícone de engrenagem** no canto superior direito da TopNav (próximo ao sino de notificações). O ícone só aparece para usuários com papel **Admin (Presidente)** ou **Tesoureiro** — voluntários e coordenadores não veem porque não têm acesso às configurações da OSC.
+Configurações da organização está no **ícone de engrenagem** no canto superior direito da TopNav (entre o Feedback e o menu do avatar). O ícone só aparece para usuários com papel **Admin (Presidente)** ou **Tesoureiro** — voluntários e coordenadores não veem porque não têm acesso às configurações da OSC.
 
 ### Onde está "Meu Perfil"?
 
@@ -133,6 +133,14 @@ Em **Meu Perfil → Notificações**, preencha seu número de WhatsApp em format
 ### E Telegram?
 
 Envie `/start` para `@BussolaBot` no Telegram. O bot vincula automaticamente seu Telegram à sua conta Bússola. Depois, a coluna Telegram na matriz de notificações fica habilitada.
+
+### Como ativo notificações push no celular?
+
+Em **Meu Perfil → Notificações**, toque no interruptor **"Ativar push neste dispositivo"** (acima da matriz). O navegador vai pedir permissão; autorize. A coluna **Push** na matriz fica habilitada para você escolher quais eventos receber por esse canal — funciona como aviso de banco, chega na tela mesmo com a Bússola fechada e abre direto na tela relevante ao tocar.
+
+**Importante:** no **iPhone (Safari)**, push só funciona se você **instalou a Bússola como app** na tela de início — sem instalar, o interruptor fica desabilitado com instrução. Veja [Instalar como aplicativo](/instalar-como-app/). No **Android (Chrome / Edge)** e em **desktop (Chrome / Firefox / Edge)**, funciona direto sem precisar instalar como app.
+
+A ativação é **por dispositivo**: pode ativar no celular pessoal e deixar desativado no celular do trabalho, sem afetar a configuração da sua conta.
 
 ## Geral
 

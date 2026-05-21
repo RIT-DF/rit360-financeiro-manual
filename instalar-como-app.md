@@ -109,8 +109,16 @@ Procure pela notificação **Nova versão disponível** dentro do app e toque em
 
 ---
 
-## Notificações push (em breve)
+## Notificações push
 
-Nas próximas versões, o app instalado vai poder enviar **notificações push** para o seu celular avisando sobre eventos importantes (reembolso aprovado, pedido aguardando sua aprovação, lançamento próximo do vencimento, etc.). Cada usuário poderá escolher quais notificações receber em **Meu Perfil → Notificações**, do mesmo jeito que escolhe canais de e-mail hoje.
+Desde a v0.19.0, o app instalado pode enviar **notificações push** para o seu celular avisando sobre eventos importantes (reembolso aprovado, pedido aguardando sua aprovação, etc.). Funciona como notificação de banco: você recebe o aviso na tela mesmo com a Bússola fechada, toca, e abre direto na tela relevante.
 
-Acompanhe o [Changelog](/changelog/) para saber quando essa funcionalidade entrar em produção.
+A ativação é **por dispositivo**, com um interruptor mestre **"Ativar push neste dispositivo"** em **[Meu Perfil → Notificações](/configuracoes/perfil/)**. Cada celular/computador é independente — pode ativar no celular pessoal e desativar no do trabalho.
+
+**Requisitos por plataforma:**
+
+- **Android (Chrome / Edge / outro navegador moderno):** funciona direto, sem precisar instalar como app. Apenas autorize quando o navegador perguntar.
+- **iOS (Safari):** push só funciona se a Bússola estiver **instalada como app** na tela de início (veja a seção do iPhone/iPad acima). Sem instalar, o interruptor fica desabilitado com instrução. Esse é o motivo principal para instalar como app no iPhone.
+- **Desktop (Chrome / Firefox / Edge):** funciona como no celular. Útil para receber avisos quando você está com outro aplicativo em primeiro plano.
+
+Configuração granular por evento × canal em **Meu Perfil → Notificações** — a coluna Push é mais uma ao lado de E-mail, WhatsApp e Telegram. Default: tudo ligado; você silencia o que não quer receber.

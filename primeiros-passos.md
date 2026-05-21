@@ -58,7 +58,7 @@ A barra de navegação no topo é o seu mapa:
 | **Movimentações** | Receitas, despesas e transferências |
 | **Pagamentos e Reembolsos** | Pedidos de pagamento e reembolsos, em abas |
 | **Projetos** | Gestão de projetos *(em construção)* |
-| **Relatórios** | Relatórios gerenciais *(em construção)* |
+| **Relatórios** | Relatórios gerenciais — Visão Geral, Receitas, Despesas, Atenção e Previsão |
 
 À direita da TopNav ficam, em ordem:
 
@@ -66,7 +66,6 @@ A barra de navegação no topo é o seu mapa:
 - **Seletor de organização** — alterna entre OSCs em que você é membro
 - **Botão Superadmin** — só visível para administradores de plataforma RIT
 - **⚙️ Engrenagem** — atalho para **Configurações da organização**, **só visível para admin e tesoureiro**
-- **🔔 Notificações** — alertas recentes
 - **Avatar do usuário** — menu com **Meu perfil** e **Sair**
 
 > 📖 **Conceito · Perfil x Configurações**
@@ -88,6 +87,9 @@ A explicação detalhada de papéis e permissões está em [Papéis e Permissõe
 - **Tesoureiro** — lançamentos, aprovações, confirmação de pagamentos, parte da configuração organizacional
 - **Coordenador de Projeto** — solicitar pagamentos e reembolsos, ver movimentações
 - **Voluntário** — solicitar os próprios reembolsos, ver o painel
+- **Comissão Fiscal** — leitura ampla de todos os dados financeiros (movimentações, reembolsos, pedidos, auditoria) sem operar nem aprovar; pode solicitar reembolso próprio
+
+Um usuário pode acumular mais de um papel na mesma OSC (ver [Múltiplos papéis](/papeis/#múltiplos-papéis-no-mesmo-vínculo)).
 
 ## Onde pedir ajuda
 

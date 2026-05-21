@@ -4,7 +4,7 @@ title: Projetos
 permalink: /modulos/projetos/
 ---
 
-> 🚧 **Em construção** · Disponibilidade prevista na Onda 5 do desenvolvimento.
+> 🚧 **Em construção** · Disponibilidade prevista na Onda 6 do desenvolvimento. Após a entrega da Onda 5 (Relatórios, em v0.15.0), Projetos é o próximo grande módulo na fila — spec e plano de implementação já estão definidos.
 
 O módulo de **Projetos** vai permitir agrupar movimentações, reembolsos e pedidos de pagamento por **projeto, campanha ou iniciativa específica** da OSC — Acampamento de Maio, Campanha do Agasalho 2026, Edital "X" da Secretaria de Cultura, etc.
 

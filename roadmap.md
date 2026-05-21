@@ -34,7 +34,7 @@ Esta página mostra **o estado de cada funcionalidade** do Bússola Financeira �
 | Resumo do mês corrente no Painel | Receitas, despesas e saldo do mês atual em destaque | ✓ | | |
 | Cards de pendências no Painel por papel | Reembolsos pendentes, pedidos aguardando aprovação, aprovados aguardando pagamento | ✓ | | |
 | Exportação em PDF e Excel | Lista filtrada exportável; PDF formatado com cabeçalho e totais, Excel com todas as colunas | ✓ | | |
-| Relatórios consolidados (módulo dedicado) | Fluxo de caixa, comparativo por categoria, evolução de saldo, comparativo período × período | | ✓ | |
+| Relatórios consolidados (módulo dedicado) | 5 abas (Visão Geral, Receitas, Despesas, Atenção, Previsão), comparativo período × período, regras de anomalia configuráveis com calibração pelo histórico, forecast 3/6/12 meses, export PDF + Excel | ✓ | | |
 | Conciliação bancária | Importação OFX/CNAB com matching automático e resolução de divergências | | | ✓ |
 | OCR de comprovantes | Extração automática de valor, data e fornecedor a partir da foto da nota | | | ✓ |
 | Sugestão de categoria por IA | Categorização automática com base em descrição e histórico | | | ✓ |
@@ -128,6 +128,9 @@ Esta página mostra **o estado de cada funcionalidade** do Bússola Financeira �
 | Multi-organização (uma conta em várias OSCs) | Seletor de organização no topo da tela | ✓ | | |
 | Gestão de usuários e papéis | Adicionar membros, alterar papel, desativar acesso, reenviar convite | ✓ | | |
 | Convite por e-mail com aceite | Acesso só após aceite formal pelo destinatário | ✓ | | |
+| Papel Comissão Fiscal (5º papel fixo) | Leitura ampla de movimentações, reembolsos, pedidos e auditoria sem operar nem aprovar; não combinável com Presidente ou Tesoureiro | ✓ | | |
+| Múltiplos papéis por usuário na mesma OSC | Um usuário pode acumular papéis (ex: Coordenador + Comissão Fiscal); capacidades se somam, com restrições explícitas no editor | ✓ | | |
+| Importação de usuários em lote via CSV | Cadastro de muitos membros de uma vez por planilha, com pré-visualização classificada por status (novo/já cadastrado/com erro) | ✓ | | |
 | Acesso público de vínculo (opcional) | Link público permite solicitações espontâneas que admin aprova | ✓ | | |
 | Cadastro de contas bancárias | Corrente, poupança, dinheiro, cartão, outros; saldo em tempo real | ✓ | | |
 | Categorias de receita, despesa e centros de custo | Estrutura editável com templates iniciais por tipo de OSC | ✓ | | |
@@ -146,8 +149,9 @@ Esta página mostra **o estado de cada funcionalidade** do Bússola Financeira �
 |---|---|:---:|:---:|:---:|
 | Identificação completa | Foto, nome, telefone, data de nascimento, CPF, RG (cifrados em repouso) | ✓ | | |
 | Dados para reembolso (PIX/TED) | Pré-preenchimento automático nas solicitações de reembolso | ✓ | | |
-| Notificações granulares por evento e canal | Matriz 10 eventos × 3 canais (e-mail, WhatsApp, Telegram) com switches individuais | ✓ | | |
+| Notificações granulares por evento e canal | Matriz 10 eventos × 4 canais (e-mail, Push, WhatsApp, Telegram) com switches individuais | ✓ | | |
 | Vinculação ao Telegram via bot oficial | Bot `@BussolaBot` vincula contato automaticamente | ✓ | | |
+| Notificações push via Web Push (PWA) | Push como 4º canal da matriz; ativação por dispositivo via master switch; suporte Android Chrome, iOS Safari (com PWA instalado) e desktop | ✓ | | |
 | Alteração de senha | Mudança autosserviço pelo próprio usuário | ✓ | | |
 | Encerramento de todas as sessões ativas | Útil em casos de perda de dispositivo ou suspeita de uso indevido | ✓ | | |
 | Solicitação de exclusão de dados (LGPD) | Fluxo de direito ao esquecimento previsto na LGPD | ✓ | | |
@@ -236,10 +240,13 @@ Esta página mostra **o estado de cada funcionalidade** do Bússola Financeira �
 | Banner discreto de instalação no celular | Sugestão aparece após uso ativo (apenas mobile, sumindo em desktop e após instalar/dispensar) | ✓ | | |
 | Tela offline amigável | Quando sem conexão, app exibe tela em pt-BR com logo da Bússola e botão "Tentar novamente" — em vez de erro do navegador | ✓ | | |
 | Cards de Movimentações em mobile | Em vez de tabela cortada, lista vertical de cards otimizada para toque (descrição, valor, data, contraparte, ações) | ✓ | | |
+| Cards de Pedidos e Reembolsos em mobile | Mesmo padrão dos cards de Movimentações aplicado às listas de Pedidos de Pagamento e Reembolsos | ✓ | | |
+| Cards de resumo no topo das listas em mobile | Em Pedidos e Reembolsos, KPIs filtrados pelo papel do usuário (Aguardando minha aprovação, Aprovados aguardando pagamento, Solicitado/Pago no período) ficam em grade 2×N acima das sub-tabs | ✓ | | |
 | Bottom nav fixa em mobile | Barra inferior fixa com Painel, Movim., +, Pag./Reemb., Mais — sempre acessível enquanto navega | ✓ | | |
 | Painel "Mais" com OrgSwitcher | Tap em **Mais** abre painel deslizante com troca de OSC (no topo), demais rotas (Projetos, Relatórios, Configurações, Perfil) e Sair | ✓ | | |
-| Notificações push em mobile | Eventos do app (reembolso aprovado, pedido aguardando aprovação, vencimento próximo) enviados como notificação push pelo celular, com toggles por evento na matriz de notificações do perfil | | | ✓ |
-| Capturar comprovante com a câmera do celular | Anexar nota fiscal, cupom ou comprovante fotografando direto pelo celular no fluxo de Novo Lançamento, Novo Reembolso e Novo Pedido de Pagamento | | | ✓ |
+| Barra de ações fixa nos formulários em mobile | Em Novo Reembolso, Novo Pedido e Editar Pedido, os botões Cancelar / Salvar rascunho / Enviar para aprovação ficam em rodapé fixo ao alcance do polegar, padrão de apps nativos | ✓ | | |
+| Notificações push via Web Push | Eventos do app (reembolso aprovado, pedido aguardando aprovação, etc.) enviados como notificação push pelo celular ou navegador, com toggles por evento na matriz de notificações do perfil | ✓ | | |
+| Capturar comprovante com a câmera do celular | Anexar nota fiscal, cupom ou comprovante fotografando direto pelo celular no fluxo de Novo Lançamento, Novo Reembolso e Novo Pedido de Pagamento — câmera traseira aberta direto, sem passar pela galeria | ✓ | | |
 
 ---
 

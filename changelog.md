@@ -930,4 +930,4 @@ Primeira release versionada após a transição de `v0.10 (beta)` para semver pu
 
 ---
 
-*Última atualização: 2026-05-13 · melhorias pós-Onda 2 (prompts 69–77)*
+*Última atualização: 2026-05-21 · estabilização mobile pós-BK-199 (v0.19.1) — 6 ajustes mobile (cards de listas, formulários, filtros de Reembolsos, footer, overflow, atualização do PWA).*
