@@ -24,6 +24,7 @@ Melhorias de usabilidade nos projetos: ações mais diretas, layout da execuçã
 - **Botões de ação diretos nos blocos do projeto**: as ações dos itens (editar, remover e ações específicas como "marcar marco como atingido" ou "marcar risco como materializado") agora aparecem como botões diretos no item, em vez de escondidas atrás de um menu de três pontos — nos blocos de Marcos, Riscos, Stakeholders, Tarefas, Evidências e Mural.
 - **Aba Execução em duas colunas (desktop)**: Tarefas ocupa a coluna principal à esquerda e Comunicação + Evidências ficam à direita, reduzindo a rolagem. No celular, continua em seções recolhíveis.
 - **Logo clicável**: clicar no logo da Bússola no topo leva você de volta ao Painel.
+- **Ações de tarefa mais claras**: em tarefas já concluídas ou abandonadas, agora aparece apenas "Reabrir" (além de Editar e Remover), em vez de vários botões redundantes. Mover uma tarefa entre qualquer status continua possível arrastando no quadro ou pela edição.
 
 ---
 
