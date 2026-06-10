@@ -11,9 +11,13 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
-## [0.20.1] — 2026-06-10
+## [0.21.0] — 2026-06-10
 
-Correções e ajustes de acabamento logo após a estreia do módulo de Projetos.
+Correções de acabamento logo após a estreia do módulo de Projetos, mais um novo filtro por período na lista de projetos.
+
+### Adicionado
+
+- **Filtro por período na lista de projetos**: filtre os projetos por mês, trimestre, ano ou por um intervalo de datas personalizado. O filtro mostra os projetos cujo período acontece — mesmo que parcialmente — dentro do intervalo escolhido, e combina com os filtros de status, tipo, saúde e busca.
 
 ### Corrigido
 
