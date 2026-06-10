@@ -11,6 +11,22 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.22.0] — 2026-06-10
+
+Melhorias de usabilidade nos projetos: ações mais diretas, layout da execução em colunas e um novo filtro por data no mural.
+
+### Adicionado
+
+- **Filtro por data no mural do projeto**: na aba Execução, o mural de comunicação ganhou um filtro por período (Últimos 7 dias, Últimos 30 dias, Este mês ou um intervalo personalizado), que combina com o filtro por tipo (eventos, comentários, status updates).
+
+### Melhorado
+
+- **Botões de ação diretos nos blocos do projeto**: as ações dos itens (editar, remover e ações específicas como "marcar marco como atingido" ou "marcar risco como materializado") agora aparecem como botões diretos no item, em vez de escondidas atrás de um menu de três pontos — nos blocos de Marcos, Riscos, Stakeholders, Tarefas, Evidências e Mural.
+- **Aba Execução em duas colunas (desktop)**: Tarefas ocupa a coluna principal à esquerda e Comunicação + Evidências ficam à direita, reduzindo a rolagem. No celular, continua em seções recolhíveis.
+- **Logo clicável**: clicar no logo da Bússola no topo leva você de volta ao Painel.
+
+---
+
 ## [0.21.0] — 2026-06-10
 
 Correções de acabamento logo após a estreia do módulo de Projetos, mais um novo filtro por período na lista de projetos.
