@@ -11,6 +11,25 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.22.1] — 2026-06-10
+
+Lote de correções e reforços após uma auditoria de qualidade: datas corretas nas exportações, app mais rápido de abrir e mais privacidade em dispositivos compartilhados.
+
+### Corrigido
+
+- **Datas corretas nas exportações e no parcelamento**: planilhas de movimentações, relatórios em PDF e o resumo ao criar um parcelamento passaram a mostrar a data exata (antes, em alguns casos, apareciam um dia antes).
+- **Aviso ao remover anexos**: se a remoção de um comprovante de reembolso falhar, agora aparece um aviso, em vez de falhar sem explicação.
+- **Lembretes e sincronizações automáticas** (lembretes de projeto e sincronização do catálogo WooCommerce) passam a rodar corretamente nos horários programados.
+
+### Melhorado
+
+- **Abertura mais rápida**: o app passou a carregar telas e recursos de exportação sob demanda, deixando a primeira abertura mais leve — especialmente no celular.
+- **Privacidade em dispositivos compartilhados**: ao sair da conta, os comprovantes visualizados deixam de ficar guardados no navegador.
+- **Reforços internos de segurança e controle de acesso**, sem mudança no uso do dia a dia.
+- **Card de compartilhamento próprio**: ao compartilhar o link do app, o card passa a exibir a imagem e a identidade da Bússola.
+
+---
+
 ## [0.22.0] — 2026-06-10
 
 Melhorias de usabilidade nos projetos: ações mais diretas, layout da execução em colunas e um novo filtro por data no mural.
