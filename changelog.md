@@ -11,6 +11,18 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.23.1] — 2026-06-11
+
+Correções de exibição e de permissões identificadas em testes por papel.
+
+### Corrigido
+
+- **Diretor agora apenas consulta as Movimentações**: para o papel Diretor, deixaram de aparecer os botões de operação (lançar, importar, editar, cancelar, estornar, excluir, marcar como pago) na lista e no detalhe, e também a edição do projeto vinculado a um lançamento. O papel é de supervisão, somente leitura.
+- **Menu "Mais" no celular**: a opção de Configurações passa a aparecer somente para quem tem acesso às configurações, e leva cada perfil à seção permitida (antes era exibida também para perfis sem acesso).
+- **Painel — seção Projetos**: voltou a carregar corretamente para perfis operacionais (como o Voluntário), que antes viam a seção falhar ao abrir o Painel.
+
+---
+
 ## [0.23.0] — 2026-06-10
 
 Uniformização das permissões por papel: o papel "Dirigente" passa a se chamar "Diretor", o Tesoureiro ganha a gestão de cadastros e há reforços internos de controle de acesso.
