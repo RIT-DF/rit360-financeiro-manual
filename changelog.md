@@ -11,6 +11,21 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.23.0] — 2026-06-10
+
+Uniformização das permissões por papel: o papel "Dirigente" passa a se chamar "Diretor", o Tesoureiro ganha a gestão de cadastros e há reforços internos de controle de acesso.
+
+### Alterado
+
+- **Papel "Diretor"** (antes "Dirigente"): renomeado para um termo mais usual em OSCs. Passa a ser um papel de **supervisão, somente leitura** — vê Movimentações, Relatórios e Projetos para acompanhamento, sem operar (não lança nem aprova).
+
+### Melhorado
+
+- **Tesoureiro gerencia cadastros**: o Tesoureiro passa a poder criar e editar Contas Bancárias e Categorias diretamente (antes restrito ao Presidente).
+- **Reforços internos de segurança e de controle de acesso por papel**, sem mudança no uso do dia a dia.
+
+---
+
 ## [0.22.1] — 2026-06-10
 
 Lote de correções e reforços após uma auditoria de qualidade: datas corretas nas exportações, app mais rápido de abrir e mais privacidade em dispositivos compartilhados.
