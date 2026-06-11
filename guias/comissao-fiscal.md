@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: section
 title: Guia da Comissão Fiscal
 permalink: /guias/comissao-fiscal/
 ---

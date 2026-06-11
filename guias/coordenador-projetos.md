@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: section
 title: Guia do Coordenador de Projetos
 permalink: /guias/coordenador-projetos/
 ---

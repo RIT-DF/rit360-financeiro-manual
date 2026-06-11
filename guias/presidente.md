@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: section
 title: Guia do Presidente
 permalink: /guias/presidente/
 ---
