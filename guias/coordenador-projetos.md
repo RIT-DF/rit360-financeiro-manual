@@ -86,10 +86,10 @@ Em OSC a equipe muda: voluntário entra, coordenador sai, a diretoria roda. O qu
 - Registre decisões importantes e o porquê delas.
 - Trate o registro como a **memória do projeto** — vale ouro na prestação de contas e no próximo projeto parecido.
 
-> 🧭 **Como o Bússola ajuda · Mural do projeto**
-> Cada projeto tem um **Mural** — a linha do tempo onde a equipe troca mensagens, registra decisões e comentários, menciona pessoas com `@` (que são notificadas) e acompanha os eventos automáticos do projeto (mudou de status, tarefa concluída, alguém entrou na equipe), com filtros por tipo. É a **memória viva** do projeto: quem decidiu o quê, quando e por quê, tudo no mesmo lugar — o que vale ouro quando a equipe muda ou na hora de prestar contas.
+> 🧭 **Como o Bússola ajuda · Comunicação do projeto**
+> Cada projeto tem uma área de **Comunicação** — a linha do tempo onde a equipe troca mensagens, registra decisões e comentários, menciona pessoas com `@` (que são notificadas) e acompanha os eventos automáticos do projeto (mudou de status, tarefa concluída, alguém entrou na equipe), com filtros por tipo. É a **memória viva** do projeto: quem decidiu o quê, quando e por quê, tudo no mesmo lugar — o que vale ouro quando a equipe muda ou na hora de prestar contas.
 >
-> [![Mural do projeto](/assets/screenshots/manual-projetos-mural.png)](/assets/screenshots/manual-projetos-mural.png)
+> [![Comunicação do projeto](/assets/screenshots/manual-projetos-mural.png)](/assets/screenshots/manual-projetos-mural.png)
 
 ## 7. Encerramento — fechar de verdade e aprender
 

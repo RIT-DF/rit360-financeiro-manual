@@ -12,6 +12,9 @@
   prefix: /configuracoes/
 - title: Papéis
   url: /papeis/
+- title: Guias
+  url: /guias/coordenador-projetos/
+  prefix: /guias/
 - title: FAQ
   url: /faq/
 - title: Roadmap

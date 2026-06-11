@@ -45,6 +45,12 @@
   children:
     - title: Coordenador de Projetos
       url: /guias/coordenador-projetos/
+    - title: Tesoureiro
+      url: /guias/tesoureiro/
+    - title: Comissão Fiscal
+      url: /guias/comissao-fiscal/
+    - title: Presidente
+      url: /guias/presidente/
 
 - title: FAQ
   url: /faq/
