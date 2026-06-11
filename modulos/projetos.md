@@ -164,6 +164,21 @@ A aba **Relatório** mostra os números do projeto dentro dos relatórios financ
 
 Quando a execução termina, o **Encerramento** conduz a coordenação por um **assistente de avaliação**: os objetivos foram alcançados (sim / parcial / não)? Os critérios de sucesso foram atendidos? Como foi o engajamento da equipe? Quantas pessoas foram atendidas? Quais foram os pontos altos, os pontos a melhorar e a **lição mais importante**?
 
+### Como preencher bem cada campo
+
+A qualidade do encerramento depende do que é escrito nos campos de texto — é isso que alimenta o relatório final e o acervo de **Lições Aprendidas** da OSC. Cada campo do assistente traz, na própria tela, uma orientação curta e um exemplo. O guia abaixo detalha o que torna cada resposta útil:
+
+- **Objetivos — comentário:** explique *por que* o resultado foi esse (o que ajudou ou atrapalhou), em vez de só repetir a nota. *Exemplo: "Batemos os 80 atendimentos, mas só após remarcar por chuva; a parceria com a escola foi decisiva."*
+- **Critérios de sucesso — comentário:** diga quais critérios foram atingidos e quais ficaram de fora, com número quando houver. *Exemplo: "Os 3 critérios de qualidade foram atingidos; o de prazo não — entregamos 2 semanas depois."*
+- **Engajamento — comentário:** aponte o que sustentou ou minou o engajamento (pessoas, rotina, comunicação). *Exemplo: "O grupo no WhatsApp com tarefas semanais manteve todos ativos; faltou um responsável fixo para o financeiro."*
+- **Imprevistos:** registre o que saiu do plano e, principalmente, *como a equipe reagiu*. *Exemplo: "O fornecedor de som cancelou na véspera; conseguimos um empréstimo com outra OSC parceira em 1 dia."*
+- **Pontos altos:** o que deu certo e *vale repetir*. Itens curtos e acionáveis, que outra equipe possa copiar. *Exemplos: "Reunião de 15 min toda segunda manteve todos alinhados." · "Convite enviado 3 semanas antes lotou as vagas."*
+- **Pontos a melhorar:** o que atrapalhou e *o que fazer diferente* — foco na ação, não na culpa. *Exemplo: "Começamos a divulgação tarde — abrir inscrições com 1 mês de antecedência."*
+- **Lição mais importante** (obrigatória): um aprendizado que você levaria para qualquer projeto, completando *"Se eu fizesse de novo, eu ___"*. *Exemplo: "…fecharia o orçamento com 20% de folga, porque imprevistos sempre aparecem."*
+- **Recomendação:** um conselho direto para quem for tocar algo parecido, completando *"Quem fizer um projeto parecido deve ___"*. *Exemplo: "…confirmar o local por escrito com 1 mês de antecedência."*
+
+> 💡 **Dica:** escreva pensando no próximo coordenador, que não viveu o projeto. Frases curtas e concretas valem mais que parágrafos genéricos.
+
 [![Relatório de encerramento](/assets/screenshots/manual-projetos-08-encerramento-relatorio.png)](/assets/screenshots/manual-projetos-08-encerramento-relatorio.png)
 *Relatório de encerramento — visão consolidada de tudo que o projeto produziu*
 
