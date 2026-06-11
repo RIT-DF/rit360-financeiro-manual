@@ -56,7 +56,7 @@ Para OSCs que estão migrando de outro sistema ou que precisam cadastrar muitos 
 
 Cada linha tem menu de ações que muda conforme o status:
 
-- **Editar papéis** — abre painel lateral com checkboxes para os 5 papéis disponíveis (Presidente, Tesoureiro, Coordenador de Projeto, Voluntário, Comissão Fiscal). Um usuário pode ter mais de um papel ao mesmo tempo — ver [Papéis e Permissões](/papeis/) para a regra de combinações.
+- **Editar papéis** — abre painel lateral com checkboxes para os papéis disponíveis (Presidente, Tesoureiro, Diretor, Coordenador de Projeto, Comissão Fiscal e Voluntário). Um usuário pode ter mais de um papel ao mesmo tempo — ver [Papéis e Permissões](/papeis/) para a regra de combinações.
 
   [![Editar papéis — painel multi-select](/assets/screenshots/manual-config-usuarios-editar-papeis.png)](/assets/screenshots/manual-config-usuarios-editar-papeis.png)
   *Editor de papéis — marque os papéis desejados; combinações proibidas ficam visualmente desabilitadas*

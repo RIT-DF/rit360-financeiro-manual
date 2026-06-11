@@ -84,7 +84,8 @@ A barra de navegação no topo é o seu mapa:
 A explicação detalhada de papéis e permissões está em [Papéis e Permissões](/papeis/). Resumo rápido:
 
 - **Presidente (admin)** — tudo: configurações, usuários, aprovações, lançamentos
-- **Tesoureiro** — lançamentos, aprovações, confirmação de pagamentos, parte da configuração organizacional
+- **Tesoureiro** — lançamentos, aprovações, confirmação de pagamentos, cadastro de contas e categorias
+- **Diretor** — supervisão de diretoria: vê movimentações, relatórios e projetos sem operar nem aprovar; pode solicitar reembolso próprio
 - **Coordenador de Projeto** — solicitar pagamentos e reembolsos, ver movimentações
 - **Voluntário** — solicitar os próprios reembolsos, ver o painel
 - **Comissão Fiscal** — leitura ampla de todos os dados financeiros (movimentações, reembolsos, pedidos, auditoria) sem operar nem aprovar; pode solicitar reembolso próprio
