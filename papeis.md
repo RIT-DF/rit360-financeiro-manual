@@ -4,28 +4,48 @@ title: Papéis e Permissões
 permalink: /papeis/
 ---
 
-O Bússola tem **cinco papéis** que um usuário pode ocupar dentro de uma organização. Cada papel define o que aquele usuário **pode ver e pode fazer** no sistema — sempre dentro da OSC à qual está vinculado. A partir da versão 0.14.0, um usuário pode acumular **mais de um papel** na mesma OSC (ver "Múltiplos papéis", abaixo).
+O Bússola tem **seis papéis** que um usuário pode ocupar dentro de uma organização. Cada papel define o que aquele usuário **pode ver e pode fazer** no sistema — sempre dentro da OSC à qual está vinculado. Um usuário pode acumular **mais de um papel** na mesma OSC (ver "Múltiplos papéis", abaixo).
 
 > 💡 **Por que isso importa**
 > Em OSC, função financeira não é "tudo ou nada". O presidente quer ter visão geral, autorizar saídas grandes, mas não necessariamente lançar cada conta de luz. O tesoureiro precisa operacionalizar o financeiro mas talvez não tenha por que mexer no cadastro de papéis. O voluntário só quer registrar seu reembolso, não ver dados de outras pessoas. **Papéis bem desenhados protegem todo mundo**: o presidente delega sem perder controle, o tesoureiro opera sem ter responsabilidade por configurar a OSC, o voluntário pede reembolso sem expor dados financeiros que não são dele saber.
 
-## Os cinco papéis
+## Os seis papéis
 
 | Papel | Pode aprovar? | O que faz no dia a dia |
 |---|---|---|
 | **Presidente** (admin) | ✓ Sim | Tudo: configurações da OSC, gerenciamento de usuários, aprovações, lançamentos, conta bancária, categorias |
 | **Tesoureiro** | ✓ Sim | Lançar movimentações, aprovar reembolsos e pedidos, confirmar pagamentos, configurar contas bancárias e categorias |
+| **Diretor** | — | Membro da diretoria com **visão ampla de supervisão**: vê movimentações, relatórios e projetos para acompanhar, mas **não opera** (não lança, não aprova). Pode solicitar reembolso próprio |
 | **Coordenador de Projeto** | — | Solicitar reembolsos e pedidos de pagamento, ver movimentações |
 | **Voluntário** | — | Solicitar reembolsos (apenas os próprios), ver o painel |
 | **Comissão Fiscal** | — | Lê tudo (movimentações, reembolsos, pedidos de pagamento, auditoria) **sem operar, aprovar ou solicitar pedidos de pagamento**. Pode solicitar reembolso próprio |
+
+> 💡 O papel **Diretor** era chamado "Dirigente" em versões anteriores — é o mesmo papel, só o nome na tela mudou (versão 0.23.0).
+
+## Quadro de permissões por papel
+
+Visão rápida do que cada papel pode fazer. **✓** = pode operar · **👁** = só leitura · **—** = sem acesso. A coluna Presidente vale também para o Superadmin da plataforma.
+
+| O que pode fazer | Presidente | Tesoureiro | Diretor | Comissão Fiscal | Coordenador | Voluntário |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| Ver o financeiro (movimentações, relatórios) | ✓ | ✓ | 👁 | 👁 | 👁 | — |
+| Lançar / editar / estornar movimentação | ✓ | ✓ | — | — | — | — |
+| Cadastrar contas bancárias e categorias | ✓ | ✓ | — | — | — | — |
+| Configurar a OSC (dados, usuários, papéis, fluxo de aprovação) | ✓ | — | — | — | — | — |
+| Aprovar reembolsos / pedidos | conforme o fluxo | conforme o fluxo | — | — | conforme o fluxo | conforme o fluxo |
+| Solicitar pedido de pagamento | ✓ | ✓ | — | — | ✓ | — |
+| Solicitar o **próprio** reembolso | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Coordenar um projeto (do qual é coordenador) | ✓ | ✓ | — | — | ✓ | — |
+
+> "Conforme o fluxo" = depende do que a OSC configurou em Fluxo de Aprovações (padrão: Presidente e Tesoureiro). Diretor e Comissão Fiscal **nunca** são aprovadores.
 
 ## Regras importantes
 
 - **Voluntários** não podem solicitar pedidos de pagamento (só reembolsos). Pedido de pagamento envolve dispor de dinheiro da OSC; reembolso é só ressarcimento.
 - **Voluntários** não veem dados de pagamento (PIX/TED/conta) de outros membros nos reembolsos. Só veem os próprios dados.
+- **Diretor** é um papel de **supervisão, somente leitura**: enxerga movimentações, relatórios, projetos e a trilha de auditoria para acompanhar a OSC, mas **não opera** — não lança, não aprova, não configura. Pode solicitar o próprio reembolso, como qualquer membro. **Não acessa Configurações da OSC.**
 - **Comissão Fiscal** tem leitura ampla de todos os dados financeiros mas não realiza nenhuma operação, não participa de fluxos de aprovação e não solicita pedidos de pagamento. Pode solicitar reembolso próprio (mesma regra dos demais membros). **Não acessa Configurações da OSC** — o papel é de fiscalização, separado da gestão.
-- **Configurações da Organização** (gerenciamento de usuários, dados da OSC, integrações, etc.) é restrita a **Presidente e Tesoureiro** — o ícone de engrenagem só aparece para esses papéis na barra superior.
-- **Tesoureiro** vê uma sub-nav reduzida em Configurações: Contas Bancárias, Categorias e Fluxo de Aprovações. Presidente vê os 5 itens (acima + Organização + Usuários).
+- **Configurações da Organização** se divide por papel: **Presidente** acessa tudo (dados da OSC, usuários, papéis, contas bancárias, categorias, fluxo de aprovações, relatórios); **Tesoureiro** acessa apenas **Contas Bancárias e Categorias** (o cadastro financeiro). O Fluxo de Aprovações, por ser configuração de governança, é **só do Presidente**. O ícone de engrenagem aparece para Presidente e Tesoureiro; ao clicar, cada um vai para a primeira seção que pode acessar.
 - **Aprovadores não aprovam a si mesmos** — a Bússola bloqueia automaticamente quando há outros aprovadores elegíveis no fluxo.
 
 ## Múltiplos papéis no mesmo vínculo
@@ -34,6 +54,7 @@ Um usuário pode ter **mais de um papel** dentro da mesma OSC. As capacidades se
 
 - **Coordenador de Projeto + Comissão Fiscal** — coordena um projeto específico e ao mesmo tempo fiscaliza as contas da OSC.
 - **Tesoureiro + Coordenador de Projeto** — opera o financeiro consolidado e também responde por um projeto específico.
+- **Diretor + Coordenador de Projeto** — acompanha a OSC como diretoria (leitura) e, no projeto que coordena, pode operar.
 - **Voluntário + Comissão Fiscal** — atua como voluntário regular e fiscaliza as contas (o papel de fiscal já cobre tudo que voluntário pode fazer).
 
 > ⚠️ **Restrição · Comissão Fiscal não acumula com Presidente ou Tesoureiro**
@@ -54,7 +75,7 @@ A configuração permite:
 
 ## Alterar os papéis de um usuário
 
-Apenas o **Presidente** pode alterar papéis. Acesse [Configurações → Usuários](/configuracoes/usuarios/), localize o membro, use o menu de ações da linha e selecione **Editar papéis**. Abrirá um painel lateral com checkboxes para os 6 papéis disponíveis (5 papéis assignáveis + Comissão Fiscal). Marque os papéis desejados e clique em "Salvar". Pelo menos 1 papel é obrigatório.
+Apenas o **Presidente** pode alterar papéis. Acesse [Configurações → Usuários](/configuracoes/usuarios/), localize o membro, use o menu de ações da linha e selecione **Editar papéis**. Abrirá um painel lateral com checkboxes para os papéis disponíveis (Presidente, Tesoureiro, Diretor, Coordenador de Projeto, Comissão Fiscal e Voluntário). Marque os papéis desejados e clique em "Salvar". Pelo menos 1 papel é obrigatório.
 
 > ⚠️ **Atenção · Mudança de papel é mudança de poder**
 > Promover alguém para Tesoureiro dá acesso à aprovação de despesas — pense bem antes de ampliar. Conversão "voluntário ↔ tesoureiro" deve passar pela diretoria, não ser unilateral. Em OSC com governança formal (estatuto, assembleia), a mudança pode até ter requisito formal de ata ou eleição. O sistema não bloqueia a mudança, mas ela fica registrada no audit log.

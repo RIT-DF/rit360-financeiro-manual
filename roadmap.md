@@ -131,7 +131,9 @@ Esta página mostra **o estado de cada funcionalidade** do Bússola Financeira �
 | Multi-organização (uma conta em várias OSCs) | Seletor de organização no topo da tela | ✓ | | |
 | Gestão de usuários e papéis | Adicionar membros, alterar papel, desativar acesso, reenviar convite | ✓ | | |
 | Convite por e-mail com aceite | Acesso só após aceite formal pelo destinatário | ✓ | | |
-| Papel Comissão Fiscal (5º papel fixo) | Leitura ampla de movimentações, reembolsos, pedidos e auditoria sem operar nem aprovar; não combinável com Presidente ou Tesoureiro | ✓ | | |
+| Papel Comissão Fiscal | Leitura ampla de movimentações, reembolsos, pedidos e auditoria sem operar nem aprovar; não combinável com Presidente ou Tesoureiro | ✓ | | |
+| Papel Diretor (supervisão) | Membro da diretoria com visão ampla de leitura (movimentações, relatórios, projetos, auditoria) sem operar nem aprovar; pode solicitar o próprio reembolso | ✓ | | |
+| Modelo de permissões uniformizado | Matriz canônica papel × módulo aplicada de forma consistente em telas, ações e dados (fonte única de verdade) | ✓ | | |
 | Múltiplos papéis por usuário na mesma OSC | Um usuário pode acumular papéis (ex: Coordenador + Comissão Fiscal); capacidades se somam, com restrições explícitas no editor | ✓ | | |
 | Importação de usuários em lote via CSV | Cadastro de muitos membros de uma vez por planilha, com pré-visualização classificada por status (novo/já cadastrado/com erro) | ✓ | | |
 | Acesso público de vínculo (opcional) | Link público permite solicitações espontâneas que admin aprova | ✓ | | |
