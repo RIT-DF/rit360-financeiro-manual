@@ -11,6 +11,16 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.24.3] — 2026-06-11
+
+A Tesouraria passa a acessar a calibração de Relatórios nas Configurações.
+
+### Corrigido
+
+- **Tesoureiro acessa "Relatórios" nas Configurações:** o item "Relatórios" (calibração das regras de atenção dos relatórios) agora aparece e funciona também para a Tesouraria, e não só para a Presidência — alinhando esse acesso ao que já vale para as demais configurações financeiras (Contas e Categorias).
+
+---
+
 ## [0.24.2] — 2026-06-11
 
 O saldo inicial de uma conta passa a ficar protegido depois que ela já tem lançamentos.
