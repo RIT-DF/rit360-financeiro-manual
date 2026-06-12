@@ -11,6 +11,16 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.26.0] — 2026-06-11
+
+Recuperação de senha por e-mail no login.
+
+### Adicionado
+
+- **"Esqueci a senha":** a tela de login passa a ter a opção **Esqueci a senha** — você informa o e-mail e recebe um link para definir uma nova senha, com as mesmas regras de senha forte do cadastro. Por segurança, a confirmação é sempre neutra (não revela se o e-mail tem conta). Quem entra pelo Google continua usando **Continuar com Google**.
+
+---
+
 ## [0.25.4] — 2026-06-11
 
 Mensagem mais clara ao vincular uma movimentação a um projeto.
