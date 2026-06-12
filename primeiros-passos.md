@@ -1,10 +1,14 @@
 ---
-layout: page
-title: Primeiros Passos
+layout: section
+title: Primeiros Passos do Usuário
 permalink: /primeiros-passos/
 ---
 
 Bem-vindo ao **Bússola Financeira**. Esta página te leva do "primeiro e-mail de convite" até "operando o sistema com segurança" em poucos minutos.
+
+> 💡 **Acabou de criar a organização?**
+>
+> Se você é quem **criou ou assumiu a OSC**, há um roteiro próprio para preparar a organização (dados, contas, categorias, fluxo de aprovação e usuários) antes de começar a operar: veja **[Primeiros Passos da Organização](/primeiros-passos/organizacao/)**.
 
 [![Tela de login](/assets/screenshots/manual-00-login.png)](/assets/screenshots/manual-00-login.png)
 *Tela de login do Bússola Financeira*

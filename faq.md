@@ -86,6 +86,36 @@ Em **Meu Perfil → Dados para Reembolso**. Configure uma vez; o formulário de 
 
 Sim. Ao criar um pedido, escolha tipo **Recorrente** e configure a frequência (mensal) e a duração (data final, quantidade de ocorrências ou indefinida até cancelar). A aprovação cria a série inteira; cada ocorrência é paga separadamente pelo tesoureiro. Veja a [seção de Pedidos de Pagamento](/modulos/pedidos-pagamento/) para detalhes.
 
+## Projetos
+
+### Como crio um projeto?
+
+Em **Projetos → Novo projeto**. Um assistente de 4 passos (tipo e identidade, período, financeiro essencial, coordenador e equipe) conduz a criação, com textos de ajuda em cada etapa. O projeto nasce como rascunho "Em planejamento"; quando estiver pronto, você solicita a aprovação de abertura.
+
+### Quem pode criar projetos?
+
+Presidente, Tesoureiro e Coordenador podem criar diretamente. O **Voluntário** pode **propor** um projeto — ao ser aprovado, ele é promovido a coordenador daquele projeto. Veja o [Guia do Coordenador de Projetos](/guias/coordenador-projetos/).
+
+### Como vinculo uma despesa (ou receita) a um projeto?
+
+No formulário de lançamento, use o campo **Projeto** (opcional). O dinheiro continua sendo da OSC, nas mesmas contas — o projeto apenas **rotula** a movimentação, para você ver o recorte dele sem perder o todo. O mesmo vale para reembolsos e pedidos de pagamento.
+
+### O que é a "saúde" do projeto (o semáforo)?
+
+Um indicador (🟢 Saudável, 🟡 Atenção, 🔴 Crítico, com pontuação de 0 a 100) que combina **prazo**, **orçamento** e **riscos**. Ele aparece na lista de projetos e no Painel, para a diretoria ver de relance o que pede atenção.
+
+### Onde vejo as lições de projetos anteriores?
+
+Em **Projetos → Lições aprendidas** — um acervo da OSC com as lições e boas práticas registradas no encerramento de todos os projetos, com busca e filtros. Ao criar um novo projeto, o sistema ainda indica quantas lições existem para aquele tipo.
+
+### Como encerro um projeto?
+
+Na aba **Encerramento** do projeto, um assistente de avaliação conduz por perguntas (objetivos, critérios, engajamento, pontos altos, lições...). A Bússola monta o **relatório de encerramento** consolidado, exportável em PDF para a prestação de contas. Cada campo traz orientação e um exemplo de preenchimento.
+
+### Qual a diferença entre meu papel na OSC e meu papel no projeto?
+
+São independentes. Seu **papel na OSC** (Presidente, Tesoureiro, Voluntário...) define o acesso geral. Seu **papel no projeto** (Coordenador, integrante, observador) define o que você faz **dentro daquele projeto** — um voluntário pode ser coordenador de um projeto específico, e um tesoureiro pode ser só integrante de outro.
+
 ## Estornos
 
 ### Quando devo estornar e quando cancelar?
@@ -141,6 +171,17 @@ Em **Meu Perfil → Notificações**, toque no interruptor **"Ativar push neste 
 **Importante:** no **iPhone (Safari)**, push só funciona se você **instalou a Bússola como app** na tela de início — sem instalar, o interruptor fica desabilitado com instrução. Veja [Instalar como aplicativo](/instalar-como-app/). No **Android (Chrome / Edge)** e em **desktop (Chrome / Firefox / Edge)**, funciona direto sem precisar instalar como app.
 
 A ativação é **por dispositivo**: pode ativar no celular pessoal e deixar desativado no celular do trabalho, sem afetar a configuração da sua conta.
+
+## Guias por papel
+
+### Existe um guia de como atuar no meu papel na OSC?
+
+Sim. Além de explicar as telas, o manual traz **cartilhas de atuação** por papel — o que se espera de você, pontos de atenção e boas práticas, com exemplos de como o Bússola ajuda em cada aspecto:
+
+- [Guia do Coordenador de Projetos](/guias/coordenador-projetos/) — escopo, prazo, recursos e pessoas.
+- [Guia do Tesoureiro](/guias/tesoureiro/) — registrar, organizar, aprovar e prestar contas.
+- [Guia da Comissão Fiscal](/guias/comissao-fiscal/) — fiscalização independente.
+- [Guia do Presidente](/guias/presidente/) — responsabilidade com visão, delegação e acompanhamento tranquilo.
 
 ## Geral
 

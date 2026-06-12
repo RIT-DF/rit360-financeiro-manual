@@ -8,8 +8,11 @@
   url: /modulos/painel/
   prefix: /modulos/
 - title: Configurações
-  url: /configuracoes/perfil/
+  url: /configuracoes/organizacao/
   prefix: /configuracoes/
+- title: Meu Perfil
+  url: /configuracoes/perfil/
+  prefix: /configuracoes/perfil/
 - title: Papéis
   url: /papeis/
 - title: Guias
