@@ -11,6 +11,22 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.26.3] — 2026-06-12
+
+A importação por planilha passa a aceitar transferências e vínculo com projetos.
+
+### Adicionado
+
+- **Transferências entre contas na importação.** A planilha ganhou a coluna **conta de destino**: ao usar o tipo `transferencia`, o lançamento entra como uma transferência interna (origem → destino, sem afetar o saldo total) — sem precisar de categoria.
+- **Vínculo de lançamento a projeto na importação.** Nova coluna **projeto**: informe o nome de um projeto aberto e o lançamento já entra vinculado a ele. Se o nome não existir (ou o projeto estiver fechado), o lançamento é importado mesmo assim, sem o vínculo, com um aviso na linha.
+- O template para download foi atualizado com as colunas novas e exemplos.
+
+### Melhorado
+
+- **Respeito às categorias permitidas do projeto.** Se um projeto restringe as categorias que aceita, a importação avisa (e não importa) as linhas cuja categoria não é permitida naquele projeto, deixando claro o motivo no resultado.
+
+---
+
 ## [0.26.2] — 2026-06-12
 
 Importar lançamentos de planilha ficou bem mais fácil — e mais seguro.
