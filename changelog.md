@@ -11,6 +11,16 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.26.1] — 2026-06-12
+
+O e-mail de redefinição de senha agora chega em português e com a identidade da Bússola.
+
+### Melhorado
+
+- **E-mail de redefinição de senha:** o link de "Esqueci a senha" passa a chegar em **português**, com o visual da Bússola, em vez do modelo padrão em inglês. O fluxo continua o mesmo — você pede o link, define a nova senha e entra com ela.
+
+---
+
 ## [0.26.0] — 2026-06-11
 
 Recuperação de senha por e-mail no login.
