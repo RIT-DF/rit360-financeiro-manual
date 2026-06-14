@@ -11,6 +11,19 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.27.0] — 2026-06-14
+
+Agora dá para editar um projeto depois de criado — com aprovação para o que é sensível e avisos para as pessoas certas.
+
+### Adicionado
+
+- **Editar os dados do projeto após a criação.** Pelo botão **Editar** no resumo do projeto, dá para ajustar nome, descrição, tipo, datas de início/fim e as categorias permitidas (e, em eventos, o número de participantes esperados) — antes esses campos ficavam travados depois que o projeto era criado.
+- **Aprovação para mudanças em projeto já aprovado, sem travar o trabalho.** Em um projeto já em execução, ajustes de **nome e descrição** valem na hora; mudanças que afetam prazo ou escopo (datas, categorias permitidas, tipo) ficam **aguardando reaprovação**: o projeto continua rodando com os valores atuais e um aviso mostra a alteração proposta (de → para). Quem aprova pode **aprovar** (passa a valer) ou **rejeitar** com um motivo; quem propôs pode **cancelar**.
+- **Avisos antes de salvar.** Ao remover uma categoria que já tem lançamentos, ao encurtar as datas de modo a deixar lançamentos fora do período, ou ao trocar o tipo de um projeto que já tem dados específicos, o sistema avisa de forma clara — nada é apagado, e você confirma antes de seguir.
+- **Notificações do ciclo de aprovação de projeto.** As pessoas certas passam a ser avisadas quando há um pedido de aprovação de abertura, quando a abertura é aprovada, quando uma alteração precisa de reaprovação e quando algo é rejeitado — pelos canais que cada uma escolher nas preferências de notificação do perfil.
+
+---
+
 ## [0.26.7] — 2026-06-12
 
 ### Corrigido
