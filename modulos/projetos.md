@@ -100,6 +100,24 @@ O **Resumo** é a visão de uma página: a **identidade** do projeto (tipo, stat
 
 No topo do detalhe ficam as **ações de ciclo de vida** disponíveis para o status atual (ex.: *Solicitar aprovação*, *Pausar*, *Solicitar encerramento*, *Cancelar*).
 
+### Editar o projeto após a criação
+
+[![Editar a identidade do projeto](/assets/screenshots/manual-projetos-editar.png)](/assets/screenshots/manual-projetos-editar.png)
+*Edição da identidade: nome, descrição, tipo, datas e categorias permitidas*
+
+Projetos mudam durante a execução — troca a coordenação, a data escorrega, o escopo se ajusta. Por isso os dados de identidade **podem ser editados depois de criados**, pelo botão **Editar** no cartão **Identidade** da aba Resumo. Dá para ajustar **nome, descrição, tipo, datas de início e fim e as categorias permitidas** (e, em projetos do tipo Evento, o número de participantes esperados).
+
+**Mudanças que exigem reaprovação.** A regra depende do estado do projeto:
+
+- **Projeto ainda não aprovado** — você edita direto.
+- **Projeto com abertura já aprovada** — mudanças de **nome e descrição** valem na hora; já as que afetam **prazo ou escopo** (datas, categorias permitidas, tipo) entram como uma **alteração proposta, aguardando reaprovação**. O projeto **continua rodando com os valores atuais** e um aviso mostra a mudança proposta (de → para). Quem aprova pode **aprovar** (passa a valer) ou **rejeitar** com um motivo; quem propôs pode **cancelar** a proposta. As pessoas certas são avisadas pelos canais que escolherem nas preferências de notificação.
+
+**Avisos antes de salvar.** Sem apagar nada, o sistema avisa quando uma edição pode ter efeito colateral: ao **remover uma categoria** que já tem lançamentos, ao **encurtar as datas** deixando lançamentos fora do novo período, ou ao **trocar o tipo** de um projeto que já tem dados específicos. Em todos os casos você vê o aviso e **confirma antes de seguir**.
+
+> 💡 **Por que isso importa · Mudar sem perder o controle**
+>
+> Editar livremente um projeto já aprovado abriria brecha para alterar prazo e escopo sem ninguém saber; travar tudo obrigaria a recriar o projeto a cada ajuste. O caminho do meio — **nome/descrição livres, prazo/escopo sob reaprovação** — deixa o trabalho fluir e mantém o rastro de quem mudou o quê e quando, que é o que a diretoria precisa na hora de prestar contas.
+
 ## A aba Planejamento
 
 [![Aba Planejamento](/assets/screenshots/manual-projetos-03-planejamento.png)](/assets/screenshots/manual-projetos-03-planejamento.png)

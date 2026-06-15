@@ -11,6 +11,18 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.28.7] — 2026-06-15
+
+### Corrigido
+
+- **Anexos com acento no nome.** Voltou a funcionar anexar arquivos cujo nome tem **acentos ou caracteres especiais** (ex.: `comprovante março.pdf`) nas movimentações — tanto no formulário do lançamento quanto na aba **Documentos** da tela de detalhe. O nome original do arquivo é preservado.
+
+### Melhorado
+
+- **Prestação de contas com autenticação eletrônica.** No PDF, o **Termo de Encerramento** deixa de trazer linha para assinatura manuscrita: passa a exibir **cargo e nome** de Presidente e Tesoureiro e um bloco de **autenticação eletrônica** com a data e hora de geração e um **código de verificação** único, derivado do conteúdo do documento.
+
+---
+
 ## [0.28.4] — 2026-06-15
 
 ### Melhorado

@@ -104,10 +104,11 @@ Marque o checkbox no início das linhas para selecionar várias movimentações.
 
 ### Exportação
 
-O botão **Exportar** permite exportar para:
+O botão **Exportar** oferece três saídas:
 
 - **PDF** — relatório formatado com cabeçalho, filtros ativos e totais (bom para imprimir / enviar para diretoria)
 - **Excel** — planilha com todas as colunas (bom para análises customizadas)
+- **Prestação de contas** — o documento contábil completo do período, em regime de caixa, com os comprovantes anexados (ver a seção **Prestação de contas** abaixo)
 
 ## Detalhe de uma movimentação
 
@@ -258,6 +259,39 @@ Parcelas, recorrências e comprovantes não entram por CSV — crie pelo formul�
 Se sua OSC tem loja online em WooCommerce (venda de produtos, doações online, ingressos), pode conectar a loja à Bússola em **Configurações → Organização → WooCommerce**. Uma vez configurada, pedidos pagos viram receitas automaticamente — diariamente via sincronização programada ou sob demanda pelo botão **Importar agora** desta tela.
 
 Mais detalhes na seção de configurações.
+
+## Prestação de contas
+
+[![Diálogo de prestação de contas](/assets/screenshots/manual-mov-prestacao-contas.png)](/assets/screenshots/manual-mov-prestacao-contas.png)
+*Em Exportar → Prestação de contas: escolha um mês fechado ou o acumulado do ano*
+
+A **prestação de contas** é um documento em PDF, no padrão visual da Bússola, que reúne **tudo o que a organização precisa apresentar de um período** — para a diretoria, o conselho fiscal, a assembleia de associados, um financiador ou um órgão público. Diferente do *Exportar PDF* (que é a lista de lançamentos), a prestação de contas é um **relatório contábil completo, em regime de caixa**, pronto para entregar. Está disponível para a **diretoria/tesouraria** e a **comissão fiscal** da organização.
+
+### O que o documento traz
+
+- **Capa e termo de abertura** — identidade da OSC (razão social, CNPJ), período e regime.
+- **Demonstração de receitas e despesas** — totais por categoria, com **gráficos** por grupo e o resultado do período (superávit ou déficit).
+- **Posição de caixa por conta** — saldo inicial, créditos, débitos e saldo final de cada conta, com o total geral que reconcilia.
+- **Demonstrativo analítico** — lançamento a lançamento, agrupado por categoria.
+- **Extrato por conta** — a movimentação cronológica de cada conta, com saldo corrente.
+- **Comprovantes das despesas** — as imagens e PDFs anexados aos lançamentos de despesa, **mesclados ao final** do documento, na ordem dos lançamentos; as despesas sem comprovante ficam listadas à parte.
+- **Termo de encerramento** — com os nomes do **Presidente** e do **Tesoureiro** e um bloco de **autenticação eletrônica** (data/hora de geração e um código de verificação único do documento).
+
+### Como gerar
+
+1. Em **Movimentações**, clique em **Exportar → Prestação de contas**.
+2. Escolha o período:
+   - **Mês** — um mês específico já **fechado** (o mês corrente, ainda em andamento, não fica disponível);
+   - **Ano (acumulado)** — de janeiro até o último mês fechado daquele ano (ou o ano inteiro, se for um ano anterior).
+3. Clique em **Gerar PDF**. A geração roda **em segundo plano**: você pode continuar trabalhando, e **o link do PDF chega no seu e-mail** assim que ficar pronto (a montagem com gráficos e comprovantes pode levar de alguns segundos a poucos minutos). Se algo falhar, você é avisado por e-mail e por notificação no app.
+
+> 💡 **Por que isso importa · Transparência e governança não são burocracia**
+>
+> Em uma OSC, **prestar contas é o que sustenta a confiança** — de quem doa, de quem fiscaliza, de quem assina junto. Um relatório completo, com os comprovantes anexados e a posição de caixa que reconcilia, responde de uma vez às perguntas que sempre voltam: *"para onde foi o dinheiro?", "esse gasto tem nota?", "o saldo bate?"*. Gerar a prestação de contas a cada mês fechado — e o acumulado para a assembleia anual — cria um **histórico íntegro e fácil de auditar**, protege a diretoria atual e a futura, e transforma a prestação de contas de uma correria de fim de ano em um clique.
+
+> ⚠️ **Atenção · O PDF reflete o que está registrado**
+>
+> A prestação de contas só é tão boa quanto os dados que a alimentam. Lançamentos sem categoria, despesas sem comprovante anexado ou contas desatualizadas aparecem assim no relatório. Use a rotina semanal e a conferência mensal contra o extrato para chegar ao fim do período com a prestação pronta — e **anexe os comprovantes na hora de lançar**.
 
 ## Boas práticas
 
