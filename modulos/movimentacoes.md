@@ -263,7 +263,7 @@ Mais detalhes na seção de configurações.
 ## Prestação de contas
 
 [![Diálogo de prestação de contas](/assets/screenshots/manual-mov-prestacao-contas.png)](/assets/screenshots/manual-mov-prestacao-contas.png)
-*Em Exportar → Prestação de contas: escolha um mês fechado ou o acumulado do ano*
+*Em Exportar → Prestação de contas: escolha o período e, opcionalmente, anexe documentos complementares*
 
 A **prestação de contas** é um documento em PDF, no padrão visual da Bússola, que reúne **tudo o que a organização precisa apresentar de um período** — para a diretoria, o conselho fiscal, a assembleia de associados, um financiador ou um órgão público. Diferente do *Exportar PDF* (que é a lista de lançamentos), a prestação de contas é um **relatório contábil completo, em regime de caixa**, pronto para entregar. Está disponível para a **diretoria/tesouraria** e a **comissão fiscal** da organização.
 
@@ -272,10 +272,21 @@ A **prestação de contas** é um documento em PDF, no padrão visual da Bússol
 - **Capa e termo de abertura** — identidade da OSC (razão social, CNPJ), período e regime.
 - **Demonstração de receitas e despesas** — totais por categoria, com **gráficos** por grupo e o resultado do período (superávit ou déficit).
 - **Posição de caixa por conta** — saldo inicial, créditos, débitos e saldo final de cada conta, com o total geral que reconcilia.
-- **Demonstrativo analítico** — lançamento a lançamento, agrupado por categoria.
+- **Demonstrativo analítico** — lançamento a lançamento, **separado em Receitas, Despesas e Transferências** e agrupado por categoria, com os valores sinalizados e coloridos (entradas em verde com `+`, saídas em vermelho com `−`), no mesmo padrão do extrato. As transferências aparecem com a conta de origem e a de destino.
 - **Extrato por conta** — a movimentação cronológica de cada conta, com saldo corrente.
-- **Comprovantes das despesas** — as imagens e PDFs anexados aos lançamentos de despesa, **mesclados ao final** do documento, na ordem dos lançamentos; as despesas sem comprovante ficam listadas à parte.
+- **Comprovantes** — as imagens e PDFs anexados aos lançamentos, **mesclados ao final** do documento e organizados em três grupos (**Despesas, Receitas e Transferências**), na ordem dos lançamentos; os lançamentos sem comprovante ficam listados à parte.
+- **Documentos complementares** (opcional) — outros documentos que você anexar na hora de gerar (extrato bancário, parecer da comissão fiscal, notas explicativas), incluídos **no fim do PDF**, cada um precedido de uma folha com título e descrição.
 - **Termo de encerramento** — com os nomes do **Presidente** e do **Tesoureiro** e um bloco de **autenticação eletrônica** (data/hora de geração e um código de verificação único do documento).
+
+### Documentos complementares (opcional)
+
+Além dos comprovantes dos lançamentos, você pode **anexar outros documentos** ao relatório no momento de gerar — por exemplo, o **extrato bancário** do período, o **parecer da comissão fiscal** ou **notas explicativas**. O objetivo é entregar a prestação de contas **completa em um único PDF**, sem precisar mandar anexos soltos por e-mail depois.
+
+Os documentos ficam **vinculados àquele período**: se você gerar o mesmo período de novo, eles **reaparecem já anexados**, prontos para complementar ou remover. No PDF, entram **no fim, depois dos comprovantes**, cada um precedido de uma folha com o título e a descrição que você informou.
+
+Para anexar, na seção **Documentos complementares** do diálogo: escolha o arquivo (PDF ou imagem), preencha o **título** (obrigatório) e uma **descrição** opcional, e clique em **Anexar este documento**. Repita para quantos documentos quiser.
+
+> ⚠️ Escolher o arquivo **não basta** — é o botão **Anexar este documento** que efetiva o anexo. Se você clicar em *Gerar PDF* com um arquivo escolhido mas ainda não anexado, a Bússola anexa automaticamente (quando há título) ou avisa para você concluir antes.
 
 ### Como gerar
 

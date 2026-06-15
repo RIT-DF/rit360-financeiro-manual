@@ -11,6 +11,14 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.30.4] — 2026-06-15
+
+### Corrigido
+
+- **Acesso a Relatórios por papel.** O papel **Diretor** deixa de exibir a área de **Relatórios** — que não estava disponível para esse papel —, alinhando o que aparece na tela ao que o sistema de fato libera e evitando mensagens de erro.
+
+---
+
 ## [0.30.3] — 2026-06-15
 
 ### Melhorado
