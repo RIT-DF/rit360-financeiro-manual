@@ -11,6 +11,22 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.31.2] — 2026-06-15
+
+### Modificado
+
+- **Ajustes internos na geração da prestação de contas** para maior robustez, sem mudança no comportamento para quem usa.
+
+---
+
+## [0.31.1] — 2026-06-15
+
+### Melhorado
+
+- **Nomes de cargo personalizados também no PDF e nos e-mails.** Quando a organização renomeia um cargo (em **Configurações → Cargos**), o nome escolhido agora aparece também no **PDF da prestação de contas** (Termo de Encerramento) e nos **e-mails** da plataforma — antes valia só dentro do sistema.
+
+---
+
 ## [0.31.0] — 2026-06-15
 
 ### Adicionado
