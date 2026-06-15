@@ -11,6 +11,14 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.31.0] — 2026-06-15
+
+### Adicionado
+
+- **Cargos com nomes personalizados por organização.** Em **Configurações → Cargos**, cada organização pode renomear os cargos (Presidente, Tesoureiro, Diretor, Coord. de projeto, Comissão Fiscal, Voluntário) para a nomenclatura que usa no dia a dia — **sem alterar as permissões**. O nome escolhido passa a aparecer em toda a aplicação para aquela organização (lista de usuários, filtros, equipe de projeto, etc.).
+
+---
+
 ## [0.30.4] — 2026-06-15
 
 ### Corrigido
