@@ -11,6 +11,14 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.31.3] — 2026-06-15
+
+### Segurança
+
+- **Reforço de controle de acesso.** Algumas ações sensíveis passaram a exigir o papel adequado: a exclusão de arquivos de evidência de projeto ficou restrita ao **coordenador do projeto** (ou a quem anexou o arquivo, por tempo limitado); os **pedidos integrados do WooCommerce** só podem ser criados ou alterados por papéis financeiros (Presidente, Tesoureiro); e configurações internas de auditoria ficaram restritas à administração da plataforma. A visualização das informações segue como antes — o reforço vale para quem pode alterá-las.
+
+---
+
 ## [0.31.2] — 2026-06-15
 
 ### Modificado
