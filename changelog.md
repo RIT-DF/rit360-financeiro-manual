@@ -23,6 +23,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ### Corrigido
 
+- **Notificações de aprovação de projeto voltaram a funcionar.** Ao enviar um projeto para aprovação, todos os aprovadores — inclusive o próprio solicitante, quando ele também é aprovador — voltam a receber o aviso por e-mail.
 - **Entrar numa segunda organização não gera mais erro.** Quem já tinha conta e era convidado para outra OSC podia ver "link inválido" ao concluir o acesso. O registro de consentimento ficou idempotente e o fluxo conclui normalmente.
 
 ---
