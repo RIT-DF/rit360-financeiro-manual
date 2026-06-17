@@ -1,6 +1,6 @@
 ---
-layout: section
-title: Política de Privacidade — versão 1.0 (arquivada)
+title: "Política de Privacidade — versão 1.0 (arquivada)"
+nav_exclude: true
 permalink: /privacidade/1.0/
 version: "1.0"
 change_summary: "Publicação inicial da versão 1.0."

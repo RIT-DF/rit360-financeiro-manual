@@ -1,6 +1,6 @@
 ---
-layout: section
-title: Papéis e Permissões
+title: "Papéis e Permissões"
+nav_order: 8
 permalink: /papeis/
 ---
 

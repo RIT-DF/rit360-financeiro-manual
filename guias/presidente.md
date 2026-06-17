@@ -1,6 +1,7 @@
 ---
-layout: section
-title: Guia do Presidente
+title: "Presidente"
+nav_order: 4
+parent: "Guias por Papel"
 permalink: /guias/presidente/
 ---
 

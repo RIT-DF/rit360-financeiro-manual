@@ -1,6 +1,7 @@
 ---
-layout: section
-title: Primeiros Passos do Usuário
+title: "Primeiros Passos"
+nav_order: 2
+has_children: true
 permalink: /primeiros-passos/
 ---
 

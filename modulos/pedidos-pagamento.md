@@ -1,6 +1,7 @@
 ---
-layout: section
-title: Pedidos de Pagamento
+title: "Pedidos de Pagamento"
+nav_order: 4
+parent: "Módulos"
 permalink: /modulos/pedidos-pagamento/
 ---
 

@@ -1,6 +1,6 @@
 ---
-layout: section
-title: Termos de Uso — versão 1.0 (arquivada)
+title: "Termos de Uso — versão 1.0 (arquivada)"
+nav_exclude: true
 permalink: /termos/1.0/
 version: "1.0"
 change_summary: "Publicação inicial da versão 1.0."

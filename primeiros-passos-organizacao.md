@@ -1,6 +1,7 @@
 ---
-layout: section
-title: Primeiros Passos da Organização
+title: "Da Organização"
+nav_order: 1
+parent: "Primeiros Passos"
 permalink: /primeiros-passos/organizacao/
 ---
 

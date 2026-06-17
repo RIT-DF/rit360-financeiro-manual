@@ -1,6 +1,6 @@
 ---
-layout: section
-title: Guia de Migração
+title: "Guia de Migração"
+nav_order: 3
 permalink: /migracao/
 ---
 

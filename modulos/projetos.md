@@ -1,6 +1,7 @@
 ---
-layout: section
-title: Projetos
+title: "Projetos"
+nav_order: 5
+parent: "Módulos"
 permalink: /modulos/projetos/
 ---
 

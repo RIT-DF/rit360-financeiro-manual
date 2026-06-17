@@ -1,6 +1,7 @@
 ---
-layout: section
-title: Painel
+title: "Painel"
+nav_order: 1
+parent: "Módulos"
 permalink: /modulos/painel/
 ---
 

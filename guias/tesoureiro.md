@@ -1,6 +1,7 @@
 ---
-layout: section
-title: Guia do Tesoureiro
+title: "Tesoureiro"
+nav_order: 2
+parent: "Guias por Papel"
 permalink: /guias/tesoureiro/
 ---
 

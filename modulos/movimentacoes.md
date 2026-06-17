@@ -1,6 +1,7 @@
 ---
-layout: section
-title: Movimentações Financeiras
+title: "Movimentações"
+nav_order: 2
+parent: "Módulos"
 permalink: /modulos/movimentacoes/
 ---
 

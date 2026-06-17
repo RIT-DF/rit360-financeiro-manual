@@ -1,6 +1,7 @@
 ---
-layout: section
-title: "Configurações — Fluxo de Aprovações"
+title: "Fluxo de Aprovações"
+nav_order: 5
+parent: "Configurações da Organização"
 permalink: /configuracoes/aprovacoes/
 ---
 

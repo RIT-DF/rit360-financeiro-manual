@@ -1,6 +1,6 @@
 ---
-layout: section
-title: Perguntas Frequentes
+title: "FAQ"
+nav_order: 10
 permalink: /faq/
 ---
 

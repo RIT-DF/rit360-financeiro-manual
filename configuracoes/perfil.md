@@ -1,6 +1,6 @@
 ---
-layout: section
 title: "Meu Perfil"
+nav_order: 6
 permalink: /configuracoes/perfil/
 ---
 

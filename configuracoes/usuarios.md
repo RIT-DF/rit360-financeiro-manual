@@ -1,6 +1,7 @@
 ---
-layout: section
-title: "Configurações — Usuários"
+title: "Usuários"
+nav_order: 2
+parent: "Configurações da Organização"
 permalink: /configuracoes/usuarios/
 ---
 

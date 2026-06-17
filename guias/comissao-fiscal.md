@@ -1,6 +1,7 @@
 ---
-layout: section
-title: Guia da Comissão Fiscal
+title: "Comissão Fiscal"
+nav_order: 3
+parent: "Guias por Papel"
 permalink: /guias/comissao-fiscal/
 ---
 

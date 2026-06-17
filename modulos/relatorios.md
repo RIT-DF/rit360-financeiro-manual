@@ -1,6 +1,7 @@
 ---
-layout: section
-title: Relatórios
+title: "Relatórios"
+nav_order: 6
+parent: "Módulos"
 permalink: /modulos/relatorios/
 ---
 

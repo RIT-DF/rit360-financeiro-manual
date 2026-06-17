@@ -1,6 +1,7 @@
 ---
-layout: section
-title: Política de Privacidade
+title: "Privacidade"
+nav_order: 1
+parent: "Termos e Privacidade"
 permalink: /privacidade/
 version: "1.0"
 change_summary: "Publicação inicial da versão 1.0."

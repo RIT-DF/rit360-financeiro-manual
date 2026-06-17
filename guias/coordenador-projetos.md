@@ -1,6 +1,7 @@
 ---
-layout: section
-title: Guia do Coordenador de Projetos
+title: "Coordenador de Projetos"
+nav_order: 1
+parent: "Guias por Papel"
 permalink: /guias/coordenador-projetos/
 ---
 

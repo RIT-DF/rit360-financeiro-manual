@@ -1,6 +1,7 @@
 ---
-layout: section
-title: Reembolsos
+title: "Reembolsos"
+nav_order: 3
+parent: "Módulos"
 permalink: /modulos/reembolsos/
 ---
 

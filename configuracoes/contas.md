@@ -1,6 +1,7 @@
 ---
-layout: section
-title: "Configurações — Contas Bancárias"
+title: "Contas Bancárias"
+nav_order: 3
+parent: "Configurações da Organização"
 permalink: /configuracoes/contas/
 ---
 

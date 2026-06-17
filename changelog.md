@@ -1,6 +1,6 @@
 ---
-layout: section
-title: Changelog
+title: "Changelog"
+nav_order: 12
 permalink: /changelog/
 ---
 

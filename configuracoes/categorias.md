@@ -1,6 +1,7 @@
 ---
-layout: section
-title: "Configurações — Categorias"
+title: "Categorias"
+nav_order: 4
+parent: "Configurações da Organização"
 permalink: /configuracoes/categorias/
 ---
 

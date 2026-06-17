@@ -1,6 +1,6 @@
 ---
-layout: section
-title: Instalar como aplicativo
+title: "Instalar como aplicativo"
+nav_order: 4
 permalink: /instalar-como-app/
 ---
 

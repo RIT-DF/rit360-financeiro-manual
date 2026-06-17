@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Bússola Financeira — Documentação
+title: "Início"
+nav_order: 1
 permalink: /
 ---
 
@@ -11,11 +11,11 @@ permalink: /
 .module-card { display: block; padding: 1.25rem 1rem; border: 1px solid #dde3ec; border-radius: 8px; text-decoration: none; color: #222; background: #f8fafd; transition: box-shadow 0.15s; }
 .module-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-color: #aac; text-decoration: none; }
 .module-card-icon { font-size: 1.75rem; margin-bottom: 0.5rem; }
-.module-card-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 0.3rem; color: #155799; }
+.module-card-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 0.3rem; color: #0F4855; }
 .module-card-desc { font-size: 0.82rem; color: #555; line-height: 1.4; }
 .section-title { font-size: 1.15rem; font-weight: 700; margin: 2rem 0 0.75rem; color: #333; border-bottom: 2px solid #e0e7ef; padding-bottom: 0.4rem; }
 .quick-links { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.75rem 0 2rem; }
-.quick-links a { padding: 0.4rem 1rem; border: 1px solid #c0cfe0; border-radius: 20px; font-size: 0.88rem; text-decoration: none; color: #155799; background: #f0f6ff; }
+.quick-links a { padding: 0.4rem 1rem; border: 1px solid #cdd9d4; border-radius: 20px; font-size: 0.88rem; text-decoration: none; color: #0F4855; background: #eef4f2; }
 .quick-links a:hover { background: #dce8f8; }
 </style>
 

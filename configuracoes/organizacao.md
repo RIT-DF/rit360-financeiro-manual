@@ -1,6 +1,7 @@
 ---
-layout: section
-title: "Configurações — Organização"
+title: "Organização"
+nav_order: 1
+parent: "Configurações da Organização"
 permalink: /configuracoes/organizacao/
 ---
 
