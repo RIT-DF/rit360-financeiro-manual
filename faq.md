@@ -66,6 +66,14 @@ Sim. Na lista de **Movimentações**, clique em **Exportar** e escolha PDF (form
 
 Ao criar uma movimentação, você pode escolher tipo **Recorrente**: define frequência (mensal, trimestral, etc.) e duração (data final, quantidade de ocorrências ou indefinido até cancelar). O Bússola cria as ocorrências automaticamente; cada uma é paga individualmente. Para encerrar uma série em andamento, abra o detalhe e use o cancelamento em 3 escopos (apenas esta / esta e futuras / série inteira).
 
+### Posso informar o centro de custo ao importar lançamentos por planilha?
+
+Sim. A planilha de importação tem a coluna `centro_de_custo` (opcional). Se o nome informado ainda não existir na OSC, ele aparece como **pendência** na tela de resumo, onde você escolhe **criar** o centro de custo, **mapear** para um existente ou **importar aquelas linhas sem** centro de custo — antes de confirmar. Em branco, o lançamento entra sem centro de custo.
+
+### Anexei um arquivo ZIP a um lançamento. Os documentos de dentro aparecem na prestação de contas?
+
+Sim. O Bússola **descompacta o ZIP automaticamente** e anexa cada arquivo de dentro como um anexo individual do lançamento — o pacote dá lugar aos arquivos, que passam a aparecer na pré-visualização e a entrar na prestação de contas. Vale também quando o comprovante chega por **link** na importação por CSV. Arquivos que não dá para exibir num PDF (planilhas, textos) ficam anexados, mas não aparecem no corpo do relatório.
+
 ## Reembolsos e Pedidos de Pagamento
 
 ### Meu reembolso foi rejeitado. Posso reenviar?

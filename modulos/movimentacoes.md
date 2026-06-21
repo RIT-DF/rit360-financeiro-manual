@@ -184,6 +184,8 @@ Você pode anexar arquivos (comprovantes, notas fiscais, contratos) ao lançamen
 
 **Em desktop**, a seção mostra uma área para arrastar arquivos ou clicar para selecionar — o botão "Tirar foto" não aparece nesse contexto (webcam de laptop não serve para fotografar comprovante apoiado na mesa).
 
+**Anexou um arquivo ZIP?** O Bússola **descompacta o pacote automaticamente** e anexa cada documento de dentro como um anexo individual do lançamento — o ZIP some da lista, dando lugar aos arquivos. Assim, cada comprovante que estava no pacote ganha pré-visualização e **entra na prestação de contas** (um ZIP, por ser um pacote fechado, não poderia ser exibido no relatório). A expansão roda em segundo plano, em segundos, e vale também quando o comprovante chega por **link** na importação por CSV. Arquivos que não dá para exibir num PDF (planilhas, documentos de texto) ficam anexados, mas não aparecem no corpo do relatório.
+
 **Em Novo Lançamento nos modos Recorrente e Parcelado**, a seção de anexo é ocultada na criação da série — não há um lançamento único ao qual associar o documento. Uma nota explicativa orienta a anexar individualmente em cada lançamento depois que a série for criada. Em **Editar Lançamento**, a seção funciona normalmente, pois você sempre edita um movimento individual.
 
 > ✓ **Dica · Anexe sempre, anexe na hora**
@@ -238,6 +240,7 @@ Em vez de digitar lançamento por lançamento, você pode importar de duas fonte
 | `categoria` | Sim (exceto transferência) | Categoria compatível com o tipo. Transferência não tem categoria. |
 | `conta_destino` | Só em transferência | Conta que recebe; obrigatória e diferente da origem. |
 | `projeto` | Não | Projeto **aberto** para vincular (qualquer tipo). |
+| `centro_de_custo` | Não | Centro de custo para vincular (qualquer tipo). |
 | `data_pagamento` | Não | Data de efetivação. Em branco = pendente. |
 | `beneficiario` | Não | Quem recebeu/pagou. |
 | `forma_pagamento` | Não | `pix`, `cartão`, `dinheiro`, etc. |
@@ -246,12 +249,13 @@ Em vez de digitar lançamento por lançamento, você pode importar de duas fonte
 - **Transferência** entre contas da OSC é **uma linha** (`tipo=transferencia`, `conta` + `conta_destino`, sem categoria) — preserva o saldo total.
 - **Projeto** não encontrado (fechado/inexistente) → o lançamento entra **sem o vínculo**, com aviso; nunca bloqueia.
 - **Conta ou categoria que ainda não existe** na OSC vira uma **pendência resolvida na própria tela de resumo**: criar a categoria que falta, mapear para uma existente, ou deixar as linhas daquela conta de fora para reimportar depois. O casamento de nomes ignora acentos, maiúsculas/minúsculas e espaços.
+- **Centro de custo que ainda não existe** também vira **pendência na tela de resumo**, com três opções por nome: **criar** o centro de custo, **mapear** para um existente, ou **importar aquelas linhas sem** centro de custo. Centro de custo em branco (ou coluna ausente) → o lançamento entra sem centro de custo, sem aviso.
 
 > 💡 **Migrando de uma planilha ou de outro sistema?**
 >
 > O **[Guia de Migração](/migracao/)** cobre o caminho completo — ponto de corte, ordem de montar a base, formato da planilha coluna a coluna, reconciliação e como virar a chave com segurança.
 
-O **template baixável** já vem com todas essas colunas e linhas de exemplo — inclusive uma transferência e uma com projeto vinculado. Baixe, apague os exemplos e preencha com os seus lançamentos.
+O **template baixável** já vem com todas essas colunas e linhas de exemplo — inclusive uma transferência, uma com projeto vinculado e uma com centro de custo. Baixe, apague os exemplos e preencha com os seus lançamentos.
 
 Parcelas e recorrências não entram por CSV — crie pelo formulário. **Comprovantes, sim:** a planilha tem uma coluna `comprovante` onde você informa o **link** do arquivo (vários links na mesma célula, separados por vírgula, barra vertical ou espaço). Ao importar, os lançamentos são criados na hora e os comprovantes são **baixados em segundo plano** e anexados — você recebe um aviso ao concluir, e qualquer link que não baixar fica registrado na **observação** do lançamento. Use o **link direto** do arquivo; links de compartilhamento de nuvem que abrem uma página (em vez de baixar o arquivo) não funcionam.
 

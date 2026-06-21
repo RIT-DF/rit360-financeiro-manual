@@ -11,6 +11,22 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.36.0] — 2026-06-21
+
+### Adicionado
+
+- **Anexos em ZIP são descompactados automaticamente.** Ao anexar um arquivo `.zip` a um lançamento (ou recebê-lo por link no comprovante), o sistema extrai os documentos de dentro e os anexa individualmente ao lançamento — assim cada arquivo aparece na prestação de contas, no detalhe do lançamento e nos downloads. Antes, o conteúdo de um ZIP não era exibido no relatório.
+
+---
+
+## [0.35.3] — 2026-06-21
+
+### Adicionado
+
+- **Importação por CSV agora aceita o centro de custo.** A planilha de importação de lançamentos ganhou a coluna `centro_de_custo`. Quando o nome informado ainda não existe, o sistema oferece, na própria tela de revisão, **criar** o centro de custo, **vincular** a um existente ou **importar sem** — antes de confirmar.
+
+---
+
 ## [0.35.2] — 2026-06-21
 
 ### Modificado
