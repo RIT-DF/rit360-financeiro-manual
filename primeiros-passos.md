@@ -122,5 +122,5 @@ Um usuário pode acumular mais de um papel na mesma OSC (ver [Múltiplos papéis
 
 - **Botão Feedback** dentro do Bússola — envia mensagem direto para a equipe RIT
 - **Este manual em `docs.bf.rit.org.br`** — sempre tem a versão mais recente
-- **Changelog** ([changelog](/changelog/)) — para saber o que foi adicionado em cada versão
+- **Novidades** ([novidades](/changelog/)) — para saber o que foi adicionado em cada versão
 - **E-mail dpo@rit.org.br** — para questões de privacidade ou LGPD

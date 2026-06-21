@@ -205,7 +205,7 @@ Use o botão **💬 Feedback** no menu superior. Está disponível para todos os
 
 ### Onde acompanho as novidades do Bússola?
 
-No [Changelog](/changelog/) deste manual. Toda nova versão lançada é registrada lá com a lista de adições, correções e mudanças. As entregas significativas aparecem em destaque.
+Nas [Novidades](/changelog/) deste manual. Toda nova versão lançada é registrada lá com a lista de adições, correções e mudanças. As entregas significativas aparecem em destaque.
 
 ### Quero entender melhor um conceito que aparece no Bússola (fluxo de caixa, regime de caixa, estorno...). Onde leio?
 

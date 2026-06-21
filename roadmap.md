@@ -12,7 +12,7 @@ Esta página mostra **o estado de cada funcionalidade** do Bússola Financeira �
 
 > ⚠️ **Sobre datas e ordem**
 >
-> Esta página descreve **intenção e estado**, não datas firmes. O que está em **Em Construção** está sendo trabalhado agora; o que está em **Planejado** vai chegar — mas a ordem pode mudar conforme as OSCs no piloto sinalizem necessidades urgentes. O que está em **Sob Demanda** são ideias que só entram no plano se houver procura significativa. Cada nova versão entregue aparece no [Changelog](/changelog/) com os detalhes específicos.
+> Esta página descreve **intenção e estado**, não datas firmes. O que está em **Em Construção** está sendo trabalhado agora; o que está em **Planejado** vai chegar — mas a ordem pode mudar conforme as OSCs no piloto sinalizem necessidades urgentes. O que está em **Sob Demanda** são ideias que só entram no plano se houver procura significativa. Cada nova versão entregue aparece nas [Novidades](/changelog/) com os detalhes específicos.
 
 > 💬 **Tem alguma funcionalidade ou sugestão?**
 >
@@ -286,5 +286,5 @@ Esta página mostra **o estado de cada funcionalidade** do Bússola Financeira �
 
 ## Acompanhe as entregas
 
-- **[Changelog](/changelog/)** lista cada versão lançada com adições, correções e mudanças específicas.
+- **[Novidades](/changelog/)** lista cada versão lançada com adições, correções e mudanças específicas.
 - **Botão 💬 Feedback** dentro do Bússola — sua mensagem é lida pela equipe da RIT e pode acelerar a priorização de algo que você precisa.

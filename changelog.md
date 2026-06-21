@@ -1,13 +1,33 @@
 ---
-title: "Changelog"
+title: "Novidades"
 nav_order: 12
 permalink: /changelog/
 ---
 
-# Changelog — Bússola Financeira
+# Novidades — Bússola Financeira
 
 Todas as mudanças relevantes do projeto são documentadas aqui.
 Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:target="_blank" rel="noopener noreferrer"}.
+
+---
+
+## [0.36.2] — 2026-06-21
+
+### Adicionado
+
+- **Contador de projetos ativos no menu.** O item **Projetos** passou a exibir um indicador (como já acontece com Pagamentos e Reembolsos) com a quantidade de projetos ativos visíveis para você.
+
+### Modificado
+
+- **Aba "Categorias e Centros de Custo".** A aba de Configurações que antes se chamava apenas "Categorias" passou a indicar também os **Centros de Custo**, que sempre estiveram nela — agora ficam fáceis de encontrar.
+
+---
+
+## [0.36.1] — 2026-06-21
+
+### Corrigido
+
+- **Pequenos ajustes de texto na interface e nos e-mails.** Padronização de termos e correções de concordância — incluindo o texto de aceite dos **Termos de Uso**.
 
 ---
 

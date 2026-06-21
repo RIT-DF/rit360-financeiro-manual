@@ -106,7 +106,7 @@ permalink: /
   <a href="/papeis/">Papéis e permissões</a>
   <a href="/faq/">Perguntas frequentes</a>
   <a href="/roadmap/">Roadmap</a>
-  <a href="/changelog/">Changelog</a>
+  <a href="/changelog/">Novidades</a>
 </div>
 
 <div class="section-title">Suporte e contato</div>
