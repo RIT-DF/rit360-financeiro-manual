@@ -11,6 +11,17 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.37.0] — 2026-06-21
+
+### Adicionado
+
+- **Baixar meus dados (LGPD).** Em **Meu Perfil**, você pode pedir uma cópia dos seus dados pessoais — perfil, preferências, consentimentos, vínculos com organizações e referências dos registros que você criou. O arquivo é gerado em segundo plano e chega por e-mail, com link de download válido por 7 dias.
+- **Excluir minha conta (LGPD).** Você pode solicitar a exclusão da sua conta pelo **Meu Perfil**. A conta entra em uma carência de 30 dias, sem acesso, e ao fim do prazo seus dados pessoais são anonimizados de forma irreversível. Registros financeiros e de auditoria são mantidos por obrigação legal, sem identificação pessoal. Para reativar dentro do prazo, basta falar com o Encarregado de Dados (DPO).
+- **Exportar dados da organização.** Administradores podem baixar, em **Configurações → Organização**, um pacote com todos os dados da OSC — movimentações, reembolsos, pedidos de pagamento, membros, categorias e centros de custo e configurações — em planilha Excel, junto dos anexos. Entregue por e-mail com link de download.
+- **Encerramento de organização.** Administradores podem encerrar a OSC. Durante 30 dias os dados seguem disponíveis para leitura e exportação, mas nenhuma alteração é permitida; ao fim do prazo, os dados são eliminados ou anonimizados conforme a Política de Privacidade — os registros financeiros e de auditoria são retidos por obrigação legal, sem identificação pessoal.
+
+---
+
 ## [0.36.2] — 2026-06-21
 
 ### Adicionado
