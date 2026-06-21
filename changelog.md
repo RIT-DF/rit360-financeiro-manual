@@ -11,6 +11,46 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.35.2] — 2026-06-21
+
+### Modificado
+
+- **A sincronização do WooCommerce conclui sozinha, em qualquer volume.** Importações grandes de pedidos agora se completam com um **único disparo**: o sistema processa os pedidos em etapas automáticas, em segundo plano, até o fim — sem você precisar repetir a ação.
+
+### Corrigido
+
+- **Lançamentos vindos do WooCommerce voltam ao sincronizar.** Se um lançamento de origem WooCommerce for removido, a próxima sincronização o recria a partir do pedido — ele deixa de "sumir para sempre".
+
+---
+
+## [0.35.1] — 2026-06-21
+
+### Modificado
+
+- **Sincronização do WooCommerce em segundo plano.** A importação de pedidos do WooCommerce passou a rodar em segundo plano: a tela responde na hora ("sincronização iniciada"), você acompanha o andamento pelo histórico e recebe um aviso quando conclui — em vez de a tela ficar travada esperando o processamento.
+
+### Corrigido
+
+- **Pedidos de valor zero não geram mais erro.** Pedidos do WooCommerce com total R$ 0,00 (gratuitos ou totalmente reembolsados) passam a ser **ignorados** na sincronização, em vez de aparecerem como erro.
+
+---
+
+## [0.35.0] — 2026-06-20
+
+### Adicionado
+
+- **Conciliação bancária por extrato (OFX).** Nova tela de **Conciliação**: você importa o extrato do banco em formato OFX e o sistema **casa cada transação com os lançamentos pendentes** (por valor e proximidade de data), pré-marcando os que batem e deixando os parecidos para sua conferência. Ao confirmar, os lançamentos conciliados são marcados como **pagos** e ficam vinculados ao extrato. As transações **sem correspondência** podem virar lançamentos novos, com a categoria que você escolher. **Reimportar o mesmo extrato não duplica nada.**
+
+---
+
+## [0.34.0] — 2026-06-20
+
+### Adicionado
+
+- **Importação de movimentações: anexe comprovantes por link.** Na planilha de importação (CSV), uma coluna nova permite informar o **link do comprovante**; ao importar, o sistema **baixa o arquivo e anexa ao lançamento** automaticamente. Vários links na mesma célula (separados por vírgula, barra vertical ou espaço) anexam vários comprovantes. Os lançamentos são criados **na hora** e os comprovantes são baixados **em segundo plano** — você recebe um aviso quando terminam, e qualquer link que não baixar fica registrado na **observação** do lançamento.
+
+---
+
 ## [0.33.1] — 2026-06-17
 
 ### Modificado

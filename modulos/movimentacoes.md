@@ -253,13 +253,34 @@ Em vez de digitar lançamento por lançamento, você pode importar de duas fonte
 
 O **template baixável** já vem com todas essas colunas e linhas de exemplo — inclusive uma transferência e uma com projeto vinculado. Baixe, apague os exemplos e preencha com os seus lançamentos.
 
-Parcelas, recorrências e comprovantes não entram por CSV — crie pelo formulário (parcelas/recorrências) ou anexe pelo detalhe do lançamento (comprovantes).
+Parcelas e recorrências não entram por CSV — crie pelo formulário. **Comprovantes, sim:** a planilha tem uma coluna `comprovante` onde você informa o **link** do arquivo (vários links na mesma célula, separados por vírgula, barra vertical ou espaço). Ao importar, os lançamentos são criados na hora e os comprovantes são **baixados em segundo plano** e anexados — você recebe um aviso ao concluir, e qualquer link que não baixar fica registrado na **observação** do lançamento. Use o **link direto** do arquivo; links de compartilhamento de nuvem que abrem uma página (em vez de baixar o arquivo) não funcionam.
 
 ### Importação do WooCommerce
 
-Se sua OSC tem loja online em WooCommerce (venda de produtos, doações online, ingressos), pode conectar a loja ao Bússola em **Configurações → Organização → WooCommerce**. Uma vez configurada, pedidos pagos viram receitas automaticamente — diariamente via sincronização programada ou sob demanda pelo botão **Importar agora** desta tela.
+Se sua OSC tem loja online em WooCommerce (venda de produtos, doações online, ingressos), pode conectar a loja ao Bússola em **Configurações → Organização → WooCommerce**. Uma vez configurada, pedidos pagos viram receitas automaticamente — diariamente via sincronização programada ou sob demanda pelo botão **Importar agora** desta tela. A sincronização roda **em segundo plano**: a tela responde na hora, você acompanha o andamento pelo histórico e recebe um aviso ao concluir; importações grandes se completam sozinhas, em um único disparo.
 
 Mais detalhes na seção de configurações.
+
+## Conciliação bancária (extrato OFX)
+
+Se você baixa o **extrato do banco em formato OFX** (a maioria dos bancos oferece), pode conciliá-lo com seus lançamentos no Bússola — em vez de marcar conta por conta como paga.
+
+**Acesso:** tela de **Conciliação**, a partir das movimentações.
+
+**Como funciona:**
+
+1. Escolha a **conta** e suba o arquivo `.ofx`.
+2. O Bússola lê cada transação do extrato e **procura o lançamento correspondente** (por valor e proximidade de data), organizando tudo em quatro grupos:
+   - **Conciliados** — alta confiança no casamento; já vêm pré-marcados.
+   - **Em revisão** — casamento provável, mas com alguns dias de diferença; você confirma ou recusa.
+   - **Novos** — transações sem lançamento correspondente; você pode **criar** o lançamento (escolhendo a categoria) ou ignorar.
+   - **Já conciliados** — transações que você já processou antes (apenas informativo).
+3. Ao **confirmar**, os lançamentos conciliados/aceitos são marcados como **pagos** com a data do extrato e ficam vinculados à conciliação; os "novos" que você escolher viram lançamentos.
+
+**Reimportar o mesmo extrato não duplica nada** — cada transação é reconhecida pelo identificador único do banco.
+
+> 💡 **Por que isso importa**
+> Conciliar pelo extrato substitui a conferência manual lançamento a lançamento, reduz erro e dá confiança de que o que está registrado no Bússola bate com o banco.
 
 ## Prestação de contas
 
