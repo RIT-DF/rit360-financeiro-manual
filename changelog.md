@@ -11,6 +11,16 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.39.0] — 2026-06-22
+
+### Adicionado
+
+- **Cargos e permissões personalizáveis.** Em **Configurações → Cargos e permissões**, o Presidente vai além dos 6 cargos padrão: pode **criar cargos novos** (do zero ou clonando um existente) e **ajustar as permissões** com controle fino — por exemplo, um "Tesoureiro sem exclusão" que registra lançamentos mas não pode excluí-los. Os cargos são atribuídos às pessoas (com acúmulo) na aba **Usuários**.
+- **Permissões essenciais protegidas.** Cada cargo padrão tem um conjunto de permissões essenciais que não pode ser removido — o Presidente apenas acrescenta sobre elas. A **Comissão Fiscal** mantém a independência: permissões que conflitam com a fiscalização (operar, aprovar ou pagar finanças) ficam bloqueadas, preservando a segregação de funções.
+- **Avisos de governança.** Conceder poderes de administrador a um cargo exibe um aviso claro; tentar excluir um cargo em uso mostra quem seria afetado; e o sistema impede deixar a organização sem um administrador.
+
+---
+
 ## [0.38.0] — 2026-06-21
 
 ### Adicionado
