@@ -1,6 +1,6 @@
 ---
 title: "Contas Bancárias"
-nav_order: 3
+nav_order: 4
 parent: "Configurações da Organização"
 permalink: /configuracoes/contas/
 ---
@@ -20,10 +20,10 @@ A página **Contas Bancárias** lista as contas financeiras da sua OSC e permite
 
 - **Corrente** — conta bancária de uso geral
 - **Poupança** — conta poupança vinculada
-- **Investimento** — aplicações, CDB, fundos
-- **Dinheiro** — caixa interno físico (notas e moedas guardadas na sede)
-- **Cartão de crédito** — conta-cartão (saldo negativo)
-- **Cartão de débito** — quando há saldo pré-pago vinculado
+- **Caixa** — caixa interno físico (notas e moedas guardadas na sede)
+- **Cartão Pré-pago** — quando há saldo pré-pago vinculado
+- **Investimento** — aplicações, CDB
+- **Fundo** — cotas de fundos de investimento
 - **Outro** — para casos não cobertos (PayPal, Mercado Pago, gateway de pagamento, etc.)
 
 ## Adicionar nova conta
@@ -32,9 +32,14 @@ Clique em **+ Nova conta**. Preencha:
 
 - **Nome** — descritivo (ex: "Banco do Brasil — CC", "Mercado Pago — Vendas WC")
 - **Tipo** — da lista acima
-- **Banco** — quando aplicável
 - **Saldo inicial** — quanto tem na conta no momento do cadastro
 - **Data de abertura** — quando a conta começou a ser usada pela OSC (não a data de criação no Bússola)
+- **Conta padrão da organização** (opcional) — ver a seção **Conta padrão**, abaixo
+- **Dados bancários** (opcional, recolhível) — banco, agência e demais dados, quando aplicável
+- **Personalização** (opcional, recolhível) — uma **cor** e um **ícone** para a conta; ver a seção **Personalização**, abaixo
+
+[![Editar conta — conta padrão e personalização](/assets/screenshots/config-contas-editar.png)](/assets/screenshots/config-contas-editar.png)
+*Cadastro/edição de conta — alternar conta padrão e definir cor e ícone*
 
 > 📖 **Conceito · Saldo inicial e data de abertura**
 >
@@ -42,12 +47,34 @@ Clique em **+ Nova conta**. Preencha:
 
 ## Ações por conta
 
-- **Editar** — alterar nome, banco, tipo (não o saldo — saldo só muda via movimentações)
+- **Definir padrão / Remover padrão** — marca (ou desmarca) a conta como **padrão da organização**; ver abaixo
+- **Editar** — alterar nome, banco, tipo, cor e ícone (não o saldo — saldo só muda via movimentações)
 - **Desativar / Reativar** — uma conta desativada não aparece em filtros e formulários, mas seu histórico permanece preservado
 
 > ⚠️ **Atenção · Conta com movimentações não pode ser excluída**
 >
 > O Bússola **não permite excluir conta que tem movimentações registradas** — só desativar. Motivo: excluir destruiria a história contábil dessas movimentações ("essa receita foi para qual conta?"). Para "encerrar" uma conta na prática, **desative**. As movimentações ficam intactas no histórico, e a conta desativada não aparece nos formulários de novo lançamento.
+
+## Conta padrão
+
+Uma das contas pode ser marcada como **conta padrão da organização**. A conta padrão é **pré-selecionada automaticamente ao criar um novo lançamento** — assim, quem registra movimentações não precisa escolher a conta toda vez (é só mudar quando for outra).
+
+- **Apenas uma** conta pode ser a padrão por vez. Ao definir uma nova padrão, a anterior deixa de ser.
+- Marque pela ação **Definir padrão** na lista, ou pelo interruptor **Conta padrão da organização** ao criar/editar a conta.
+- A conta padrão exibe o selo **Padrão** na lista de contas.
+- Se você **desativar** a conta que era a padrão, ela deixa de ser padrão automaticamente — defina outra.
+
+> ✓ **Dica · Aponte para a conta que mais movimenta**
+>
+> Defina como padrão a conta por onde passa o grosso do dia a dia (geralmente a conta corrente principal). Como ela já vem selecionada no novo lançamento, você economiza um passo na maioria dos registros e reduz o risco de lançar na conta errada por desatenção.
+
+## Personalização (cor e ícone)
+
+Na seção **Personalização** do cadastro da conta, você pode definir uma **cor** (em hexadecimal) e um **ícone** para a conta. A cor vira um **acento visual** nos cartões de saldo — no **Painel**, na lista de movimentações e nos relatórios —, ajudando a distinguir as contas de relance.
+
+> ✓ **Dica · Cores ajudam a bater o olho**
+>
+> Dar a cada conta uma cor própria (azul para o banco, verde para o caixa, roxo para a poupança) faz o Painel ficar legível num instante — você identifica de qual conta é cada saldo sem precisar ler o nome. É opcional, mas vale o minuto de configuração.
 
 ## Saldo em tempo real
 

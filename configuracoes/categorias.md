@@ -1,6 +1,6 @@
 ---
 title: "Categorias"
-nav_order: 4
+nav_order: 5
 parent: "Configurações da Organização"
 permalink: /configuracoes/categorias/
 ---

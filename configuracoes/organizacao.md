@@ -19,7 +19,7 @@ A página **Organização** centraliza os dados da sua OSC e as **integrações*
 ## Identidade da OSC
 
 - **Nome** — como a OSC se identifica oficialmente
-- **CNPJ** — formato `XX.XXX.XXX/XXXX-XX`
+- **CNPJ** — formatado automaticamente conforme você digita. Aceita tanto o CNPJ numérico tradicional quanto o novo **CNPJ alfanumérico** (que passa a valer a partir de julho/2026)
 - **E-mail institucional**
 - **Telefone**
 - **Site** — endereço completo (`https://...`)
@@ -86,6 +86,33 @@ Envio de notificações via número oficial WhatsApp Business da OSC. Habilita o
 ### Telegram *(em implantação)*
 
 Envio de notificações via bot oficial Telegram da OSC para grupos/canais. Complementa o envio individual para usuários que vincularam Telegram no perfil pessoal.
+
+## Exportar dados da organização (LGPD)
+
+No fim da página, a seção **Exportação de dados da organização (LGPD)** permite ao admin **baixar todos os dados da OSC** em um único pacote — útil para guardar um backup, levar para outro sistema ou atender a uma solicitação de transparência.
+
+[![Exportação e encerramento da organização](/assets/screenshots/config-organizacao-lgpd.png)](/assets/screenshots/config-organizacao-lgpd.png)
+*Exportação de dados (LGPD) e zona de perigo para encerramento da organização*
+
+- Clique em **Exportar dados da organização**. O pacote é um **ZIP** com uma planilha **Excel** (movimentações, reembolsos, pedidos de pagamento, membros, categorias, centros de custo e configurações) mais **todos os anexos e comprovantes**.
+- A geração roda **em segundo plano**. Você recebe um **e-mail com o link de download** (válido por **7 dias**) assim que o pacote fica pronto. O link só pode ser baixado por administradores da OSC.
+- O último pacote gerado fica listado na própria seção, com a data e um botão para baixar enquanto o link estiver válido.
+
+> 💡 **Por que isso importa**
+>
+> Poder exportar a base inteira a qualquer momento é uma garantia de **autonomia e transparência**: os dados são da sua OSC, não ficam reféns da plataforma. Serve de backup, ajuda numa eventual migração e responde de imediato a um pedido de prestação de contas ou auditoria.
+
+## Encerrar organização
+
+Ainda no fim da página, a **Zona de perigo · Encerrar organização** inicia o encerramento definitivo da OSC no Bússola. É uma ação séria e foi desenhada com calma para que ninguém perca dados por engano.
+
+- O encerramento **bloqueia novas escritas imediatamente** — a partir dali ninguém lança, edita ou aprova nada na OSC.
+- Você tem uma **janela de 30 dias** para exportar tudo o que precisar antes da eliminação (use a exportação acima).
+- Após o prazo, **identificadores e anexos são apagados** e os **dados pessoais dos membros são anonimizados**. Por **obrigação legal**, os **registros financeiros e a trilha de auditoria são mantidos sem identificação pessoal**, e o **CNPJ é retido**.
+
+> ⚠️ **Atenção · Encerrar é irreversível pelo autosserviço**
+>
+> Não há botão para "desfazer" um encerramento pela própria interface. Só recorra a essa opção quando a OSC realmente vai deixar de operar no Bússola. Em dúvida, **exporte os dados primeiro** e procure o suporte/DPO antes de confirmar.
 
 ## Por onde seguir
 

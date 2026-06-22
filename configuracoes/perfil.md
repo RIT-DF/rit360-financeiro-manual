@@ -7,21 +7,21 @@ permalink: /configuracoes/perfil/
 A página **Meu Perfil** concentra **seus** dados pessoais e preferências dentro do Bússola — não os dados da organização. Disponível para todos os usuários autenticados, acessada pelo menu do avatar (canto superior direito → **Meu perfil**) ou diretamente pela rota `/perfil`.
 
 [![Página Meu Perfil](/assets/screenshots/config-perfil.png)](/assets/screenshots/config-perfil.png)
-*Página Meu Perfil — 4 boxes consolidados*
+*Página Meu Perfil — boxes consolidados de dados e preferências*
 
 > 💡 **Por que isso importa**
 >
 > Perfil bem configurado tem dois efeitos práticos: (1) **reembolsos mais rápidos** porque a chave PIX/TED já vem pré-preenchida; (2) **menos ruído no dia a dia** porque você só recebe as notificações que importam para você, nos canais que prefere. 5 minutos de configuração inicial economizam horas ao longo dos meses.
 
-A página tem 4 boxes consolidados.
+A página tem cinco boxes consolidados: **Identificação**, **Dados para Reembolso**, **Notificações**, **Meus dados (LGPD)** e **Ações de Conta**.
 
 ## Identificação
 
 - **Foto de perfil** — JPG, PNG ou WebP, até 2 MB. A imagem é redimensionada para 512×512 antes do envio.
 - **Nome completo** — como aparece em audit logs, aprovações, registros.
-- **Telefone** — formato internacional (com `+55`).
+- **Telefone** — digite no formato brasileiro `(11) 99999-9999` (o campo formata sozinho enquanto você digita); o Bússola guarda em formato internacional (com `+55`).
 - **Data de nascimento** — opcional.
-- **CPF** e **RG** — opcionais; armazenados **cifrados em repouso** (chave de criptografia gerenciada separadamente do banco). Usados apenas para emissão de comprovantes quando exigido por lei.
+- **CPF** e **RG** — opcionais; o **CPF** é formatado automaticamente (`000.000.000-00`). Armazenados **cifrados em repouso** (chave de criptografia gerenciada separadamente do banco). Usados apenas para emissão de comprovantes quando exigido por lei.
 
 Botão **Salvar alterações** ao final do box salva tudo de uma vez.
 
@@ -76,10 +76,12 @@ A ativação é **por dispositivo**, com um interruptor mestre **"Ativar push ne
 
 ### Matriz granular de preferências
 
-Tabela com **10 eventos × 4 canais** permite controle fino sobre quais notificações receber e por onde:
+Tabela que cruza **eventos × 4 canais** (E-mail, WhatsApp, Telegram, Push) e permite controle fino sobre quais notificações receber e por onde. Os eventos estão agrupados por área:
 
-**Reembolsos** (5 eventos): submetido, aprovação parcial, aprovado, rejeitado, pago.
-**Pedidos de Pagamento** (5 eventos): submetido, aprovação parcial, aprovado, rejeitado, pago.
+- **Reembolsos** (5): submetido, aprovação parcial, aprovado, rejeitado, pago.
+- **Pedidos de Pagamento** (5): submetido, aprovação parcial, aprovado, rejeitado, pago.
+- **Feedback** (2): novo feedback enviado, feedback resolvido.
+- **Projetos**: comentários no mural, hora de publicar status, marcos atingidos ou perdidos, riscos materializados, tarefas atribuídas ou vencendo, resumo diário, e as aprovações de abertura/alteração e seus resultados.
 
 Para cada par (evento, canal), um switch on/off. **Default é tudo ligado** — você silencia o que não quer receber.
 
@@ -91,13 +93,30 @@ Para cada par (evento, canal), um switch on/off. **Default é tudo ligado** — 
 >
 > Se você é aprovador, mantenha "submetido" ligado para ser avisado quando um reembolso/pedido precisa do seu voto. Se você é solicitante e não aprovador, "submetido" não te interessa — pode desligar e manter só "aprovado", "rejeitado" e "pago". Tesoureiro deve manter "aprovado" e "pago" sempre ligados para acompanhar o ciclo de pagamento.
 
+## Meus dados (LGPD)
+
+Você pode **baixar uma cópia dos seus dados pessoais** no Bússola a qualquer momento — é o seu direito de acesso e portabilidade previsto na LGPD.
+
+[![Meus dados (LGPD) e ações de conta](/assets/screenshots/config-perfil-lgpd.png)](/assets/screenshots/config-perfil-lgpd.png)
+*Box "Meus dados (LGPD)" para baixar seus dados, e box "Ações de conta"*
+
+- Clique em **Baixar meus dados**. O pacote é um arquivo **JSON** com seu perfil, preferências, consentimentos, vínculos com organizações e as referências dos registros que você criou.
+- A geração roda **em segundo plano**. Você recebe um **e-mail com o link de download** (válido por **7 dias**) assim que o pacote fica pronto. O último pedido fica listado na seção, pronto para baixar enquanto o link estiver válido.
+
 ## Ações de Conta
 
 Ações administrativas sobre sua própria conta, cada uma com botão independente:
 
 - **Alterar senha** — campos de nova senha e confirmação; clique em "Alterar senha" para confirmar. Senha forte (8+ caracteres, mix de letras, números e símbolos) é exigida.
 - **Encerrar todas as sessões** — desconecta sua conta de todos os dispositivos onde está logada. Útil se você perdeu acesso a um celular ou suspeita de uso indevido.
-- **Solicitar exclusão de dados (LGPD)** — abre fluxo para exercer o direito ao esquecimento previsto na Lei Geral de Proteção de Dados. A exclusão tem regras específicas (dados financeiros têm retenção legal mínima); o fluxo orienta o que pode e o que não pode ser excluído.
+- **Excluir minha conta (LGPD)** — exerce o **direito ao esquecimento**. Ao confirmar, sua conta entra em uma **carência de 30 dias**; passado o prazo, seus dados pessoais (nome, e-mail, telefone, CPF, RG, avatar) são **anonimizados de forma irreversível**. Por obrigação legal, **registros financeiros e de auditoria são retidos por 5 anos sem identificação pessoal**.
+
+### Como excluir a conta
+
+[![Confirmação de exclusão da conta](/assets/screenshots/config-perfil-excluir.png)](/assets/screenshots/config-perfil-excluir.png)
+*Confirmação de exclusão — exige a senha atual e digitar "EXCLUIR"*
+
+Por ser uma ação séria, a confirmação pede duas coisas: **sua senha atual** e digitar a palavra **EXCLUIR**. Ao confirmar, você é **desconectado de todos os dispositivos** e **não consegue mais entrar**. Dentro da janela de 30 dias, a **reativação** só é possível pelo DPO (`dpo@rit.org.br`) — não há autosserviço para reativar.
 
 > ⚠️ **Atenção · Encerrar sessões te desconecta também**
 >

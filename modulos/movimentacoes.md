@@ -40,7 +40,7 @@ Antes de entrar nos botões, vale firmar três conceitos que você vai ver em to
 [![Lista de movimentações](/assets/screenshots/manual-02-movimentacoes-lista.png)](/assets/screenshots/manual-02-movimentacoes-lista.png)
 *Lista de movimentações em desktop — tabela com todas as colunas*
 
-A lista mostra todas as movimentações com as colunas **Vencimento**, **Pagamento**, **Lançamento** (título e beneficiário), **Conta**, **Categoria**, **Status** e **Valor**.
+A lista mostra todas as movimentações com as colunas **Vencimento**, **Pagamento**, **Lançamento** (descrição e contraparte), **Conta**, **Categoria**, **Status** e **Valor**.
 
 No **celular** ou em telas estreitas (abaixo de 1024 px de largura), a tabela vira uma **lista de cards** com a mesma informação organizada verticalmente — descrição em destaque, valor colorido, data, contraparte, conta, categoria, status e menu de ações:
 
@@ -143,22 +143,33 @@ Linha do tempo com todas as ações sobre o lançamento — quem criou, quem mar
 [![Formulário de novo lançamento](/assets/screenshots/manual-04-novo-lancamento.png)](/assets/screenshots/manual-04-novo-lancamento.png)
 *Formulário de novo lançamento*
 
-Clique em **+ Novo lançamento** no topo da lista.
+Clique em **+ Novo lançamento** no topo da lista. O formulário abre em **página própria**, com um resumo e um checklist do lado direito que vão se preenchendo conforme você digita.
 
 **Campos obrigatórios:**
 
-- **Tipo** — Receita, Despesa ou Transferência
-- **Título** — descrição breve (ex: "Conta de luz - março", "Doação Família Silva")
+- **Tipo** — Receita, Despesa ou Transferência (define o resto do formulário)
+- **Descrição** — descrição breve do lançamento (ex: "Conta de luz - março", "Doação Família Silva")
 - **Data de vencimento**
 - **Valor total**
-- **Conta** — qual conta financeira movimenta
-- **Categoria** — não obrigatória para Transferências (porque transferência é só mudança de lugar)
+- **Conta** — qual conta financeira movimenta. Já vem **pré-selecionada com a [conta padrão](/configuracoes/contas/#conta-padrão)** da OSC; troque se for outra
+- **Categoria** — não pedida para Transferências (porque transferência é só mudança de lugar)
 
 **Campos opcionais:**
 
+- **Beneficiário / Pagador** — quem recebeu o pagamento (em Despesa, "Beneficiário") ou de quem veio o dinheiro (em Receita, "Pagador"). Fica no topo do formulário, logo após o tipo
+- **Tipo de documento fiscal** e **Número do documento** — para registrar a nota/recibo que originou o lançamento
 - **Data de pagamento** — se preenchida no momento da criação, o lançamento já entra como **Pago**; se vazia, entra como **Pendente** e você confirma o pagamento depois
 - **Projeto** e **Centro de custo** — para OSCs que dividem o financeiro por projeto/área
 - **Distribuir valor entre categorias** — divide um único valor por várias categorias (ex: uma compra de R$ 500 que vai 60% para "Material didático" e 40% para "Manutenção")
+
+> 📖 **Conceito · O formulário se adapta ao tipo**
+>
+> Ao escolher **Transferência**, o Bússola **oculta os campos que não fazem sentido** para um movimento interno entre contas — Beneficiário, Categoria e os campos de documento fiscal somem, e aparece o campo de **conta de destino**. Você só vê o que precisa preencher para cada tipo de lançamento.
+
+No **celular**, o mesmo formulário se organiza em uma coluna única, na ordem em que você preenche — desenhado para registrar um lançamento de pé, em campo, sem zoom nem rolagem horizontal:
+
+[![Novo lançamento no celular](/assets/screenshots/mobile-novo-lancamento.png)](/assets/screenshots/mobile-novo-lancamento.png)
+*Novo lançamento no celular — coluna única, campos na ordem de preenchimento*
 
 > ✓ **Dica · Categorias consistentes valem ouro nos relatórios**
 >
