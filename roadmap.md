@@ -41,7 +41,7 @@ Esta página mostra **o estado de cada funcionalidade** do Bússola Financeira �
 | Cards de pendências no Painel por papel | Reembolsos pendentes, pedidos aguardando aprovação, aprovados aguardando pagamento | ✓ | | | |
 | Exportação em PDF e Excel | Lista filtrada exportável; PDF formatado com cabeçalho e totais, Excel com todas as colunas | ✓ | | | |
 | Relatórios consolidados (módulo dedicado) | 5 abas (Visão Geral, Receitas, Despesas, Atenção, Previsão), comparativo período × período, regras de anomalia configuráveis com calibração pelo histórico, forecast 3/6/12 meses, export PDF + Excel | ✓ | | | |
-| Conciliação bancária | Importação OFX/CNAB com matching automático e resolução de divergências | | | ✓ | |
+| Conciliação bancária | Importação de extrato OFX com matching automático por valor e data, e resolução manual de divergências | ✓ | | | |
 | OCR de comprovantes | Extração automática de valor, data e fornecedor a partir da foto da nota | | | ✓ | |
 | Sugestão de categoria por IA | Categorização automática com base em descrição e histórico | | | ✓ | |
 
@@ -156,8 +156,10 @@ Esta página mostra **o estado de cada funcionalidade** do Bússola Financeira �
 | Categorias de receita, despesa e centros de custo | Estrutura editável com templates iniciais por tipo de OSC | ✓ | | | |
 | Hierarquia de categorias (mãe + filhas) | Subcategorias para organização contábil mais granular | ✓ | | | |
 | Fluxo de aprovações configurável | Quórum 1 ou 2, papéis aprovadores, pessoas individuais como aprovadores | ✓ | | | |
+| Exportação de dados da organização (LGPD) | Administradores baixam um pacote completo da OSC — movimentações, reembolsos, pedidos, membros, categorias, centros de custo e configurações — em Excel com anexos, entregue por e-mail | ✓ | | | |
+| Encerramento da organização (LGPD) | Administradores encerram a OSC; 30 dias de leitura/exportação sem alterações, depois eliminação/anonimização conforme a Política de Privacidade (financeiro e auditoria retidos por obrigação legal) | ✓ | | | |
 | Status "Suspensa" para organizações | Acesso temporariamente bloqueado, dados preservados | | | ✓ | |
-| Gestão de papéis customizável por OSC | Renomear papéis, criar papéis novos, matriz de permissões | | | ✓ | |
+| Gestão de papéis customizável por OSC | Criar cargos novos (do zero ou clonando um existente) além dos 6 padrão, e ajustar permissões com controle fino por cargo | ✓ | | | |
 | Suporte a múltiplas lojas WooCommerce por OSC | Configuração de mais de uma loja online conectada | | | | ✓ |
 
 ---
@@ -191,7 +193,8 @@ Esta página mostra **o estado de cada funcionalidade** do Bússola Financeira �
 | API pública REST (OpenAPI / Swagger) | Acesso programático aos dados da OSC, habilitado por OSC via superadmin | | | ✓ | |
 | Integração com sistemas contábeis (NIBO, ContaAzul) | Exportação automática de lançamentos para o ERP contábil | | | ✓ | |
 | Webhook em tempo real para WooCommerce | Sincronização instantânea ao invés de diária | | | ✓ | |
-| Conciliação com extrato bancário (OFX/CNAB) | Importação de extrato com matching automático | | | ✓ | |
+| Conciliação com extrato bancário (OFX) | Importação de extrato com matching automático | ✓ | | | |
+| Conciliação com extrato bancário — CNAB e outros formatos de banco | Ampliar além do OFX/QFX já suportado | | | | ✓ |
 
 ---
 
@@ -230,9 +233,9 @@ Esta página mostra **o estado de cada funcionalidade** do Bússola Financeira �
 | Dados sensíveis cifrados em repouso | CPF e RG cifrados; chave gerenciada separadamente | ✓ | | | |
 | Multi-tenancy por RLS (isolamento por OSC) | Cada OSC enxerga apenas seus próprios dados | ✓ | | | |
 | Auditoria completa em todas as ações | Audit log de criação, edição, aprovação, pagamento, estorno | ✓ | | | |
-| Aceite combinado privacy + terms | Fluxo único de aceite com versionamento independente dos dois | | ✓ | | |
-| Exportação de dados pessoais sob demanda | Direito de portabilidade da LGPD | | | ✓ | |
-| Anonimização automática | Direito ao esquecimento; PII vira placeholders mantendo integridade contábil | | | ✓ | |
+| Aceite combinado privacy + terms | Fluxo único de aceite com versionamento independente dos dois, e re-consentimento quando um documento muda | ✓ | | | |
+| Exportação de dados pessoais sob demanda | Direito de portabilidade da LGPD — baixar perfil, preferências, consentimentos e vínculos com organizações, entregue por e-mail | ✓ | | | |
+| Anonimização automática | Direito ao esquecimento — após a exclusão de conta, os dados pessoais viram placeholders mantendo a integridade contábil | ✓ | | | |
 
 ---
 
