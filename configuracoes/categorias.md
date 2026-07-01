@@ -54,7 +54,7 @@ OSC pequena geralmente não precisa de centros de custo. OSC com **múltiplas fr
 
 ## Template de categorias
 
-Para começar rapidamente, clique em **Aplicar template**. O Bússola tem modelos prontos por tipo de OSC — por exemplo, o template "Padrão Grupo Escoteiro 2026" traz categorias típicas de grupos escoteiros. Aplicar template importa as categorias do modelo para a sua OSC, sem apagar o que você já tinha.
+Para começar rapidamente, clique em **Aplicar template**. O Bússola tem modelos prontos por tipo de OSC — há templates para **Grupo Escoteiro, Associação, Instituto, Fundação, ONG, Coletivo e Cooperativa**, cada um com as categorias de receita e despesa típicas daquele perfil. Escolha o modelo mais próximo da sua organização; aplicar o template importa as categorias do modelo para a sua OSC, sem apagar o que você já tinha.
 
 > ✓ **Dica · Comece com template, depois afine**
 >

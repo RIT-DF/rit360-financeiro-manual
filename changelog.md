@@ -11,6 +11,15 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.41.0] — 2026-07-01
+
+### Adicionado
+
+- **Templates de categorias para mais tipos de organização.** Além do modelo de Grupo Escoteiro, agora há conjuntos de categorias prontos para **Associação, Instituto, Fundação, ONG, Coletivo e Cooperativa**. Ao configurar as categorias da sua OSC, escolha o modelo do seu tipo de organização para começar com uma estrutura de receitas e despesas já organizada — e personalize à vontade depois. Quem prefere começar do zero pode continuar criando as categorias manualmente.
+- **Tipos de organização unificados no cadastro.** A lista de tipos de OSC ficou consistente em todas as telas de criação de organização: Grupo Escoteiro, Associação, Instituto, Fundação, ONG, Coletivo, Cooperativa e Outro.
+
+---
+
 ## [0.40.4] — 2026-07-01
 
 ### Adicionado
