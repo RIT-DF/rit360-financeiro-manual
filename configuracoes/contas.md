@@ -21,10 +21,23 @@ A página **Contas Bancárias** lista as contas financeiras da sua OSC e permite
 - **Corrente** — conta bancária de uso geral
 - **Poupança** — conta poupança vinculada
 - **Caixa** — caixa interno físico (notas e moedas guardadas na sede)
+- **Cartão de crédito** — o cartão da OSC, tratado como **dívida** (passivo); ver o conceito abaixo
 - **Cartão Pré-pago** — quando há saldo pré-pago vinculado
 - **Investimento** — aplicações, CDB
 - **Fundo** — cotas de fundos de investimento
 - **Outro** — para casos não cobertos (PayPal, Mercado Pago, gateway de pagamento, etc.)
+
+[![Cadastro de conta tipo Cartão de crédito](/assets/screenshots/manual-conta-cartao-credito.png)](/assets/screenshots/manual-conta-cartao-credito.png)
+*Cadastro de uma conta do tipo Cartão de crédito*
+
+> 📖 **Conceito · Cartão de crédito é dívida, não dinheiro guardado**
+>
+> As demais contas guardam dinheiro que a OSC **tem** (ativos). O cartão de crédito é o contrário: representa dinheiro que a OSC **deve** (passivo). Por isso ele entra de forma diferente no saldo consolidado, que passa a mostrar **Ativos** e **Passivos** em blocos separados e o **Líquido** — o que sobra depois de descontar o que se deve.
+>
+> Na prática: uma **compra no cartão** é lançada como despesa na conta do cartão (aumenta a dívida); o **pagamento da fatura** é uma **transferência** da conta bancária para o cartão (reduz a dívida). OSCs que não cadastram nenhum cartão de crédito não veem diferença nenhuma no consolidado.
+>
+> [![Saldo consolidado com Ativos e Passivos](/assets/screenshots/manual-saldos-ativos-passivos.png)](/assets/screenshots/manual-saldos-ativos-passivos.png)
+> *Saldo consolidado separando Ativos, Passivos e Líquido*
 
 ## Adicionar nova conta
 

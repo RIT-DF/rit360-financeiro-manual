@@ -125,6 +125,7 @@ Clique em qualquer linha da lista para abrir o detalhe completo, organizado em d
 - Tipo e status (chips coloridos no topo)
 - Título e valor em destaque
 - Dados do lançamento: vencimento, pagamento, conta, categoria, beneficiário/fornecedor, forma de pagamento, projeto, centro de custo
+- **Dados de pagamento** — quando o lançamento tem chave PIX ou dados bancários do destinatário, um card mostra esses dados para efetivar o pagamento sem abrir a solicitação de origem. Vale tanto para lançamentos vindos de **reembolso/pedido de pagamento** quanto para **despesas lançadas à mão** (ver "Forma de pagamento" no formulário). Aparece apenas para quem tem permissão de ver esses dados (tesoureiro, aprovadores e administradores)
 - Distribuição entre categorias (se o valor foi dividido)
 - Observações
 - Documentos: comprovantes e notas fiscais anexados, com pré-visualização inline para imagens e PDFs
@@ -162,11 +163,12 @@ Clique em **+ Novo lançamento** no topo da lista. O formulário abre em **pági
 - **Tipo de documento fiscal** e **Número do documento** — para registrar a nota/recibo que originou o lançamento
 - **Data de pagamento** — se preenchida no momento da criação, o lançamento já entra como **Pago**; se vazia, entra como **Pendente** e você confirma o pagamento depois
 - **Projeto** e **Centro de custo** — para OSCs que dividem o financeiro por projeto/área
+- **Forma de pagamento** (em Despesa) — como o pagamento será feito. Ao escolher **PIX**, o formulário abre os campos da **chave PIX** (tipo e chave); ao escolher **Transferência bancária**, abre os **dados bancários** do destinatário (banco, agência, conta e titular); **Boleto** e as demais formas não pedem campos extras. Esses dados são opcionais e ficam guardados no lançamento — úteis para quem for efetivar o pagamento depois
 - **Distribuir valor entre categorias** — divide um único valor por várias categorias (ex: uma compra de R$ 500 que vai 60% para "Material didático" e 40% para "Manutenção")
 
 > 📖 **Conceito · O formulário se adapta ao tipo**
 >
-> Ao escolher **Transferência**, o Bússola **oculta os campos que não fazem sentido** para um movimento interno entre contas — Beneficiário, Categoria e os campos de documento fiscal somem, e aparece o campo de **conta de destino**. Você só vê o que precisa preencher para cada tipo de lançamento.
+> Ao escolher **Transferência**, o Bússola **oculta os campos que não fazem sentido** para um movimento interno entre contas — Beneficiário, Categoria e os campos de documento fiscal somem, e aparece o campo de **conta de destino**. Você só vê o que precisa preencher para cada tipo de lançamento. Da mesma forma, os campos de destinatário (chave PIX / dados bancários) só aparecem em **Despesa**, conforme a forma de pagamento escolhida.
 
 No **celular**, o mesmo formulário se organiza em uma coluna única, na ordem em que você preenche — desenhado para registrar um lançamento de pé, em campo, sem zoom nem rolagem horizontal:
 

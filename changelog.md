@@ -11,6 +11,22 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.43.0] — 2026-07-07
+
+### Adicionado
+
+- **Dados de pagamento direto no lançamento de despesa.** Ao criar ou editar uma despesa em Movimentações, a **forma de pagamento** passou a ficar visível no formulário e agora abre os campos do destinatário conforme a escolha: **PIX** pede o tipo e a chave; **Transferência bancária** pede banco, agência, conta e titular; **Boleto** e as demais formas não pedem campos extras. Esses dados aparecem depois no card **"Dados de pagamento"** do detalhe do lançamento, para quem tem permissão de vê-los. Assim o tesoureiro registra a chave PIX / dados bancários também em despesas lançadas à mão, e não só nas que vêm de reembolso ou pedido de pagamento.
+
+---
+
+## [0.42.0] — 2026-07-07
+
+### Adicionado
+
+- **Cartão de crédito como passivo.** Agora é possível cadastrar uma conta do tipo **Cartão de crédito**. Diferente de uma conta comum, o cartão representa uma **dívida**: o saldo consolidado passou a mostrar **Ativos** e **Passivos** em seções separadas, com o **Líquido** sendo o que sobra depois de descontar o que se deve. Uma compra no cartão é lançada como despesa na conta do cartão, e o **pagamento da fatura** é uma transferência da conta bancária para o cartão, que reduz a dívida. Organizações que não usam cartão de crédito não veem nenhuma diferença.
+
+---
+
 ## [0.41.8] — 2026-07-06
 
 ### Adicionado
