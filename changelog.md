@@ -11,6 +11,14 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.41.8] — 2026-07-06
+
+### Adicionado
+
+- **Detalhe do lançamento mais completo.** Ao abrir um lançamento em Movimentações, agora aparecem os campos que estavam preenchidos mas não eram exibidos (forma de pagamento, referência bancária, documento fiscal, tags, observações). E, para lançamentos gerados a partir de um **reembolso** ou **pedido de pagamento**, um card **"Dados de pagamento"** mostra a chave PIX / dados bancários do beneficiário — para o tesoureiro efetivar o pagamento sem precisar abrir a solicitação de origem. Esses dados de pagamento aparecem apenas para quem já pode vê-los (tesoureiro, aprovadores e administradores).
+
+---
+
 ## [0.41.7] — 2026-07-06
 
 ### Corrigido
