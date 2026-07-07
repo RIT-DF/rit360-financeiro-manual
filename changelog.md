@@ -11,6 +11,55 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [0.41.7] — 2026-07-06
+
+### Corrigido
+
+- **Botão "Rejeitar" deixou de aparecer para quem não pode decidir.** Nas telas de detalhe de reembolso e de pedido de pagamento, o botão de rejeitar passou a seguir exatamente a mesma regra do botão de aprovar: o próprio solicitante (havendo outros aprovadores suficientes) não vê mais "Rejeitar" na própria solicitação — vê apenas "Aguardando decisão dos aprovadores". Quando o solicitante é o único que pode concluir a aprovação, ele continua vendo as ações normalmente.
+
+---
+
+## [0.41.6] — 2026-07-06
+
+### Adicionado
+
+- **Histórico de aprovações agora aparece também no lançamento.** Ao abrir, pela tela de Movimentações, um lançamento que nasceu de um reembolso ou de um pedido de pagamento, o Bússola passa a mostrar o **histórico de aprovações** completo (quem aprovou, com papel e data), além de um link em destaque para abrir a solicitação de origem. A seção "Auditoria" do lançamento continua como estava.
+
+---
+
+## [0.41.4] — 2026-07-06
+
+### Corrigido
+
+- **Aprovador indicado por nome volta a ver e aprovar pedidos de pagamento.** Um aprovador adicionado ao fluxo pela lista de **usuários** (e não por papel) não conseguia ver os pedidos de pagamento que deveria aprovar — o contador acusava um pedido, mas a lista aparecia vazia. Agora ele enxerga o pedido, o histórico e os anexos, e consegue aprovar normalmente — como já acontecia com os reembolsos.
+
+---
+
+## [0.41.3] — 2026-07-06
+
+### Corrigido
+
+- **Mensagens claras ao aprovar ou rejeitar.** Quando uma aprovação ou rejeição não podia ser concluída (por exemplo, quando alguém já havia registrado a própria decisão), a tela mostrava um erro técnico. Agora aparece uma mensagem clara — como "Você já registrou sua decisão nesta solicitação. Aguardando os demais aprovadores." Além disso, ao registrar uma aprovação que ainda não fecha o total exigido, o Bússola avisa **quantas aprovações faltam**, e o botão de aprovar deixa de aparecer para quem já votou.
+
+---
+
+## [0.41.2] — 2026-07-06
+
+### Corrigido
+
+- **"Mês atual" volta a mostrar o mês inteiro.** Na tela de Movimentações, o atalho de período "Mês atual" exibia os lançamentos apenas até a data de hoje, escondendo os previstos para o restante do mês. Agora ele cobre o mês de calendário completo (do dia 1 ao último dia). Os atalhos "Trimestre atual", "Semestre atual" e "Ano atual" receberam o mesmo ajuste — este último deixou de ser "até a data" e passou a cobrir o ano inteiro.
+
+---
+
+## [0.41.1] — 2026-07-06
+
+### Corrigido
+
+- **Ninguém aprova a própria solicitação quando há aprovadores suficientes.** Na aprovação de reembolsos e pedidos de pagamento, o solicitante não pode mais aprovar a própria solicitação enquanto houver outros aprovadores em número suficiente para atingir o total de aprovações exigido pela organização — e deixa de receber o e-mail pedindo para aprovar o próprio pedido. A regra passou a valer para todos, sem exceção. (O solicitante só decide a própria solicitação no caso em que é o único que pode concluí-la.)
+- **Contador "Aguardando minha aprovação" mais preciso.** Na tela de Pedidos de Pagamento, esse contador deixou de somar os reembolsos pendentes — passa a refletir apenas os pedidos de pagamento, batendo com a lista exibida.
+
+---
+
 ## [0.41.0] — 2026-07-01
 
 ### Adicionado
