@@ -88,11 +88,9 @@ Para operar a plataforma, utilizamos os seguintes serviços de terceiros. Alguns
 | **v3rtech.com.br** | Envio de e-mails operacionais | Brasil (Brasília – DF) |
 | **Resend** | Envio de e-mails transacionais | Estados Unidos |
 | **Gotenberg** | Geração de documentos PDF | Alemanha (União Europeia — RGPD/GDPR aplicável) |
-| **Telegram** | Notificações via mensagem (quando ativado pela OSC) | Servidores internacionais |
-| **WhatsApp (Meta)** | Notificações via mensagem (quando ativado pela OSC) | Estados Unidos |
 | **Google Drive** | Armazenamento de documentos (quando ativado pela OSC) | Estados Unidos |
 
-Os serviços de Telegram, WhatsApp e Google Drive são recursos opcionais ativados a critério de cada OSC. Sua ativação implica a aceitação das políticas de privacidade dos respectivos fornecedores.
+O serviço de Google Drive é um recurso opcional ativado a critério de cada OSC. Sua ativação implica a aceitação da política de privacidade do respectivo fornecedor.
 
 ---
 

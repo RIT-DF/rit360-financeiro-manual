@@ -3,21 +3,21 @@ title: "Termos de Uso"
 nav_order: 2
 parent: "Termos e Privacidade"
 permalink: /termos/
-version: "1.0"
-change_summary: "Publicação inicial da versão 1.0."
+version: "1.1"
+change_summary: "A plataforma passa a se chamar RIT360 Financeiro (antiga Bússola Financeira), operada pela mesma RIT."
 requires_reconsent: true
 ---
 
-# Termos de Uso — Bússola Financeira
+# Termos de Uso — RIT360 Financeiro
 
-**Vigência:** 15 de maio de 2026
-**Versão:** 1.0
+**Vigência:** 10 de julho de 2026
+**Versão:** 1.1
 
 ---
 
 ## 1. Aceitação
 
-O uso da plataforma **Bússola Financeira** está condicionado à aceitação destes Termos de Uso. A aceitação ocorre em dois momentos distintos:
+O uso da plataforma **RIT360 Financeiro** está condicionado à aceitação destes Termos de Uso. A aceitação ocorre em dois momentos distintos:
 
 1. **Pela organização (OSC):** o representante responsável pelo cadastro da organização aceita estes Termos em nome da OSC no momento do onboarding institucional. Ao aceitar, a OSC declara ter capacidade legal para firmar este acordo.
 2. **Por cada usuário individualmente:** toda pessoa que cria uma conta na plataforma aceita estes Termos ao concluir o cadastro. O aceite individual não substitui o aceite institucional da OSC.
@@ -28,13 +28,13 @@ Se você não concorda com estes Termos, não utilize a plataforma.
 
 ## 2. Quem somos
 
-O **Bússola Financeira** é uma plataforma de gestão financeira desenvolvida e operada pela **RIT — Rede de Inovação e Transformação**, CNPJ 59.905.202/0001-25, com sede em SMPW Qd. 25, Conjunto 4, Lote 10, Unidade C – Park Way – Brasília – DF – CEP 71745-504 (doravante "RIT").
+O **RIT360 Financeiro** é uma plataforma de gestão financeira desenvolvida e operada pela **RIT — Rede de Inovação e Transformação**, CNPJ 59.905.202/0001-25, com sede em SMPW Qd. 25, Conjunto 4, Lote 10, Unidade C – Park Way – Brasília – DF – CEP 71745-504 (doravante "RIT").
 
 ---
 
-## 3. O que é o Bússola Financeira
+## 3. O que é o RIT360 Financeiro
 
-O Bússola Financeira é uma plataforma de software disponibilizada via internet (SaaS) para organizações da sociedade civil (OSCs), oferecendo recursos de gestão financeira, controle de movimentações, solicitações de reembolso, pedidos de pagamento e funcionalidades correlatas.
+O RIT360 Financeiro é uma plataforma de software disponibilizada via internet (SaaS) para organizações da sociedade civil (OSCs), oferecendo recursos de gestão financeira, controle de movimentações, solicitações de reembolso, pedidos de pagamento e funcionalidades correlatas.
 
 A plataforma está em desenvolvimento contínuo. Novas funcionalidades poderão ser adicionadas, modificadas ou descontinuadas ao longo do tempo.
 
@@ -58,7 +58,7 @@ A RIT poderá alterar os valores de assinatura mediante comunicação com antece
 
 ## 5. Obrigações da OSC
 
-A organização que utiliza o Bússola Financeira se compromete a:
+A organização que utiliza o RIT360 Financeiro se compromete a:
 
 - Manter as informações cadastrais da organização atualizadas e verdadeiras.
 - Designar ao menos um administrador responsável pela gestão da conta.
@@ -116,7 +116,7 @@ O tratamento de dados pessoais realizado pela plataforma é regido pela [Políti
 
 ## 10. Propriedade intelectual
 
-A plataforma Bússola Financeira, incluindo seu código, design, marca e documentação, é propriedade da RIT. Estes Termos não transferem à OSC nem ao usuário qualquer direito de propriedade intelectual sobre a plataforma.
+A plataforma RIT360 Financeiro, incluindo seu código, design, marca e documentação, é propriedade da RIT. Estes Termos não transferem à OSC nem ao usuário qualquer direito de propriedade intelectual sobre a plataforma.
 
 Os dados inseridos pelas OSCs na plataforma (registros financeiros, informações de membros, documentos) pertencem à própria OSC. A RIT não reivindica propriedade sobre esses dados e os utiliza exclusivamente para a prestação do serviço, conforme a Política de Privacidade.
 
