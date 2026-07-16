@@ -1,5 +1,5 @@
 ---
-title: "FAQ"
+title: "Perguntas Frequentes"
 nav_order: 10
 permalink: /faq/
 ---
@@ -79,6 +79,24 @@ Sim. O RIT360 Financeiro **descompacta o ZIP automaticamente** e anexa cada arqu
 ### Se eu sair da tela enquanto preencho, perco o que já digitei?
 
 Não. Ao preencher um **novo lançamento**, **reembolso** ou **pedido de pagamento**, o que você digita é salvo automaticamente no seu dispositivo. Se você sair da tela — por exemplo, para escolher um arquivo para anexar — ou o navegador recarregar a página, ao voltar os campos continuam preenchidos e aparece um aviso de **"rascunho recuperado"**. O rascunho é apagado assim que você envia o formulário (ou clica em descartar), e some ao sair da sua conta. Observação: **arquivos ainda não enviados** não são guardados — só os campos digitados.
+
+## Caça-diferenças (conciliação pelo saldo)
+
+### O saldo do sistema não bate com o do meu banco. Como descubro por quê?
+
+Use o **Caça-diferenças**. Na tela de **Movimentações**, cada card de saldo por conta tem um ícone de **lupa** 🔎. Clique nele, informe o **saldo final do extrato do banco** e a **data**, e o RIT360 Financeiro calcula a diferença e lista **hipóteses ranqueadas** do que pode tê-la causado — um lançamento duplicado, um lançamento que explica exatamente a diferença, algo lançado na conta errada, uma combinação de dois, ou um lançamento que ainda falta registrar. Veja o passo a passo em [Caça-diferenças](/modulos/caca-diferencas/).
+
+### Qual a diferença entre o Caça-diferenças e "Conciliar extrato"?
+
+**Conciliar extrato** parte de um **arquivo OFX** do banco e casa cada linha do extrato com os lançamentos do sistema. O **Caça-diferenças** parte só do **saldo final** que você lê no app do banco ou no caixa eletrônico — sem precisar de arquivo. Use o Conciliar extrato quando tiver o OFX; use o Caça-diferenças para uma conferência rápida "pelo número", ou para caçar aquela diferença que sobrou.
+
+### É seguro clicar em "Excluir lançamento"?
+
+A exclusão é **permanente** — por isso o botão só aparece para quem tem permissão de excluir movimentações, e sempre pede uma confirmação. Já **"Mover para esta conta"** apenas troca a conta do lançamento (reversível). Nas duas ações, depois de aplicar, a diferença é recalculada na hora para você ver o efeito. Na dúvida, use **"Abrir lançamento"** e confira antes de decidir.
+
+### Minha conta está no cheque especial (saldo negativo). Consigo usar?
+
+Sim. No campo de saldo do banco, use o sinal de **"−"** para informar um valor negativo (ex.: `−1.500,00`). O cálculo da diferença considera o sinal corretamente. Vale também para conciliar a **fatura de um cartão de crédito**.
 
 ## Reembolsos e Pedidos de Pagamento
 

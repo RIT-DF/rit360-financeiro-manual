@@ -321,6 +321,8 @@ Se você baixa o **extrato do banco em formato OFX** (a maioria dos bancos ofere
 > 💡 **Por que isso importa**
 > Conciliar pelo extrato substitui a conferência manual lançamento a lançamento, reduz erro e dá confiança de que o que está registrado no RIT360 Financeiro bate com o banco.
 
+> 🔎 **Não tem o arquivo OFX?** Se você só tem o **saldo final** que aparece na tela do banco, use o **[Caça-diferenças](/modulos/caca-diferencas/)**: informe o saldo e ele aponta na hora onde está a diferença, com correção em um clique. É a conferência rápida "pelo número", complementar a esta conciliação por extrato.
+
 ## Prestação de contas
 
 [![Diálogo de prestação de contas](/assets/screenshots/manual-mov-prestacao-contas.png)](/assets/screenshots/manual-mov-prestacao-contas.png)

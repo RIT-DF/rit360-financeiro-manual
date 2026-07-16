@@ -31,7 +31,7 @@ A entrada no RIT360 Financeiro é por **convite**, não por cadastro aberto. Iss
 1. Abra o e-mail de convite enviado pelo administrador da sua organização (assunto começa com "RIT360 Financeiro").
 2. Clique no link **Configurar minha conta**.
 3. Preencha **nome completo** e defina uma **senha** (mínimo 8 caracteres) — ou clique **Continuar com Google** para usar conta Google.
-4. Leia e aceite a **Política de Privacidade** e os **Termos de Uso** (ambos disponíveis em `docs.bf.rit.org.br`).
+4. Leia e aceite a **Política de Privacidade** e os **Termos de Uso** (ambos disponíveis em `docs.financeiro.rit360.org.br`).
 5. Clique em **Concluir**.
 
 Após o primeiro acesso, você cai direto no **Painel** da sua organização.
@@ -56,7 +56,7 @@ Na tela de login você pode:
 - **E-mail e senha** — credenciais definidas no primeiro acesso
 - **Esqueci a senha** — se esqueceu, clique aqui e siga as instruções por e-mail
 
-Acesse em: [bf.rit.org.br](https://bf.rit.org.br){:target="_blank" rel="noopener noreferrer"}
+Acesse em: [financeiro.rit360.org.br](https://financeiro.rit360.org.br){:target="_blank" rel="noopener noreferrer"}
 
 > ⚠️ **Atenção · Senha forte, sempre**
 >
@@ -69,7 +69,7 @@ Na primeira vez que você acessa, ou quando a Política de Privacidade ou os Ter
 [![Tela de aceite dos documentos legais](/assets/screenshots/manual-aceite-documentos-legais.png)](/assets/screenshots/manual-aceite-documentos-legais.png)
 *Tela de aceite — cada documento tem seu link para leitura, um resumo do "o que mudou" e uma confirmação própria; o botão Continuar só habilita com os dois marcados*
 
-Cada documento é **versionado**: o link abre exatamente a versão vigente (por exemplo, `docs.bf.rit.org.br/privacidade/1.0/`) e o seu aceite fica registrado apontando para a versão que você leu — uma garantia de que dá para saber, no futuro, qual texto cada pessoa aceitou. Quando uma nova versão exige novo consentimento, esta tela reaparece no próximo acesso, com o resumo das mudanças.
+Cada documento é **versionado**: o link abre exatamente a versão vigente (por exemplo, `docs.financeiro.rit360.org.br/privacidade/1.0/`) e o seu aceite fica registrado apontando para a versão que você leu — uma garantia de que dá para saber, no futuro, qual texto cada pessoa aceitou. Quando uma nova versão exige novo consentimento, esta tela reaparece no próximo acesso, com o resumo das mudanças.
 
 Acompanhe atualizações em [Política de Privacidade](/privacidade/) e [Termos de Uso](/termos/).
 
@@ -121,6 +121,6 @@ Um usuário pode acumular mais de um papel na mesma OSC (ver [Múltiplos papéis
 ## Onde pedir ajuda
 
 - **Botão Feedback** dentro do RIT360 Financeiro — envia mensagem direto para a equipe RIT
-- **Este manual em `docs.bf.rit.org.br`** — sempre tem a versão mais recente
+- **Este manual em `docs.financeiro.rit360.org.br`** — sempre tem a versão mais recente
 - **Novidades** ([novidades](/changelog/)) — para saber o que foi adicionado em cada versão
 - **E-mail dpo@rit.org.br** — para questões de privacidade ou LGPD

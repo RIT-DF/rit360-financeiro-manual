@@ -26,7 +26,7 @@ A instalação **não exige cadastro novo**, **não copia seus dados pro celular
 
 ## Android (Google Chrome)
 
-1. Abra `bf.rit.org.br` no Chrome do celular Android.
+1. Abra `financeiro.rit360.org.br` no Chrome do celular Android.
 2. Faça login normalmente.
 3. Toque no menu de **3 pontinhos** no canto superior direito do Chrome.
 4. Toque em **Instalar aplicativo**.
@@ -42,7 +42,7 @@ Pronto — o ícone do RIT360 Financeiro aparece na sua tela inicial. Tocar nele
 
 > Importante: no iPhone e iPad, a instalação de PWAs **só funciona no Safari**, não no Chrome iOS.
 
-1. Abra `bf.rit.org.br` no **Safari** do iPhone ou iPad.
+1. Abra `financeiro.rit360.org.br` no **Safari** do iPhone ou iPad.
 2. Faça login normalmente.
 3. Toque no botão **Compartilhar** (quadrado com seta para cima) na parte inferior da tela.
 4. Role para baixo no menu de compartilhamento.
@@ -55,7 +55,7 @@ O ícone do RIT360 Financeiro aparece na tela inicial do iPhone como qualquer ou
 
 ## Computador (Chrome ou Edge)
 
-1. Abra `bf.rit.org.br` no Google Chrome ou Microsoft Edge.
+1. Abra `financeiro.rit360.org.br` no Google Chrome ou Microsoft Edge.
 2. Faça login normalmente.
 3. Olhe para o lado direito da **barra de endereços** — aparece um pequeno ícone de **instalação** (monitor com seta para baixo, ou um círculo com sinal de +).
 4. Clique nesse ícone.
@@ -92,17 +92,17 @@ Pressione e segure o ícone do RIT360 Financeiro → toque em **Remover app** �
 
 Dentro do app instalado, clique no menu **⋮** (3 pontinhos) no canto superior direito da janela → **Desinstalar RIT360 Financeiro**.
 
-Você pode reinstalar a qualquer momento abrindo `bf.rit.org.br` no navegador e seguindo os passos acima.
+Você pode reinstalar a qualquer momento abrindo `financeiro.rit360.org.br` no navegador e seguindo os passos acima.
 
 ---
 
 ## Problemas comuns
 
 **"Não aparece a opção Instalar aplicativo no menu do Chrome."**
-Aguarde uns 30 segundos navegando pelo app antes de procurar a opção — o Chrome só oferece a instalação após algum uso real. Se mesmo assim não aparecer, limpe os dados do site (Configurações do Chrome → Sites → `bf.rit.org.br` → **Limpar dados**) e tente de novo.
+Aguarde uns 30 segundos navegando pelo app antes de procurar a opção — o Chrome só oferece a instalação após algum uso real. Se mesmo assim não aparecer, limpe os dados do site (Configurações do Chrome → Sites → `financeiro.rit360.org.br` → **Limpar dados**) e tente de novo.
 
 **"Instalei mas o app abre dentro do Chrome com barra de endereços."**
-Isso significa que foi criado um atalho, não uma instalação completa. Desinstale, limpe os dados do site no Chrome, reabra `bf.rit.org.br`, navegue por ~30 segundos e tente instalar de novo.
+Isso significa que foi criado um atalho, não uma instalação completa. Desinstale, limpe os dados do site no Chrome, reabra `financeiro.rit360.org.br`, navegue por ~30 segundos e tente instalar de novo.
 
 **"O app instalado está com versão antiga."**
 Procure pela notificação **Nova versão disponível** dentro do app e toque em **Atualizar**. Se não aparecer, force atualização puxando a tela para baixo (Android) ou feche e abra o app de novo.
