@@ -11,6 +11,14 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/){:
 
 ---
 
+## [1.6.2] — 2026-07-16
+
+### Corrigido
+
+- **E-mails ajustados.** Corrigimos textos que ainda traziam o nome antigo (em assuntos como boas-vindas e redefinição de senha), o **rodapé** dos e-mails (logo do RIT360 Financeiro maior e clicável, com links para o sistema e para a RIT) e a **altura do botão**, que aparecia desproporcional. Os PDFs de prestação de contas e de encerramento de projeto também passaram a mostrar o nome atualizado.
+
+---
+
 ## [1.6.0] — 2026-07-15
 
 ### Adicionado
